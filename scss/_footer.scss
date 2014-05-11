@@ -1,0 +1,31 @@
+.footer {
+	margin-top: 0;
+	padding: 0 0 1.5rem 0;
+	text-align: center;
+	img {
+		max-width: 25px;
+		height: auto;
+	}
+	.flexcontents {
+		flex-direction: row;
+		border-top: 1px $litered solid;
+		padding: 1rem;
+		@include media($mobile) {
+			flex-direction: column;
+		}
+	}
+	.widget {
+		flex: 1;
+		padding: 1rem;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+	}
+	.mccracken {
+		p {
+			font-style: italic;
+			text-align: left;
+		}
+
+	}
+}

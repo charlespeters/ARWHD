@@ -1,5 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -216,6 +215,7 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -223,7 +223,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -858,11 +857,19 @@ html, body {
 
 .flexcontents {
   min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -933,9 +940,22 @@ img {
   line-height: 1;
   color: #e4be68;
   padding: 0 1.5rem;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
   flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .logo img {
@@ -963,8 +983,18 @@ img {
 @media screen and (max-width: 768px) {
   .navbtn {
     width: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: white;
     font-size: 2rem;
@@ -981,6 +1011,9 @@ img {
 
 .show {
   display: block !important;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
   flex: 0;
 }
 
@@ -1036,16 +1069,27 @@ img {
   height: auto;
 }
 .footer .flexcontents {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   border-top: 1px #d04d36 solid;
   padding: 1rem;
 }
 @media screen and (max-width: 500px) {
   .footer .flexcontents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 .footer .widget {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 1rem;
 }
@@ -1188,6 +1232,9 @@ select option {
   padding: 5rem 5%;
   text-align: center;
   position: relative;
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -ms-flex: 5;
   flex: 5;
 }
 .hero h1 {
@@ -1231,6 +1278,9 @@ select option {
   background: url("../img/connect_copy.png") no-repeat -15% 0;
   background-size: contain;
   padding: 2rem 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 .frontpage h2 {
@@ -1255,22 +1305,39 @@ select option {
 }
 
 .frontindex {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
   .frontindex {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 500px) {
   .frontindex {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 .frontindex article.frontpost {
   position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   background: #d04d36;
   z-index: 0;
@@ -1282,6 +1349,9 @@ select option {
 @media screen and (max-width: 500px) {
   .frontindex article.frontpost {
     width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -1299,8 +1369,18 @@ select option {
   width: 100%;
   height: 100%;
   padding: 0 .25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .frontindex article.frontpost img {
@@ -1320,15 +1400,26 @@ select option {
 .frontprojects {
   background: #b74435 url("../img/archery.png") no-repeat center center;
   background-size: cover;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 @media screen and (max-width: 768px) {
   .frontprojects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 .frontprojects .frontproject {
   padding: 2rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 .frontprojects .frontproject h2 {
@@ -1426,8 +1517,18 @@ article.blogpost footer {
 
 .blogindex {
   padding: 0 1rem;
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+  -ms-flex: 7;
   flex: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .blogindex h1 {
@@ -1465,6 +1566,9 @@ article.blogpost footer {
 }
 
 aside.sidebar {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
   flex: 3;
   margin-top: 2rem;
   padding: 0 1.5rem;
@@ -1500,11 +1604,17 @@ aside.sidebar {
   font-weight: 700;
   font-size: 3rem;
   color: #d04d36;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   background: url("../img/404target.png") no-repeat center center;
   background-size: 50%;
   height: 100%;
   text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .error404 h2 {
@@ -1516,12 +1626,20 @@ aside.sidebar {
 }
 
 .archive main, .page-blog main {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   max-width: 68rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .archive main, .page-blog main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -1597,11 +1715,15 @@ pre samp {
   hyphens: none;
   padding: 1.143em;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
   text-align: left;
   white-space: pre-wrap;
   word-spacing: normal;
+}
+pre ::-moz-selection {
+  background: #073642;
+  color: inherit;
+  text-shadow: none;
 }
 pre ::selection {
   background: #073642;

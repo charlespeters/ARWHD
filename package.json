@@ -1,0 +1,19 @@
+{
+  "name": "ARWHD",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlespeters/arwhd-jekyll.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-contrib-cssmin": "*"
+  }
+}

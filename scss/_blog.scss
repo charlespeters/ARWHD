@@ -1,0 +1,120 @@
+//blog page
+
+
+.post {
+
+}
+
+
+//classes related the blog
+
+.followus {
+	text-align: center;
+	padding: 0 .5rem;
+	.genericon {
+		font-size: 2.5rem;
+		display: inline;
+		width: 2.5rem;
+		height: auto;
+		text-align: center;
+		margin: 0 .25rem
+	}
+}
+
+//meta
+.meta { text-transform: uppercase; letter-spacing: 2px; }
+
+//single entry
+
+article.blogpost {
+	padding: 0 1rem;
+	header {
+		padding: 2.125rem 0;
+		text-align: center;
+		.category {
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+		h1 {
+			margin: .5rem 0 1rem;
+			letter-spacing: 1px;
+			text-align: center;
+			text-transform: none;
+			color: $litered;
+			font-size: 3.25rem;
+			font-family: "proxima-nova";
+			@include media($mobile) { font-size: 2.125rem; }
+		}
+	}
+
+	section.entry {
+		max-width: 35rem;
+		margin: 0 auto;
+		.wp-post-image {
+			border-bottom: .25rem solid $palegold;
+			display: block;
+			margin: .25rem auto;
+		}
+		ul, ol {
+			margin: .5rem 0;
+			list-style-position: inside;
+		}
+		h3 {
+			color: $litered;
+			letter-spacing: 3px;
+			margin: .5rem 0;
+			font-weight: 700;
+		}
+		blockquote {
+			padding: 0 1rem;
+			margin: .5rem 0;
+			border-left: 2px solid $litered;
+			p {font-style: italic; }
+		}
+	}
+footer {
+	max-width: 38rem;
+	margin: 0 auto 2rem;
+
+}
+}
+
+//blog page
+
+.blogindex {
+	padding: 0 1rem;
+	flex: 7;
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	h1 {
+		font: 700 2rem/1 "proxima-nova";
+		color: $litered;
+		margin-top: 2rem;
+	}
+	article {
+		margin-bottom: 1%;
+		max-width: 40rem;
+		p {
+			border-left: 2px solid $litered;
+			padding-left: 1rem;
+		}
+		a {
+			color: $palegold;
+			&:hover { color: $litered; }
+		}
+
+
+		@include media($mobile) { width: 100% !important; }
+	}
+	&:after { @extend .clearfix; }
+}
+
+.index_navigation {
+	max-width: 60rem;
+	margin: 1rem 0 1rem auto;
+	div {
+		display: inline-block;
+		padding: 0 1rem;
+	}
+}
