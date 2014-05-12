@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body class="{{ page.tags }}">
+    <body class="{{ page.tags | prepend: "page-" }}">
 
     {% include header.html %}
 
