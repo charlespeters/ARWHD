@@ -8,3 +8,5 @@ url: "http://arwhd.co"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude: ["node_modules", "package.json", "feed.xml"]

@@ -1,0 +1,41 @@
+---
+layout: default
+title: Blog
+tags: blog
+---
+<main role="main" class="flexcontents page">
+<section class="blogindex">
+    <h1>Blog</h1>
+    {% for post in site.posts %}
+    <article>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <span class="meta">Jan 6th, 2014 | <span class="category"><a href="http://arw.hd:8888/category/uiux-design/" title="View all posts in UI/UX Design" rel="category tag">UI/UX Design</a></span></span>
+        {{ post.excerpt }}
+    </article>
+    {% endfor %}
+</section>
+<aside class="sidebar">
+    <div class="widget">
+      <img src="http://arw.hd:8888/wp/wp-content/themes/arwhdv3/img/aimwell.jpg" alt="">
+      <hr>
+    </div>
+
+  <div id="text-3" class="widget widget_text">			<div class="textwidget"><p>Enter ARWHD. We want to connect you with a freelance web professional who will easily meet your needs and exceed your expectations. No middle man required. We want to equip those designers and developers to do the best work they can.</p>
+</div>
+		</div><div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-4"><a href="http://arw.hd:8888/category/freelance/" title="View all posts filed under Freelance">Freelance</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://arw.hd:8888/category/resources/" title="View all posts filed under Resources">Resources</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://arw.hd:8888/category/uiux-design/" title="View all posts filed under UI/UX Design">UI/UX Design</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://arw.hd:8888/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://arw.hd:8888/category/web-development/" title="View all posts filed under Web Development">Web Development</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://arw.hd:8888/category/wordpress/" title="View all posts filed under Wordpress">Wordpress</a>
+</li>
+		</ul>
+</div>
+</aside>
+</main>

@@ -2,10 +2,36 @@
 layout: page
 title: About
 permalink: /about/
+tags: about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+“Work hard. Don’t be an a**hole. Share what you know.” &mdash; Brad Frost
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I struggle with client work, being a freelancer and being a web designer. It’s a balancing act of business, account management and the work itself. But those three things are agreed to be the way to be successful over time in the web industry.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+So I made this site.
+
+As I struggle through working I find myself, missing the mark, aiming but not always making contact. I thought the best way to move forward was to share the mistakes and the successes, to have them set alongside the good ideas, best practices and summations of what I know.
+
+Design, User Experience, Front-end Development are all complicated in their own way. I want to put some order to those subjects for myself and hopefully benefit any reader.
+
+### Goals
+
+My only real goals here are to make sense of things like design & front-end code and to write about the things that fill my time: the work & business of web design.
+
+### Colophon
+
+This site is somewhat reluctantly powered by Wordpress. It’s made with SASS, Autoprefixer, Grunt & Flexbox, Prism.js, FitText/FitVids & written mostly with the Atom editor (Beta). It’s hosted on Laughing Squid, version controlled with Github (via Tower) & deployed with FTPloy.
+
+The typefaces being used are Proxima Nova & Proxima Nova Condensed by Mark Simonson served via Typekit.
+
+Images
+
+### About Charles
+
+My name is Charles. I’m a web designer & front-end developer.
+
+I am available for hire.
+
+### Comment Policy
+Please be advised that I don’t have any patience for a**holes that aren’t me and I am not often concerned with IE8 support.
