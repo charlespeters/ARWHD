@@ -1615,7 +1615,7 @@ aside.sidebar {
   margin: .25rem 0;
 }
 
-.archive main, body.blog main {
+.archive main, .page-blog main {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1625,7 +1625,7 @@ aside.sidebar {
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  .archive main, body.blog main {
+  .archive main, .page-blog main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

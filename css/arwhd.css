@@ -1505,13 +1505,13 @@ aside.sidebar {
   margin: .25rem 0;
 }
 
-.archive main, body.blog main {
+.archive main, .page-blog main {
   flex-direction: row;
   max-width: 68rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  .archive main, body.blog main {
+  .archive main, .page-blog main {
     flex-direction: column;
   }
 }
