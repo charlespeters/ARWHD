@@ -3,7 +3,7 @@ layout: post
 title: Working with Editorially
 categories:
 - Resources
-tags: []
+date:   2014-01-10 08:00
 ---
 
 [Editorially](editorially.com) is by far one of my favorite tools to work with on the whole internet. I’ll even go so far as to say its public beta was the catalyst to get me writing again.
