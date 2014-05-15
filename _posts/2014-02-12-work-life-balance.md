@@ -5,8 +5,6 @@ date:   2014-02-12 14:03:43
 categories: freelance
 ---
 
-![workbalance](img/workbalance.jpg)
-
 So you’re a freelancer or remote worker and you’re working from home. You’re passionate about what you do and love throwing yourself into learning new things and the projects you’re commissioned to do, and you can’t help but want to share about it in your blog. That’s all great. A lot of us are like that.
 
 One of things I keep finding is that I sometimes can’t stop working. I mean, I love my wife and family and enjoy our friends and have hobbies, but I love working. Since I work from home, those two things blend into each other. It’s not surprising.
