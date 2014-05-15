@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Guide to Web Typography
+title: "A Guide to Web Typography"
 categories:
 - UI/UX Design
 status: publish
