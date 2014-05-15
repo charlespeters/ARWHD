@@ -23,7 +23,7 @@ Start by asking what goals they have for their site and what exists already. Dig
 
 Content is a huge thing that you need to canvas thoroughly before getting started. You can’t design a website without content. So what kinds of content do they have now? What content needs to be on the new site? Is there more that needs be generated before the new project launches? Who is responsible for creating it? If you’re using a CMS, what parts of it need to be dynamic? How often will they want to update their content? Where are they going to update from?
 
-Walk them through your process &amp;amp; talk about their timeline. When do they expect this site to launch? How would you like to handle communication? Is there someone you specifically need to be in touch with? What amount of content do you need to get started? What goals should you meet during the course of this project? How will you handle feedback?
+Walk them through your process &amp; talk about their timeline. When do they expect this site to launch? How would you like to handle communication? Is there someone you specifically need to be in touch with? What amount of content do you need to get started? What goals should you meet during the course of this project? How will you handle feedback?
 
 Dive as deep as you can into these topics. Leave no stone unturned, be as thorough and detailed as you can. _Most importantly, get everything out on the table and invite your client to be as open as possible._
 
