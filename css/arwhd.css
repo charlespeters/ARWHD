@@ -1257,6 +1257,7 @@ select option {
 .frontindex {
   flex: 1;
   display: flex;
+  padding: 1rem;
 }
 @media screen and (max-width: 768px) {
   .frontindex {
@@ -1291,6 +1292,7 @@ select option {
   .frontindex article.frontpost {
     width: 100%;
     flex: 1;
+    margin: .25rem auto;
   }
 }
 .frontindex article.frontpost h2 {

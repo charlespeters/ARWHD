@@ -1,15 +1,15 @@
-    <header class="header">
-    	<div class="logo">
-    		<a href="http://arwhd.co/"><img src="/img/logowhite.svg" alt="ARWHD"></a>
-    		<h1>ARWHD</h1>
-    	</div>
-    	<div class="navbtn">☰</div>
-        <nav class="nav">
-            <ul id="menu-primary-menu" class="menu">
-            {% for page in site.pages %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endfor %}
-                <!-- <li id="menu-item-69"><a href="/connect/">Connect</a></li> -->
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+    <div class="logo">
+    	<a href="http://arwhd.co/"><img src="/img/logowhite.svg" alt="ARWHD"></a>
+    	<h1>ARWHD</h1>
+    </div>
+    <div class="navbtn">☰</div>
+    <nav class="nav">
+        <ul id="menu-primary-menu" class="menu">
+        {% for page in site.pages %}
+            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endfor %}
+            <!-- <li id="menu-item-69"><a href="/connect/">Connect</a></li> -->
+        </ul>
+    </nav>
+</header>
