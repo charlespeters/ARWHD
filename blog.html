@@ -9,7 +9,7 @@ tags: blog
     {% for post in site.posts %}
     <article>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span class="meta">Jan 6th, 2014 | <span class="category"><a href="http://arw.hd:8888/category/uiux-design/" title="View all posts in UI/UX Design" rel="category tag">UI/UX Design</a></span></span>
+        <span class="meta">{{ post.date | date: "%b %-d, %Y" }} | <span class="category"><a href="http://arw.hd:8888/category/uiux-design/" title="View all posts in UI/UX Design" rel="category tag">UI/UX Design</a></span></span>
         {{ post.excerpt }}
     </article>
     {% endfor %}
@@ -24,7 +24,11 @@ tags: blog
             <p class="text">{{ site.description }}</p>
         </div>
     </div>
-<div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		<ul>
+    <hr>
+    <div class="widget">
+      <p>This blog isn't supported by ad revenue, please consider <a href="https://www.gittip.com/charlespeters/">donating</a> to keep it up and running</p>
+    </div>
+<!-- <div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		<ul>
 	<li class="cat-item cat-item-4"><a href="http://arw.hd:8888/category/freelance/" title="View all posts filed under Freelance">Freelance</a>
 </li>
 	<li class="cat-item cat-item-6"><a href="http://arw.hd:8888/category/resources/" title="View all posts filed under Resources">Resources</a>
@@ -38,6 +42,6 @@ tags: blog
 	<li class="cat-item cat-item-9"><a href="http://arw.hd:8888/category/wordpress/" title="View all posts filed under Wordpress">Wordpress</a>
 </li>
 		</ul>
-</div>
+</div> -->
 </aside>
 </main>

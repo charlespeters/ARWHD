@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Where We Start
+title: "Where We Start"
 categories:
 - Freelance
-tags: []
 ---
 We aim.
 
