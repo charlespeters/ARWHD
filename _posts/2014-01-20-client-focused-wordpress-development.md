@@ -3,6 +3,7 @@ layout: post
 title: "Client Focused Wordpress Development"
 categories:
 - Wordpress
+date: 2014-01-20
 ---
 Every time I work with a client on a Wordpress related project, the number one thing being asked for is customization. Out of the box, Wordpress really isn’t very opinionated about what it will let you customize and the content you’ll be able to add. It comes with some basic content types (posts, pages, media, attachments, menus) and the rest is up to your imagination.
 

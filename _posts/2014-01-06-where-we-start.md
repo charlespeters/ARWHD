@@ -3,6 +3,7 @@ layout: post
 title: "Where We Start"
 categories:
 - Freelance
+date: 2014-01-06
 ---
 We aim.
 

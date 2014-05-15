@@ -3,7 +3,6 @@ layout: post
 title: "2014 Photoshop Workflow"
 categories:
 - UI/UX Design
-tags: []
 date: 2014-01-16
 ---
 Yeah, we get it, it’s 2014. Why are you still using expensive raster software to design things with fixed widths? Isn’t the web supposed to be fluid and responsive?
