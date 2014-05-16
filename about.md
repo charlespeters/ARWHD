@@ -27,9 +27,7 @@ The typefaces being used are Proxima Nova & Proxima Nova Condensed by Mark Simon
 
 ### About Charles
 
-My name is Charles. I’m a web designer & front-end developer.
-
-I am available for hire.
+My name is Charles. I’m a web designer & front-end developer. I am available for [hire](/connect/).
 
 ### Comment Policy
 Please be advised that I don’t have any patience for a**holes that aren’t me and I am not often concerned with IE8 support.

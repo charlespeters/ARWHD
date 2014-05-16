@@ -6,6 +6,8 @@ input[type="text"], input[type="email"], textarea {
 	padding: .875rem 0;
 	color: $darkred;
 	@include anti;
+	width: 80%;
+	max-width: 45rem;
 	&:focus {
 		outline: none;
 		background: none;
