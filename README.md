@@ -8,7 +8,6 @@ Done
 - [x] FitText
 - [x] Blog Page
 - [x] Footer Styling
-
 - [x] Input Fields
 - [x] Contact Page Template
 - [x] Sidebar Widgets
@@ -16,18 +15,20 @@ Done
 - [x] About Page Template
 - [x] Copy [About, Home, Connect, Projects]
 - [x] Repo Cleaning
+- [x] Padding on `<main>` & `<article>`
+
 
 To Do
 ----
 - [ ] Organize Categories
-- [ ] Padding on `<main>` & `<article>`
 - [ ] 404
 - [ ] Disqus
+- [ ] Redirect
 
 Known Issues
 ----
 - [ ] Front Page Issues With Post Indexes
-- [ ] Forms
+- [x] Forms
 - [ ] Disqus is loading on all pages
 
 Future Versions
