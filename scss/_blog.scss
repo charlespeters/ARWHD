@@ -79,6 +79,19 @@ footer {
 }
 }
 
+
+.footnotes {
+	margin-top: 1rem;
+	border-top: 1px solid $litered;
+	padding: .5rem;
+	li {
+		font-size: .875rem;
+		p {
+			margin: .25rem 0;
+		}
+	}
+}
+
 //blog page
 
 .blogindex {

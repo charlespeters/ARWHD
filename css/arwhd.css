@@ -1436,6 +1436,18 @@ article.blogpost footer {
   margin: 0 auto 2rem;
 }
 
+.footnotes {
+  margin-top: 1rem;
+  border-top: 1px solid #d04d36;
+  padding: .5rem;
+}
+.footnotes li {
+  font-size: .875rem;
+}
+.footnotes li p {
+  margin: .25rem 0;
+}
+
 .blogindex {
   padding: 0 1rem;
   flex: 7;

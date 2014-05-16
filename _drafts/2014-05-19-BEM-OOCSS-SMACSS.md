@@ -9,7 +9,19 @@ CSS needs an architecture to it or it will inevitably fall apart overtime. The m
 So we need to some sort of structure and guide for our projects as they grow. There are 3 really popular ways of achieving that and I have a hard time keeping them all straight, I want to highlight them and go over their differences and similarities.
 
 ### BEM
-BEM stands for Block, Element and Modifier
+BEM stands for Block, Element and Modifier [^1]
 
 ### OOCSS
+Object Oriented CSS
+
+#### Separation of Structure and Skin
+emphasis on reuse [^2]
+
+
+#### Separation of Containers and Content
+Not Duplicatin Styles
+
 ### SMACC
+
+[^1]: [BEM](http://bem.info/method/)
+[^2]: [Louis Lazarus on Smashing Mag](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
