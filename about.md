@@ -17,15 +17,13 @@ Design, User Experience, Front-end Development are all complicated in their own 
 
 ### Goals
 
-My only real goals here are to make sense of things like design & front-end code and to write about the things that fill my time: the work & business of web design.
+My only real goals here are to make sense of things like design & front-end code and to write about the things that fill my time: the work & business of web design. I ultimately, want to get better at client services and better at front-end development.
 
 ### Colophon
 
-This site is somewhat reluctantly powered by Wordpress. It’s made with SASS, Autoprefixer, Grunt & Flexbox, Prism.js, FitText/FitVids & written mostly with the Atom editor (Beta). It’s hosted on Laughing Squid, version controlled with Github (via Tower) & deployed with FTPloy.
+This site is somewhat reluctantly powered by Jekyll. It’s made with SASS, Autoprefixer, Grunt & Flexbox, Prism.js, FitText/FitVids & written mostly with the Atom editor (Beta). It’s hosted on Github Pages, version controlled with Github (via Tower).
 
 The typefaces being used are Proxima Nova & Proxima Nova Condensed by Mark Simonson served via Typekit.
-
-Images
 
 ### About Charles
 
