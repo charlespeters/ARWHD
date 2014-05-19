@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Simple Transitions"
-date:   2014-05-21 14:03:43
+date:   2014-05-19 13:03:43
 categories: CSS
 ---
-I've used CSS transitions sparingly. But a few recent posts got me really interested it going to town. During 2013's 24 Ways there was a post about the hover paradigm[^1] and it got me thinking about CSS transitions. Then this post on the Cognition Blog [^2] and that rekindled the thought that CSS transitions are a significant part of a website's design.
+I've used CSS transitions sparingly. But a few recent posts got me really interested it going to town. During 2013's 24 Ways there was a post about the hover paradigm[^1] and it got me thinking about CSS transitions. Then this post on the Cognition Blog[^2] and that rekindled the thought that CSS transitions are a significant part of a website's design.
 
-These articles suggest going applying transitions to the `:focus` states too because few and fewer touch devices support hover.
+These articles suggest going applying transitions to the `:focus` states too because fewer and fewer touch devices support hover.
 
 What I didn't realize is that CSS transitions were easier to use than I thought, especially when you apply them to the `:hover` state.
 
@@ -24,7 +24,7 @@ So this would end up being something like:
   }
 }</code></pre>
 
-So if we're using the transition on the `:hover` state we'd want set the transition on the element's normal state and on the `:hover` state we'd want to set our result.
+So if we're using the transition on the `:hover` state we'd want set the transition on the element's normal state and on the `:hover` & `:focus` states we'd want to set our result. Here's an example to add a transition on `:hover`.
 
 <p data-height="268" data-theme-id="4981" data-slug-hash="oDqAh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/charlespeters/pen/oDqAh/'>CSS Transitions on Border</a> by charles peters (<a href='http://codepen.io/charlespeters'>@charlespeters</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
@@ -35,7 +35,7 @@ The other big thing is to remember: don't interrupt your user's experience. In D
 
 > But the truth is everyone can begin using CSS3 right now. And fortunately you don’t have to think differently or make drastic changes to the way you craft websites in order to do so. How can anyone use CSS3 on any project? Because we’re going to carefully choose the situations where we apply CSS3, focusing squarely on the experience layer.
 
-The idea is simple: go slow with transitions.
+The idea is simple: go slow with transitions they can be awesome or they can like your undergrad projects done in Flash.
 
 [^1]: [The Responsive Hover Paradigm](http://24ways.org/2013/the-responsive-hover-paradigm/)
 [^2]: [Hover-crafting](http://cognition.happycog.com/article/hover-crafting)
