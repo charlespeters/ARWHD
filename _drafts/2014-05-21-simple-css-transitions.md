@@ -16,15 +16,13 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
 So this would end up being something like:
 
-<pre><code class="language-scss">
-div {
+<pre><code class="language-scss">div {
   height: 3rem;
   transition: height 1s ease;
   &:hover {
     height: 5rem;
   }
-}
-</code></pre>
+}</code></pre>
 
 So if we're using the transition on the `:hover` state we'd want set the transition on the element's normal state and on the `:hover` state we'd want to set our result.
 
