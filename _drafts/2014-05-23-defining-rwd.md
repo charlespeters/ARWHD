@@ -40,3 +40,4 @@ This is similar to paying for a roof. If you've ever had to had a roofing job do
 [^4]: [_Responsive Web Design_ by Ethan Marcotte May 25, 2010](http://alistapart.com/article/responsive-web-design)
 
 http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/
+http://www.thinkwithgoogle.com/research-studies/the-new-multi-screen-world-study.html

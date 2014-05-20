@@ -17,7 +17,7 @@ Design, User Experience, Front-end Development are all complicated in their own 
 
 ### Goals
 
-My only real goals here are to make sense of things like design & front-end code and to write about the things that fill my time: the work & business of web design. I ultimately, want to get better at client services and better at front-end development.
+My only real goals here are to make sense of things like design & front-end code and to write about the things that fill my time: the work & business of web design. I ultimately, just want to get better at client services and at front-end development.
 
 ### Colophon
 
@@ -25,9 +25,18 @@ This site is somewhat reluctantly powered by Jekyll. It’s made with SASS, Auto
 
 The typefaces being used are Proxima Nova & Proxima Nova Condensed by Mark Simonson served via Typekit.
 
-### About Charles
+### About Me
 
-My name is Charles. I’m a web designer & front-end developer. I am available for [hire](/connect/).
+My name is Charles. I’m a web designer & front-end developer. I am available for [hire](/connect/) and if you ever want me to shut up for about 20 minutes, put Chinese food in front of me.
 
 ### Comment Policy
 Please be advised that I don’t have any patience for a**holes that aren’t me and I am not often concerned with IE8 support.
+
+### Blogs I Love
+- [Adtile's Blog](http://blog.adtile.me/)
+- [Daniel Eden's Blog](http://daneden.me/)
+- [Ragged Write](http://raggedwrite.net/)
+- [Usability Post](http://usabilitypost.com/)
+- [Giant Robots Smashing into Other Giant Robots](http://robots.thoughtbot.com/)
+- [The Sass Way](http://thesassway.com/)
+- [Dave Rupert's Blog](http://daverupert.com/)
