@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
-
-    <body class="{{ page.tags | prepend: "page-" }}">
-
+    {% include head.html %}
+    {% if page.id %}
+        <body>
+        {% else %}
+        <body class="page-{{ page.tags}}">
+    {% endif %}
     {% include header.html %}
 
 

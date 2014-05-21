@@ -1494,7 +1494,7 @@ article.blogpost header h1 {
   letter-spacing: 3px;
   text-align: center;
   color: #d04d36;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 500px) {
   article.blogpost header h1 {

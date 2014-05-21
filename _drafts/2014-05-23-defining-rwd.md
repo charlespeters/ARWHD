@@ -5,7 +5,7 @@ comments: true
 tags:
 - RWD
 - Web Design
-- Cigarettes
+- Client Services
 categories:
 - RWD
 date: 2014-05-23 10:03:43
@@ -32,14 +32,15 @@ The main thing to understand is responsive web design is a boilerplate idea to m
 It may mean spending more to have your website to be built, this is similar to paying for a roof. If you've ever had to had a roofing job done you can pay for a cheap job and maybe in the next couple of years your roof will collapse on you or you can pay for the job to be done properly.
 
 ### Out With It Nerd, Why Should I Care?
-As the mobile space grows, your potential to reach more people and customers grows. Starting in 2012, a trend started to where some users were exclusively mobile only[^5]. More importantly Google started reporting statistics of another user behavior, 90% of people use more than one device to do something[^6].
+As the mobile space grows, your potential to reach more people and customers grows. Starting in 2012, a trend started to where some users were exclusively mobile only[^5]. More importantly Google started reporting statistics of another user behavior, 90% of people use more than one device to do something[^6]. Knowing that these behaviors exist and these trends are rising should be cause enough to change the way you approach having a web presence or any kind of doing business online.
 
+***
+
+Responsive Web Design isn't going anywhere and it will continue to  
 
 [^1]: [_Device Agnostic_ by Trent Walton March 10, 2013](http://trentwalton.com/2014/03/10/device-agnostic/)
 [^2]: [_As mobile gets bigger, enterprises need to figure out how to make it work_ by Mike Cassidy April 17, 2014](http://bloomreach.com/2014/04/as-mobile-gets-bigger-enterprises-need-to-figure-out-how-to-make-it-work/)
 [^3]: [_Designing for Touch_ by Luke Wroblewski at ConveyUX on May 6, 2013](http://www.lukew.com/presos/preso.asp?33)
 [^4]: [_Responsive Web Design_ by Ethan Marcotte May 25, 2010](http://alistapart.com/article/responsive-web-design)
 [^5]: [_Cell Internet Use 2012_ by Aaron Smith](http://www.pewinternet.org/2012/06/26/cell-internet-use-2012/)
-
-http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/
-http://www.thinkwithgoogle.com/research-studies/the-new-multi-screen-world-study.html
+[^6]: [_The New Multi-Screen World Study_](http://www.thinkwithgoogle.com/research-studies/the-new-multi-screen-world-study.html)
