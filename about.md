@@ -33,6 +33,7 @@ My name is Charles. I’m a web designer & front-end developer. I am available f
 Please be advised that I don’t have any patience for a**holes that aren’t me and I am not often concerned with IE8 support.
 
 ### Blogs I Love
+
 - [Adtile's Blog](http://blog.adtile.me/)
 - [Daniel Eden's Blog](http://daneden.me/)
 - [Ragged Write](http://raggedwrite.net/)
