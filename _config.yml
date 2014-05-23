@@ -9,4 +9,4 @@ url: "http://arwhd.co"
 markdown: kramdown
 permalink: pretty
 
-exclude: ["node_modules", "package.json", "feed.xml"]
+exclude: ["node_modules", "package.json"]
