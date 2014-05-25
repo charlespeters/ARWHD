@@ -886,6 +886,10 @@ img {
   height: auto;
 }
 
+.hide {
+  display: none;
+}
+
 .container {
   max-width: 68em;
   margin-left: auto;
@@ -1024,7 +1028,6 @@ img {
 }
 
 .footer {
-  margin-top: 1.5rem;
   padding: 0 0 1.5rem 0;
   text-align: center;
 }
@@ -1252,14 +1255,19 @@ select option {
 .frontindex {
   color: #d04d36;
 }
-.frontindex .flexposts {
-  display: flex;
-  padding: 1rem;
+.frontindex .frontheading {
+  color: #e4be68;
 }
-@media screen and (max-width: 768px) {
-  .frontindex .flexposts {
-    flex-wrap: wrap;
-  }
+.frontindex .frontheading span {
+  border-color: #d04d36;
+}
+.frontindex .flexposts {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 @media screen and (max-width: 500px) {
   .frontindex .flexposts {
@@ -1268,22 +1276,18 @@ select option {
   }
 }
 .frontindex article.frontpost {
-  flex: 1;
-  border: 2px solid #d04d36;
+  color: #d04d36;
+  flex: 0 1 17.5rem;
+  border: 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: .25rem;
   z-index: 0;
   text-align: center;
-  color: #d04d36;
   font-size: 1rem;
-  padding: 2rem .5rem;
+  padding: 1rem;
   min-height: 15rem;
-}
-.frontindex article.frontpost:hover {
-  background: #d04d36;
-  color: white;
 }
 @media screen and (max-width: 500px) {
   .frontindex article.frontpost {
@@ -1292,18 +1296,18 @@ select option {
     margin: .25rem auto;
   }
 }
+.frontindex article.frontpost a {
+  color: #e4be68;
+}
+.frontindex article.frontpost a:hover {
+  color: #d04d36;
+}
 .frontindex article.frontpost h3 {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "proxima-nova", sans-serif;
   letter-spacing: 2px;
   margin: .25rem 0;
-}
-.frontindex article.frontpost a {
-  color: #e4be68;
-}
-.frontindex article.frontpost a:hover {
-  color: white;
 }
 
 .frontprojects {
@@ -1374,6 +1378,7 @@ select option {
 
 article.blogpost {
   padding: 0 1rem;
+  margin-bottom: 1.5rem;
 }
 article.blogpost header {
   padding: 2.125rem 0;
@@ -1501,6 +1506,13 @@ article.blogpost footer {
   padding: 0 1rem;
 }
 
+ul.cat_list {
+  list-style: inside;
+}
+ul.cat_list li {
+  padding: 1rem;
+}
+
 aside.sidebar {
   flex: 3;
   margin-top: 2rem;
@@ -1596,6 +1608,42 @@ aside.sidebar {
 .page-about, .page-about-us {
   background: url("../img/archerypractice.png") no-repeat center center;
   background-size: cover;
+}
+
+.sharing {
+  width: 100%;
+  list-style: none inside;
+  text-align: center;
+}
+.sharing li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem .5rem;
+}
+.sharing svg {
+  max-width: 4rem;
+}
+.sharing a {
+  border: 0;
+  background: none;
+}
+.sharing .circling {
+  border-radius: 100%;
+  border: 1px solid #d04d36;
+  padding: .5rem;
+}
+.sharing .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #d04d36;
+  background: none;
+  transition: all 750ms ease;
+}
+.sharing .icon:hover, .sharing .icon:focus {
+  background: #e16b56;
+  width: 3rem;
+  height: 3rem;
+  fill: white;
 }
 
 /* ==========================================================================

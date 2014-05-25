@@ -28,6 +28,7 @@
 
 article.blogpost {
 	padding: 0 1rem;
+	margin-bottom: 1.5rem;
 	header {
 		padding: 2.125rem 0;
 		max-width: 48rem;
@@ -146,5 +147,12 @@ footer {
 	div {
 		display: inline-block;
 		padding: 0 1rem;
+	}
+}
+
+ul.cat_list {
+	list-style: inside;
+	li {
+		padding: 1rem;
 	}
 }

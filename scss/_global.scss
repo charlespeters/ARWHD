@@ -18,6 +18,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.hide {
+	display: none;
+}
 
 .container {
 	@include outer-container;
