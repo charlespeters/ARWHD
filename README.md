@@ -20,25 +20,25 @@ Done
 
 To Do
 ----
-- [ ] Organize Categories
+- [x] Organize Categories
 - [ ] 404
-- [ ] Disqus
-- [ ] Redirect
+- [x] Disqus
+- [x] Redirect
 
 Known Issues
 ----
-- [ ] Front Page Issues With Post Indexes
+- [x] Front Page Issues With Post Indexes
 - [x] Forms
-- [ ] Disqus is loading on all pages
+- [x] Disqus is loading on all pages
 
 Future Versions
 ----
-* Featured Projects
+* ~~Featured Projects~~
 * Twitter Cards
 * Learning Resources
 * Advertising
 * Hire Button
 * Speed
 * Leveraging Cache
-* Migrating from Icon Fonts to SVG
+* ~~Migrating from Icon Fonts to SVG~~
 * Category Pages
