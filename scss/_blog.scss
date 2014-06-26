@@ -62,7 +62,7 @@ article.blogpost {
 	}
 
 	section.entry {
-		max-width: 35rem;
+		max-width: 40rem;
 		margin: 0 auto;
 		.wp-post-image {
 			border-bottom: .25rem solid $palegold;
@@ -76,14 +76,21 @@ article.blogpost {
 		h3 {
 			color: $litered;
 			letter-spacing: 3px;
-			margin: .5rem 0;
+			margin: .625rem 0;
 			font-weight: 700;
+			font-size: 1.75rem;
 		}
 		blockquote {
 			padding: 0 1rem;
 			margin: .5rem 0;
 			border-left: 2px solid $litered;
 			p {font-style: italic; }
+		}
+		p {
+			font-size: 1.125rem;
+			@include media($mobile) {
+				font-size: 1rem;
+			}
 		}
 	}
 footer {

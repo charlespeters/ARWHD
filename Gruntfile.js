@@ -25,7 +25,8 @@ module.exports = function(grunt) {
 		sass: { // Task
 			dist: { // Target
 				options: { // Target options
-					style: 'expanded'
+					style: 'expanded',
+					sourcemap: true
 				},
 				files: { // Dictionary of files
 					'css/arwhd.css': 'scss/arwhd.scss' // 'destination': 'source'
@@ -47,6 +48,18 @@ module.exports = function(grunt) {
 				dest: 'css/arwhd.min.css',
 			}
 		},
+		jekyll: {
+			serve: {
+				server : true,
+				server_port : 8000,
+				auto : true,
+				drafts: true
+			},
+			dev: {
+				src: '.',
+				dest: './_site'
+			},
+		},
 		watch: {
 			css: {
 				files: 'scss/*.scss',
@@ -62,6 +75,10 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true,
 				},
+			},
+			jekyll: {
+				files: ['*.html', '*.md', '*.yml', '*.css', '*.js'],
+				tasks: ['jekyll:dev']
 			}
 		}
 	});
@@ -72,9 +89,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-notify');
+	grunt.loadNpmTasks('grunt-jekyll');
 
 	// Default task(s).
-	grunt.registerTask('default', ['uglify', 'sass']);
+	grunt.registerTask('default', ['uglify', 'sass', 'jekyll:serve']);
 	grunt.registerTask('notify', ['notify:sass', 'notify:watch', 'notify:sass']);
 	grunt.registerTask('dev', ['watch', 'notify:sass']);
 };
