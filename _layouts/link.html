@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<main role="main" class="flexcontents">
+<article class="blogpost">
+    <header class="post-header">
+    <span class="category"><a href="/{{ page.categories }}/">{{ page.categories }}</a></span>
+    <h1>{{ page.title }}</h1>
+    <span class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} | {{ page.meta }}{% endif %}</span>
+    <span class="orna"></span>
+  </header>
+
+  <section class="entry">
+  {{ content }}
+  </section>
+    <footer>
+    {% include sharing.html %}
+    {% if page.comments %}
+        {% include disqus.html %}
+    {% endif %}
+    </footer>
+</article>
+</main>

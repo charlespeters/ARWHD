@@ -76,10 +76,10 @@ module.exports = function(grunt) {
 					livereload: true,
 				},
 			},
-			jekyll: {
-				files: ['*.html', '*.md', '*.yml', '*.css', '*.js'],
-				tasks: ['jekyll:dev']
-			}
+			// jekyll: {
+			// 	files: ['*.html', '*.md', '*.yml', '*.css', '*.js'],
+			// 	tasks: ['jekyll:dev']
+			// }
 		}
 	});
 	// Load the plugin that provides the "uglify" task.

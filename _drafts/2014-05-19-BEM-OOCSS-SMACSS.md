@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BEM, OOCSS & SMACSS"
+title:  "BEM & OOCSS Together"
 date:   2014-05-19 14:03:43
 categories: CSS
 ---
@@ -19,9 +19,11 @@ emphasis on reuse [^2]
 
 
 #### Separation of Containers and Content
-Not Duplicatin Styles
+Not Duplicating Styles
 
-### SMACC
+### Putting the Two Together
+
+
 
 [^1]: [BEM](http://bem.info/method/)
 [^2]: [Louis Lazarus on Smashing Mag](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
