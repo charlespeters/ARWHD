@@ -1,98 +1,117 @@
 module.exports = function(grunt) {
-	// Project configuration.
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
-		notify: {
-			watch: {
-				options: {
-					title: 'Task Complete', // optional
-					message: 'SASS and Uglify finished running & Autoprefixed', //required
-				}
-			},
-			sass: {
-    			options: {
-        			title: 'SASS Compiled',
-        			message: 'Ummm keep working maybe?',
-    			}
-			}
-		},
-		uglify: {
-			build: {
-				src: ['js/libs/*.js', 'js/plugins/*.js', 'js/global.js'],
-				dest: 'js/build/global.min.js'
-			}
-		},
-		sass: { // Task
-			dist: { // Target
-				options: { // Target options
-					style: 'expanded',
-					sourcemap: true
-				},
-				files: { // Dictionary of files
-					'css/arwhd.css': 'scss/arwhd.scss' // 'destination': 'source'
-				}
-			}
-		},
-		autoprefixer: {
-			options: {
-				browsers: ['last 2 version', 'ie 8', 'ie 9']
-			},
-			single_file: {
-				src: 'css/arwhd.css',
-				dest: 'css/arwhd.prefixed.css'
-			},
-		},
-		cssmin: {
-			minify: {
-				src: 'css/arwhd.prefixed.css',
-				dest: 'css/arwhd.min.css',
-			}
-		},
-		jekyll: {
-			serve: {
-				server : true,
-				server_port : 8000,
-				auto : true,
-				drafts: true
-			},
-			dev: {
-				src: '.',
-				dest: './_site'
-			},
-		},
-		watch: {
-			css: {
-				files: 'scss/*.scss',
-				tasks: ['sass', 'autoprefixer', 'cssmin'],
-				options: {
-					livereload: true,
-					spawn: false,
-				},
-			},
-			js: {
-				files: ['js/libs/*.js', 'js/plugins/*.js', 'js/*.js'],
-				tasks: ['uglify'],
-				options: {
-					livereload: true,
-				},
-			},
-			// jekyll: {
-			// 	files: ['*.html', '*.md', '*.yml', '*.css', '*.js'],
-			// 	tasks: ['jekyll:dev']
-			// }
-		}
-	});
-	// Load the plugin that provides the "uglify" task.
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-notify');
-	grunt.loadNpmTasks('grunt-jekyll');
+    // Project configuration.
+	require('time-grunt')(grunt);
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
 
-	// Default task(s).
-	grunt.registerTask('default', ['uglify', 'sass', 'jekyll:serve']);
-	grunt.registerTask('notify', ['notify:sass', 'notify:watch', 'notify:sass']);
-	grunt.registerTask('dev', ['watch', 'notify:sass']);
+        // JavaScript Stuff
+        uglify: {
+            build: {
+                src: ['src/js/plugins/*.js', 'src/js/global.js'],
+                dest: 'src/js/build/<%= pkg.name %>.min.js'
+            }
+        },
+
+        // SASS & CSS stuff
+        sass: {
+            dist: {
+                options: {
+                    style: 'expanded',
+                },
+                files: {
+                    'src/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.scss',
+                }
+            }
+        },
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version', 'ie 8', 'ie 9', 'safari 6']
+            },
+            single_file: {
+                src: 'src/css/<%= pkg.name %>.css',
+                dest: 'src/css/<%= pkg.name %>.prefixed.css'
+            },
+        },
+        cssmin: {
+            minify: {
+                src: 'src/css/<%= pkg.name %>.prefixed.css',
+                dest: 'src/css/<%= pkg.name %>.min.css',
+            }
+        },
+		shell: {
+      		jekyllServe: {
+        		command: "jekyll serve"
+      		},
+      		jekyllBuild: {
+        		command: "jekyll build --drafts"
+      		}
+		},
+		connect: {
+            server: {
+              options: {
+                port: 9001,
+                base: '_site/',
+				open: true,
+                livereload: true
+              }
+            }
+        },
+        svgmin: {
+            options: { // Configuration that will be passed directly to SVGO
+                plugins: [{
+                    removeViewBox: false
+                }],
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/img/', // Src matches are relative to this path.
+                    src: ['**/*.svg'], // Actual pattern(s) to match.
+                    dest: 'src/img/min', // Destination path prefix.
+                    ext: '.min.svg' // Dest filepaths will have this extension.
+        		}],
+      		},
+    	},
+        // Watch & Notify
+        watch: {
+            scripts: {
+                files: ['src/js/*.js', 'src/js/plugins/*.js'],
+                tasks: ['uglify', 'shell:jekyllBuild'],
+                options: {
+                    spawn: false,
+					livereload: 35729
+                }
+            },
+            css: {
+                files: ['src/scss/*.scss', 'src/scss/**/*.scss' ],
+                tasks: ['sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild'],
+                options: {
+                    spawn: false,
+					livereload: 35729
+                }
+            },
+            jekyll: {
+                files: ['*.html', '*md', '_layouts/*.html', '_posts/*.md', '_projects/*.md', '_includes/*.html'],
+                tasks: ['shell:jekyllBuild'],
+                options: { livereload: 35729 }
+			}
+        },
+    });
+
+    // Registered tasks
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-remfallback');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-shell');
+
+    // Default task(s).
+    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild']);
+    grunt.registerTask('dev', ['connect', 'watch']);
 };

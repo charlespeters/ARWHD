@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+.flex {
+    &--contents {
+        max-width: 75rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    &--main {
+        flex: 4 0 19rem;
+        padding: 0 .5rem;
+        @include media($mobile) { padding: 0; }
+    }
+    &--sidebar {
+        flex: 1 0 18rem;
+        padding: 0 .5rem;
+        @include media($mobile) { padding: 0; }
+    }
+}

@@ -1,0 +1,23 @@
+.frontprojects {
+    background: $darkred url('../../img/archery.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: .5rem 0;
+    .frontproject {
+        padding: 1rem 2rem;
+        flex: 1 0;
+        h2 {
+            letter-spacing: 1px;
+        }
+        p {
+            color: white;
+            max-width: 30rem;
+        }
+        a {
+            color: $palegold;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

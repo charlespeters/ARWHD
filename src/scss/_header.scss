@@ -1,14 +1,12 @@
 .header {
-  background: linear-gradient($litered, $darkred);
-  background: $darkred;
-  padding: 1rem 0;
+    background: linear-gradient($litered, $darkred);
+    background: $darkred;
+    padding: 1rem 0;
     width: 100%;
     margin: 0;
     min-height: 75px;
     position: relative;
-    @include media($mobile) {
-	    padding: 1rem 0;
-    }
+    @include media($mobile) { padding: 1rem 0; }
 	a {
 		color: white;
 		&:hover { color: $palegold;	}
@@ -37,8 +35,7 @@
 
 	h1 {
 		line-height: 0;
-		font-family: "proxima-nova";
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 1.5rem;
 		letter-spacing: 5px;
 		padding: 0 1rem;
@@ -70,7 +67,7 @@
     float: right;
     min-height: 100%;
     text-transform: uppercase;
-    font: 700 1.125rem/1 "proxima-nova";
+    font: 700 1.125rem/1;
     letter-spacing: 5px;
     margin: .5rem 0;
     @include media($tablet) {
@@ -87,7 +84,7 @@
     }
     li {
       display: inline-block;
-      font: 700 1.125rem/1 "proxima-nova";
+      font: 700 1.125rem/1;
       padding: 1rem;
       @include media($tablet) {
         display: block;

@@ -2,45 +2,25 @@
 layout: default
 title: Home
 ---
-<main role="main" class="flexcontents">
-<section class="hero">
-		<h1 class="fithero">ARHWD</h1>
-		<h2 class="fithero">Don't Miss Your Target</h2>
-</section>
-<section class="frontpage">
-		<article class="container">
-			<header>
-				<h2>The Web is Complicated</h2>
-			</header>
-			<p>As I struggle through working as a web designer, I find myself, missing the mark, aiming but not always making contact. I thought the best way to move forward was to share the mistakes and the successes, to have them set alongside the good ideas, best practices and summations of what I know.</p>
-			<p>This site is meant to be a good place to discuss those things like Design, User Experience, Front-end Development and Client Services, that I find challenging and make some sense of them.</p>
-			<footer>
-				<a href="/about/"><button>Find out more</button></a>
-			</footer>
-		</article>
-</section>
-<section class="frontindex">
-	<h2 class="frontheading"><span>Recent Posts</span></h2>
+
+<section class="posts--index flex--main">
+	<h2 class="posts--heading">Recent Posts</h2>
 	<section class="flexposts">
-	{% for post in site.posts limit:4 %}
-		<article class="frontpost">
-			<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-			<span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	{% for post in site.posts limit:6 %}
+		<article class="posts--short">
+			<div class="meta--short posts--short_info">
+				<p class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<p class="meta">{{ page.categories }}</p>
+			</div>
+			<div class="posts--short_content">
+				<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+				<div>
+					{{ post.excerpt }}
+				</div>
+			</div>
 		</article>
 	{% endfor %}
 	</section>
 </section>
-<section class="frontprojects">
-		<h2 class="frontheading"><span>Current Projects</span></h2>
-		<section class="flexcontents">
-			<article class="frontproject">
-				<h3><a href="https://github.com/charlespeters/Grunt.js-Boilerplate">Grunt Boilerplate →</a></h3>
-				<p>I am a huge Grunt user, it's pretty essential to my build process. I've collected my boilerplate of tasks &amp; configurations I use on every project I work on. For SASS after it compiles and I then run Autoprefixer, a minifier. Then linting &amp; uglify for JavaScript, watch and a notify task that has OS X stuff.</p>
-			</article>
-			<article class="frontproject">
-				<h3><a href="https://github.com/charlespeters/Etching">Etching →</a></h3>
-				<p>This is a blank Wordpress theme to help me speed through Wordpress projects. It's meant solely to pull in everything like your own markup, stylesheets and scripts.</p>
-			</article>
-		</section>
-</section>
-</main>
+
+{% include sidebar.html %}
