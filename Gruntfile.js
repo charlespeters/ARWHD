@@ -17,6 +17,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     style: 'expanded',
+					sourcemap: true
                 },
                 files: {
                     'src/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.scss',
@@ -86,11 +87,11 @@ module.exports = function(grunt) {
                 files: ['src/scss/*.scss', 'src/scss/**/*.scss' ],
                 tasks: ['sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild'],
                 options: {
-                    spawn: false,
+					spawn: false,
 					livereload: 35729
                 }
             },
-            jekyll: {
+			jekyll: {
                 files: ['*.html', '*md', '_layouts/*.html', '_posts/*.md', '_projects/*.md', '_includes/*.html'],
                 tasks: ['shell:jekyllBuild'],
                 options: { livereload: 35729 }
@@ -98,20 +99,19 @@ module.exports = function(grunt) {
         },
     });
 
-    // Registered tasks
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-remfallback');
-    grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-shell');
+	// Registered tasks
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-notify');
+	grunt.loadNpmTasks('grunt-remfallback');
+	grunt.loadNpmTasks('grunt-svgmin');
+	grunt.loadNpmTasks('grunt-shell');
 
-    // Default task(s).
-    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild']);
-    grunt.registerTask('dev', ['connect', 'watch']);
+	// Default task(s).
+	grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild']);
+	grunt.registerTask('dev', ['connect', 'watch']);
 };
