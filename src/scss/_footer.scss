@@ -9,7 +9,7 @@
 		flex-direction: row;
 		border-top: 1px $litered solid;
 		padding: 1rem;
-		@include media($mobile) {
+		@include respond-to(handhelds) {
 			flex-direction: column;
 		}
 	}

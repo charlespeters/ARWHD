@@ -19,19 +19,19 @@ input[type="text"], input[type="email"], textarea {
 //buttons
 input[type="submit"], button {
 	border: solid 1px $darkred;
-  	border-radius: 10px;
-  	@include linear-gradient($litered, $darkred);
-  	text-transform: uppercase;
+	border-radius: 10px;
+	background-image: linear-gradient($litered, $darkred);
+	text-transform: uppercase;
 	color: white;
 	padding: .875rem 1.875rem;
 	margin: 0.5rem 0;
 	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.125);
 	font-size: 1.25rem;
 	@include anti();
-	&:hover { @include linear-gradient($litered, $palered); }
+	&:hover { background-image: linear-gradient($litered, $palered); }
 	&:focus {
 		color: $text;
-		@include linear-gradient($palegold, $litegold);
+		background-image: linear-gradient($palegold, $litegold);
 		border: $litegold;
 		outline: 0;
 	}
@@ -44,14 +44,14 @@ form {
 	p {
 		text-transform: uppercase;
 		margin: .75rem 0;
-		font: 400 125%/1.5 "proxima-nova-condensed", sans-serif;
+		font: 400 125%/1.5;
 	}
-	@include media($mobile) {
+	@include respond-to(handhelds) {
 		input {width: 100%;}
 	}
 }
 select {
-	@include linear-gradient($darkred, $litered);
+	background-image: linear-gradient($darkred, $litered);
 	padding: .5rem 0 .5rem 1.5rem;
 	border: 0;
 	border-radius: 15px;
@@ -111,7 +111,6 @@ select {
 	input[type="text"], input[type="email"], textarea {
 		border-bottom: 1px $litered solid;
 	}
-
 	input[type="submit"] {
 		color: $litered;
 		background: none;

@@ -59,7 +59,7 @@ article.blogpost {
 			font-weight: 300;
 			color: $litered;
 			font-size: 2.5rem;
-			@include media($mobile) { font-size: 2.125rem; }
+			@include respond-to(handhelds) { font-size: 2.125rem; }
 		}
 	}
 
@@ -90,7 +90,7 @@ article.blogpost {
 		}
 		p {
 			font-size: 1.125rem;
-			@include media($mobile) {
+			@include respond-to(handhelds) {
 				font-size: 1rem;
 			}
 		}
@@ -143,7 +143,7 @@ footer {
 			color: $palegold;
 			&:hover { color: $litered; }
 		}
-		@include media($mobile) { width: 100% !important; }
+		@include respond-to(handhelds) { width: 100% !important; }
 	}
 	&:after { @extend .clearfix; }
 }

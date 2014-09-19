@@ -11,7 +11,6 @@ module.exports = function(grunt) {
                 dest: 'src/js/build/<%= pkg.name %>.min.js'
             }
         },
-
         // SASS & CSS stuff
         sass: {
             dist: {
@@ -111,6 +110,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 
 	// Default task(s).
-	grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild']);
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('dev', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild']);
 	grunt.registerTask('dev', ['connect', 'watch']);
 };

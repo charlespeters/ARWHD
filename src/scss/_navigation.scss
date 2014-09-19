@@ -1,6 +1,6 @@
 .navbtn {
 	display: none;
-	@include media($tablet) {
+	@include respond-to(mediumscreens) {
 		width: 3rem;
 		display: flex;
 		flex-direction: column;
@@ -29,7 +29,7 @@
 		font: 700 1.125rem/1;
 		letter-spacing: 5px;
 		margin: .5rem 0;
-		@include media($tablet) {
+		@include respond-to(mediumscreens) {
 			padding: 1rem 1rem 0;
 				display: none;
 				width: 100%;
@@ -39,13 +39,13 @@
 			list-style: inside none;
 			width: 100%;
 			text-align: right;
-			@include media($tablet) { text-align: left; }
+			@include respond-to(mediumscreens) { text-align: left; }
 		}
 		li {
 			display: inline-block;
 			font: 700 1.125rem/1;
 			padding: 1rem;
-			@include media($tablet) {
+			@include respond-to(mediumscreens) {
 				display: block;
 				border-top: 1px solid white;
 			}

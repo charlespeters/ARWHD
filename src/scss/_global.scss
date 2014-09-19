@@ -22,12 +22,16 @@ img {
 	display: none;
 }
 
-.container {
-	@include outer-container;
+.clearfix {
+		content: "";
+		clear: both;
+		display: block;
 }
 
-.clearfix {
-    content: "";
-    clear: both;
-    display: block;
+.container {
+	max-width: 68rem;
+	margin: 0 auto;
+	&::after {
+		@extend .clearfix;
+	}
 }
