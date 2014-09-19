@@ -8,16 +8,19 @@ title: Home
 	<section class="flexposts">
 	{% for post in site.posts limit:6 %}
 		<article class="posts--short">
-			<div class="meta--short posts--short_info">
-				<p class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-				<p class="meta">{{ page.categories }}</p>
-			</div>
-			<div class="posts--short_content">
+			<header>
 				<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-				<div>
-					{{ post.excerpt }}
-				</div>
-			</div>
+			</header>
+			<aside class="meta--short posts--short_info">
+				<p class="meta">{{ post.date | date: "%m.%d.%y" }}</p>
+				<p class="meta">{{ page.categories }}</p>
+				<span class="sharing">
+					<svg class="icon circling">
+						<use xlink:href="#icon-JAFI_link" />
+					</svg>
+				</span>
+			</aside>
+			{{ post.excerpt }}
 		</article>
 	{% endfor %}
 	</section>

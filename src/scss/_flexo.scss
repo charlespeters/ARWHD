@@ -16,11 +16,11 @@ html, body {
     &--main {
         flex: 4 0 19rem;
         padding: 0 .5rem;
-        @include media($mobile) { padding: 0; }
+        @include respond-to(handhelds) { padding: 0; }
     }
     &--sidebar {
         flex: 1 0 18rem;
         padding: 0 .5rem;
-        @include media($mobile) { padding: 0; }
+        @include respond-to(handhelds) { padding: 0; }
     }
 }
