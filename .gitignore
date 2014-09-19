@@ -2,5 +2,5 @@ _site
 node_modules
 *.sass-cache
 *.map
-
-.DS_STOre
+*.log
+.DS_Store
