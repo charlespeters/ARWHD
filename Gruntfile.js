@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 src: ['src/js/plugins/*.js', 'src/js/global.js'],
-                dest: 'src/js/build/<%= pkg.name %>.min.js'
+                dest: 'build/js/<%= pkg.name %>.min.js'
             }
         },
         // SASS & CSS stuff
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'src/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.scss',
+                    'build/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.scss',
                 }
             }
         },
@@ -27,14 +27,14 @@ module.exports = function(grunt) {
                 browsers: ['last 2 version', 'ie 8', 'ie 9', 'safari 6']
             },
             single_file: {
-                src: 'src/css/<%= pkg.name %>.css',
-                dest: 'src/css/<%= pkg.name %>.prefixed.css'
+                src: 'build/css/<%= pkg.name %>.css',
+                dest: 'build/css/<%= pkg.name %>.prefixed.css'
             },
         },
         cssmin: {
             minify: {
-                src: 'src/css/<%= pkg.name %>.prefixed.css',
-                dest: 'src/css/<%= pkg.name %>.min.css',
+                src: 'build/css/<%= pkg.name %>.prefixed.css',
+                dest: 'build/css/<%= pkg.name %>.min.css',
             }
         },
 		shell: {
@@ -77,16 +77,16 @@ module.exports = function(grunt) {
                 files: ['src/js/*.js', 'src/js/plugins/*.js'],
                 tasks: ['uglify', 'shell:jekyllBuild'],
                 options: {
-                    spawn: false,
-					livereload: 35729
+										spawn: false,
+										livereload: 35729
                 }
             },
             css: {
                 files: ['src/scss/*.scss', 'src/scss/**/*.scss' ],
                 tasks: ['sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild'],
                 options: {
-					spawn: false,
-					livereload: 35729
+										spawn: false,
+										livereload: 35729
                 }
             },
 			jekyll: {

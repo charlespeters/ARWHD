@@ -1,0 +1,35 @@
+.sharing {
+    width: 100%;
+    list-style: none inside;
+    text-align: center;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1rem .5rem;
+    }
+    svg {
+        max-width: 4rem;
+    }
+    a {
+        border: 0;
+        background: none;
+    }
+    .circling {
+        border-radius: 100%;
+        border: 1px solid $litered;
+        padding: .5rem;
+    }
+    .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: $litered;
+        background: none;
+        transition: all 750ms ease;
+        &:hover, &:focus {
+            background: $palered;
+            width: 3rem;
+            height: 3rem;
+            fill: white;
+        }
+    }
+}

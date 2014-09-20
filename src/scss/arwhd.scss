@@ -1,20 +1,24 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/typography";
+@import "base/svg";
+@import "base/global";
+@import "base/contact";
 
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "typography";
-@import "meta";
-@import "flexo";
-@import "global";
-@import "header";
-@import "navigation";
-@import "stripe";
-@import "footer";
-@import "contact";
-@import "frontpage";
-@import "blog";
-@import "sidebar";
-@import "pages";
-@import "sharing";
-@import "prism";
-@import "projects";
+@import "grid/flexo";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/sidebar";
+
+@import "components/stripe";
+@import "components/meta";
+@import "components/sharing";
+@import "components/prism";
+
+@import "pages/frontpage";
+@import "pages/blog";
+@import "pages/pages";
+@import "pages/projects";

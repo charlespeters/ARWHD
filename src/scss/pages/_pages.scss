@@ -1,0 +1,71 @@
+.error404 {
+  main {
+    font-weight: 700;
+    font-size: 3rem;
+    color: $litered;
+    flex: 1;
+    background: url('../img/404target.png') no-repeat center center;
+    background-size: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  h2 {
+    margin: .25rem 0;
+    color: white;
+  }
+  h3 {
+    margin: .25rem 0;
+  }
+}
+
+.archive, .page-blog {
+  main {
+    flex-direction: row;
+    max-width: 68rem;
+    margin: 0 auto;
+    @include respond-to(mediumscreens) {
+        flex-direction: column;
+      }
+    }
+}
+
+
+.page-connect {
+    background: url('../img/londonarchery.png') no-repeat center center;
+    background-size: cover;
+    ::-webkit-input-placeholder {
+       color: rgba($text, .6);
+       font-style: italic;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: rgba($text, .6);
+        font-style: italic;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba($text, .6);
+       font-style: italic;
+    }
+
+    :-ms-input-placeholder {
+       color: rgba($text, .6);
+       font-style: italic;
+    }
+}
+
+
+.page {
+    article.blogpost, .blogindex {
+        h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        }
+    }
+}
+.page-about, .page-about-us {
+    background: url('../img/archerypractice.png') no-repeat center center;
+    background-size: cover;
+}
