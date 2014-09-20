@@ -14,8 +14,8 @@ title: Home
 			<aside class="meta--short posts--short_info">
 				<p class="meta">{{ post.date | date: "%m.%d.%y" }}</p>
 				<p class="meta">{{ page.categories }}</p>
-				<span class="sharing">
-					<svg class="icon circling">
+				<span class="icon--container">
+					<svg class="icon">
 						<use xlink:href="#icon-JAFI_link" />
 					</svg>
 				</span>
@@ -25,5 +25,4 @@ title: Home
 	{% endfor %}
 	</section>
 </section>
-
 {% include sidebar.html %}

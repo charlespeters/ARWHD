@@ -12,13 +12,13 @@
             margin-right: 0;
             margin-bottom: 1rem;
             background: $litered;
-            @include respond-to(handhelds) {
+            @include respond-to(mediumscreens) {
               margin-left: 0;
               margin-bottom: .5rem;
             }
         }
         text-align: right;
-        @include respond-to(handhelds) {
+        @include respond-to(mediumscreens) {
           text-align: left;
         }
     }

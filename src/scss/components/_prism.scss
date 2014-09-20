@@ -35,13 +35,12 @@ samp {
 	padding: .25em;
 }
 pre {
-	background-color: $solarized_base03;
+	background-color: $solarized_base02;
 	color: $solarized_base0;
 	font-size: 100%;
 	line-height: inherit;
-	margin-top: 1em;
-	margin-bottom: 1em;
-
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	code,
 	kbd,
 	samp {
@@ -76,62 +75,31 @@ pre {
 
 pre[class*="language-"] {
 	&::before {
-		background-color: $solarized_base02;
+		background-color: $solarized_base03;
 		color: $solarized_base00;
 		display: block;
 		font-size: 87.5%;
 		line-height: 1;
-		padding: ( .25em / .875 ) ( 1em / .875 );
+		padding: .75rem;
 		text-align: left;
 		font-family: $sans-serif;
-		font-weight: 400;
+		font-weight: 700;
+		text-transform: uppercase;
 	}
-	code {
-		padding-top: ( .5em / .875 );
-	}
+	code { padding-top: .5rem; }
 }
-pre.language-markup::before {
-	content: "HTML";
-}
-pre.language-css::before {
-	content: "CSS";
-}
-pre.language-scss::before {
-	content: "SASS";
-}
-pre.language-javascript::before {
-	content: "JavaScript";
-}
-pre.language-php::before {
-	content: "PHP";
-}
-pre.language-clike::before {
-	content: "C-like";
-}
-pre.language-java::before {
-	content: "Java";
-}
-pre.language-coffeescript::before {
-	content: "Coffee Script";
-}
-pre.language-bash::before {
-	content: "Bash";
-}
-pre.language-cpp::before {
-	content: "C++";
-}
-pre.language-python::before {
-	content: "Python";
-}
-pre.language-sql::before {
-	content: "SQL";
-}
-pre.language-groovy::before {
-	content: "Groovy";
-}
-pre.language-http::before {
-	content: "HTTP";
-}
+pre.language-markup::before { content: "HTML"; }
+pre.language-css::before { content: "CSS"; }
+pre.language-scss::before { content: "SASS"; }
+pre.language-javascript::before { content: "JavaScript"; }
+pre.language-php::before { content: "PHP"; }
+pre.language-clike::before { content: "C-like"; }
+pre.language-coffeescript::before { content: "CoffeeScript"; }
+pre.language-bash::before { content: "Bash"; }
+pre.language-cpp::before { content: "C++"; }
+pre.language-python::before { content: "Python"; }
+pre.language-sql::before { content: "SQL"; }
+pre.language-http::before { content: "HTTP"; }
 
 /* General
    ========================================================================== */
@@ -147,8 +115,7 @@ pre.language-http::before {
 	color: $solarized_base00;
 	font-weight: 400;
 }
-.namespace {
-}
+.namespace { }
 .token.property,
 .token.tag,
 .token.boolean,

@@ -41,12 +41,14 @@
 		}
 	}
 	.followus {
+		text-align: center;
+		padding: 0 .5rem;
 		a {
 			fill: $litered;
 			&:hover {
 				fill: $palegold;
 			}
 		}
-		svg { max-width: 3rem; }
+		.social--media_link { padding: .5rem; }
 	}
 }

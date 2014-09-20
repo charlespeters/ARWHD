@@ -1,42 +1,23 @@
-// .hero {
-// 	background: $darkred url('../img/newarw.png') no-repeat right top;
+// .frontpage {
+// 	background: url('../img/connect_copy.png') no-repeat -15% 0;
 // 	background-size: contain;
-// 	position: relative;
-//     &:after {
-//         content: "";
-//         width: 0;
-//         height: 0;
-//         margin: 0 auto;
-//         position: absolute;
-//         bottom: -1.438rem;
-//         left: 0;
-//         right: 0;
-//         border-left: 1.5rem solid transparent;
-//         border-right: 1.5rem solid transparent;
-//         border-top: 1.5rem solid $darkred;
-//     }
+// 	padding: 2rem 1rem;
+// 	h2 {
+// 		font-weight: 600;
+// 				font-size: 2rem;
+// 		letter-spacing: 3px;
+// 		line-height: 1;
+// 		text: {transform: uppercase; align: center;}
+// 		margin: 0 0 .5rem;
+// 		color: $palegold;
+// 	}
+// 	button {
+// 		width: 60%;
+// 		margin: 1.5rem auto 1rem;
+// 		display: block;
+// 		@include respond-to(handhelds) { width: 100%; }
+// 	}
 // }
-
-.frontpage {
-	background: url('../img/connect_copy.png') no-repeat -15% 0;
-	background-size: contain;
-	padding: 2rem 1rem;
-	h2 {
-		font-weight: 600;
-        font-size: 2rem;
-		letter-spacing: 3px;
-		line-height: 1;
-		text: {transform: uppercase; align: center;}
-		margin: 0 0 .5rem;
-		color: $palegold;
-	}
-	button {
-		width: 60%;
-		margin: 1.5rem auto 1rem;
-		display: block;
-		@include respond-to(handhelds) { width: 100%; }
-	}
-}
 
 .posts {
 	&--index {
@@ -58,9 +39,7 @@
 		padding-left: 18%;
 		@include respond-to(mediumscreens) { padding-left: 0; }
 		&::after {
-			content: "";
-			clear: both;
-			display: table;
+			@extend .clearfix;
 		}
 		&:last-of-type {
 			margin-bottom: 0;
@@ -79,30 +58,26 @@
 		&_info {
 			//padding-right: 1.5rem;
 			float: left;
-			margin-left: -28%;
-			@include respond-to(handhelds) {
+			margin-left: -20%;
+			@include respond-to(mediumscreens) {
 				margin: 1rem 0;
 				float: none;
 				width: 100%;
-				.sharing {
-					display: none;
-				}
+				.icon { display: none; }
 			}
-			.sharing {
-				.icon {
-					margin-top: 1rem;
-					width: 2.5rem;
-					height: 2.5rem;
-					&:hover {
-						width: 2.5rem;
-						height: 2.5rem;
-					}
+			.icon {
+				margin-top: 1rem;
+				width: 2.5rem;
+				height: 2.5rem;
+				transition: all 375ms linear;
+				&:hover {
+					fill: $palegold;
 				}
 			}
 		}
 	}
 }
 
-.frontheading {
+.front--heading {
 	margin: 0 0 1rem;
 }

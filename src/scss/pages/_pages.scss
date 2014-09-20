@@ -19,17 +19,6 @@
   }
 }
 
-.archive, .page-blog {
-  main {
-    flex-direction: row;
-    max-width: 68rem;
-    margin: 0 auto;
-    @include respond-to(mediumscreens) {
-        flex-direction: column;
-      }
-    }
-}
-
 
 .page-connect {
     background: url('../img/londonarchery.png') no-repeat center center;
@@ -55,16 +44,6 @@
     }
 }
 
-
-.page {
-    article.blogpost, .blogindex {
-        h1 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        }
-    }
-}
 .page-about, .page-about-us {
     background: url('../img/archerypractice.png') no-repeat center center;
     background-size: cover;

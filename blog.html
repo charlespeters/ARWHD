@@ -3,45 +3,22 @@ layout: default
 title: Blog
 tags: blog
 ---
-<main role="main" class="flexcontents page">
-<section class="blogindex">
-    <h1>Full Archive</h1>
+<section class="posts--index flex--main">
+    <h2 class="posts--heading">Full Blog Archive</h2>
     {% for post in site.posts %}
     <article>
-        <h2>&#10163; <a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span class="meta">{{ post.date | date: "%b %-d, %Y" }} | <span class="category"><a href="/{{ post.categories }}/">{{ post.categories }}</a></span></span>
-        {{ post.excerpt }}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </article>
     {% endfor %}
 </section>
-<aside class="sidebar">
-    <div class="widget">
-        <img src="/img/aimwell.jpg" alt="">
-        <hr>
-    </div>
+<!-- <aside class="flex--sidebar">
     <div id="text-3" class="widget widget_text">
         <div class="textwidget">
-            <p class="text">{{ site.description }}</p>
+            <p>{{ site.description }}</p>
         </div>
     </div>
     <hr>
-    <div class="widget">
-      <p>This blog isn't supported by ad revenue, please consider <a href="https://www.gittip.com/charlespeters/">donating</a> to keep it up and running</p>
-    </div>
-<!-- <div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		<ul>
-	<li class="cat-item cat-item-4"><a href="/category/freelance/" title="View all posts filed under Freelance">Freelance</a>
-</li>
-	<li class="cat-item cat-item-6"><a href="/category/resources/" title="View all posts filed under Resources">Resources</a>
-</li>
-	<li class="cat-item cat-item-7"><a href="/category/uiux-design/" title="View all posts filed under UI/UX Design">UI/UX Design</a>
-</li>
-	<li class="cat-item cat-item-1"><a href="/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
-</li>
-	<li class="cat-item cat-item-8"><a href="/category/web-development/" title="View all posts filed under Web Development">Web Development</a>
-</li>
-	<li class="cat-item cat-item-9"><a href="/category/wordpress/" title="View all posts filed under Wordpress">Wordpress</a>
-</li>
-		</ul>
-</div> -->
-</aside>
-</main>
+
+</aside> -->
+{% include sidebar.html %}

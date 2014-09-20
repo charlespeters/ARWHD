@@ -1,14 +1,14 @@
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html {
 	background: rgba($bkg, .5);
-	margin-top: 0 !important;
+	box-sizing: border-box;
 }
-
-#wpadminbar { display: none; }
 
 .page-wrap {
 	padding: 0 1.5rem;

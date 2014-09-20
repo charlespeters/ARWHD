@@ -1,57 +1,12 @@
 //blog page
-.post {
-
-}
-
-
-//classes related the blog
-
-.followus {
-	text-align: center;
-	padding: 0 .5rem;
-	.genericon {
-		font-size: 2.5rem;
-		display: inline;
-		width: 2.5rem;
-		height: auto;
-		text-align: center;
-		margin: 0 .25rem
-	}
-}
-
-//meta
-
-
-//single entry
-
-article.blogpost {
+.post--full {
 	padding: 0 1rem;
 	max-width: 42rem;
 	margin: 0 auto;
-	header {
+	&_header {
 		padding: 2.125rem 0;
 		max-width: 48rem;
 		margin: 0 auto;
-		.category {
-			color: $litered;
-			border-bottom: 1px solid;
-			letter-spacing: 2px;
-			padding-bottom: .25rem;
-			text-transform: uppercase;
-			margin-bottom: 1rem;
-			// font: 700 1rem/1.4 "proxima-nova", sans-serif;
-			text-align: left;
-		}
-		.orna, .meta {
-			color: $litered;
-			text-align: center;
-			width: 100%;
-			display: block;
-			margin: .5rem 0;
-		}
-		.meta {
-			color: $text;
-		}
 		h1 {
 			margin: 5rem 0 2rem;
 			letter-spacing: 1px;
@@ -62,38 +17,31 @@ article.blogpost {
 			@include respond-to(handhelds) { font-size: 2.125rem; }
 		}
 	}
+}
 
-	section.entry {
-		max-width: 40rem;
-		margin: 0 auto;
-		.wp-post-image {
-			border-bottom: .25rem solid $palegold;
-			display: block;
-			margin: .25rem auto;
-		}
-		ul, ol {
-			margin: .5rem 0;
-			list-style-position: inside;
-		}
-		h3 {
+
+//classes related the blog
+
+
+//meta
+
+
+//single entry
+
+.blogpost {
+
+	header {
+		.orna, .meta {
 			color: $litered;
-			letter-spacing: 3px;
-			margin: .625rem 0;
-			font-weight: 700;
-			font-size: 1.75rem;
-		}
-		blockquote {
-			padding: 0 1rem;
+			text-align: center;
+			width: 100%;
+			display: block;
 			margin: .5rem 0;
-			border-left: 2px solid $litered;
-			p {font-style: italic; }
 		}
-		p {
-			font-size: 1.125rem;
-			@include respond-to(handhelds) {
-				font-size: 1rem;
-			}
+		.meta {
+			color: $text;
 		}
+
 	}
 footer {
 	max-width: 38rem;
