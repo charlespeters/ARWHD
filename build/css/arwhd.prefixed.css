@@ -5,22 +5,9 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 nav,
-section,
-summary {
+section {
   display: block;
-}
-
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
 }
 
 [hidden], template {
@@ -86,22 +73,9 @@ h6 {
   margin: 2.33em 0;
 }
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
 b,
 strong {
   font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
 }
 
 code,
@@ -118,36 +92,6 @@ pre {
   word-wrap: break-word;
 }
 
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
 img {
   border: 0;
 }
@@ -158,18 +102,6 @@ svg:not(:root) {
 
 figure {
   margin: 0;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
 }
 
 button,
@@ -229,11 +161,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 body {
@@ -865,7 +792,7 @@ select option {
 
 .sharing {
   width: 100%;
-  list-style: none inside;
+  list-style: none;
   text-align: center;
 }
 .sharing li {

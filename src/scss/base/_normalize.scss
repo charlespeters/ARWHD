@@ -49,31 +49,9 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 nav,
-section,
-summary {
+section {
     display: block;
-}
-
-// Corrects inline-block display not defined in IE6/7/8/9 & FF3
-
-audio,
-canvas,
-video {
-    display: inline-block;
-    @if $legacy_support_for_ie {
-        *display: inline;
-        *zoom: 1;
-    }
-}
-
-// 1. Prevents modern browsers from displaying 'audio' without controls
-// 2. Remove excess height in iOS5 devices
-
-audio:not([controls]) {
-    display: none; // 1
-    height: 0; // 2
 }
 
 //
@@ -131,7 +109,7 @@ body {
 
 a {
     // 1
-    
+
     background: transparent;
 
     // 2
@@ -187,11 +165,6 @@ a {
     }
 }
 
-// Addresses styling not present in IE 8/9, S5, Chrome
-
-abbr[title] {
-    border-bottom: 1px dotted;
-}
 
 // Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 
@@ -204,19 +177,6 @@ strong {
     blockquote {
         margin: 1em 40px;
     }
-}
-
-// Addresses styling not present in S5, Chrome
-
-dfn {
-    font-style: italic;
-}
-
-// Addresses styling not present in IE6/7/8/9
-
-mark {
-    background: #ff0;
-    color: #000;
 }
 
 // Addresses margins set differently in IE6/7
@@ -249,53 +209,53 @@ pre {
     word-wrap: break-word;
 }
 
-// Set consistent quote types.
+// // Set consistent quote types.
+//
+// q {
+//     quotes: "\201C" "\201D" "\2018" "\2019";
+// }
+//
+// // 1. Addresses CSS quotes not supported in IE6/7
+// // 2. Addresses quote property not supported in S4
+//
+// // 1
+// @if $legacy_support_for_ie {
+//     q {
+//         quotes: none;
+//     }
+// }
 
-q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-// 1. Addresses CSS quotes not supported in IE6/7
-// 2. Addresses quote property not supported in S4
-
-// 1
-@if $legacy_support_for_ie {
-    q {
-        quotes: none;
-    }
-}
-
-// 2
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-// Address inconsistent and variable font size in all browsers.
-
-small {
-    font-size: 80%;
-}
+// // 2
+// q:before,
+// q:after {
+//     content: '';
+//     content: none;
+// }
+//
+// // Address inconsistent and variable font size in all browsers.
+//
+// small {
+//     font-size: 80%;
+// }
 
 // Prevents sub and sup affecting line-height in all browsers
 // gist.github.com/413930
 
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
-}
+// sub,
+// sup {
+//     font-size: 75%;
+//     line-height: 0;
+//     position: relative;
+//     vertical-align: baseline;
+// }
+//
+// sup {
+//     top: -0.5em;
+// }
+//
+// sub {
+//     bottom: -0.25em;
+// }
 
 // =============================================================================
 // Lists
@@ -303,19 +263,19 @@ sub {
 
 // Addresses margins set differently in IE6/7
 @if $legacy_support_for_ie {
-    dl,
-    menu,
+    // dl,
+    // menu,
     ol,
     ul {
         margin: 1em 0;
     }
 }
 
-@if $legacy_support_for_ie {
-    dd {
-        margin: 0 0 0 40px;
-    }
-}
+// @if $legacy_support_for_ie {
+//     dd {
+//         margin: 0 0 0 40px;
+//     }
+// }
 
 // Addresses paddings set differently in IE6/7
 @if $legacy_support_for_ie {
@@ -381,25 +341,25 @@ figure {
 
 // Define consistent border, margin, and padding
 
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
+// fieldset {
+//     border: 1px solid #c0c0c0;
+//     margin: 0 2px;
+//     padding: 0.35em 0.625em 0.75em;
+// }
 
 // 1. Corrects color not being inherited in IE6/7/8/9
 // 2. Remove padding so people aren't caught out if they zero out fieldsets.
 // 3. Corrects text not wrapping in FF3
 // 4. Corrects alignment displayed oddly in IE6/7
 
-legend {
-    border: 0; // 1
-    padding: 0; // 2
-    white-space: normal; // 3
-    @if $legacy_support_for_ie {
-        *margin-left: -7px; // 4
-    }
-}
+// legend {
+//     border: 0; // 1
+//     padding: 0; // 2
+//     white-space: normal; // 3
+//     @if $legacy_support_for_ie {
+//         *margin-left: -7px; // 4
+//     }
+// }
 
 // 1. Correct font family not being inherited in all browsers.
 // 2. Corrects font size not being inherited in all browsers
@@ -519,7 +479,7 @@ textarea {
 
 // Remove most spacing between table cells
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+// table {
+//     border-collapse: collapse;
+//     border-spacing: 0;
+// }
