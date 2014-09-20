@@ -1,4 +1,3 @@
-/* breakpoints */
 article,
 aside,
 details,
@@ -238,7 +237,7 @@ table {
 }
 
 body {
-  font: 400 100%/1.5 "Whitney SSm A", "Whitney SSm B", Lucida Grande, sans-serif;
+  font: 400 100%/1.5 "Whitney SSm A", "Whitney SSm B", Avenir, Lucida Grande, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -246,7 +245,7 @@ body {
 }
 
 form, input, textarea {
-  font: 400 1rem/1.5 "Whitney SSm A", "Whitney SSm B", Lucida Grande, sans-serif;
+  font: 400 1rem/1.5 "Whitney SSm A", "Whitney SSm B", Avenir, Lucida Grande, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -359,15 +358,10 @@ img {
   display: none;
 }
 
-.clearfix, .container::after, .mc4wp-form p:after, .wpcf7-form:after, .header:after, .posts--short::after, .blogindex:after {
+.clearfix, .mc4wp-form p:after, .header:after, .posts--short::after {
   content: "";
   clear: both;
   display: block;
-}
-
-.container {
-  max-width: 68rem;
-  margin: 0 auto;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -386,7 +380,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   color: #d04d36;
 }
 
-input[type="submit"], button {
+.btn {
   border: solid 1px #b74435;
   border-radius: 10px;
   background-image: -webkit-linear-gradient(#d04d36, #b74435);
@@ -400,11 +394,11 @@ input[type="submit"], button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-input[type="submit"]:hover, button:hover {
+.btn:hover {
   background-image: -webkit-linear-gradient(#d04d36, #e16b56);
   background-image: linear-gradient(#d04d36, #e16b56);
 }
-input[type="submit"]:focus, button:focus {
+.btn:focus {
   color: #333;
   background-image: -webkit-linear-gradient(#e4be68, #ebb734);
   background-image: linear-gradient(#e4be68, #ebb734);
@@ -475,27 +469,6 @@ select option {
   margin: 0;
 }
 
-.wpcf7-form input[type="text"], .wpcf7-form input[type="email"], .wpcf7-form textarea {
-  border-bottom: 1px #d04d36 solid;
-}
-.wpcf7-form input[type="submit"] {
-  color: #d04d36;
-  background: none;
-  font-size: 2rem;
-  padding: .5rem 0 .5rem 2rem;
-  float: right;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-.wpcf7-form input[type="submit"]:hover {
-  color: #e4be68;
-}
-
-html, body {
-  height: 100%;
-}
-
 .flex--contents {
   max-width: 75rem;
   margin: 0 auto;
@@ -551,16 +524,25 @@ html, body {
 
 .header {
   background: #d04d36;
-  padding: 1rem 0;
   width: 100%;
-  margin: 0;
-  min-height: 75px;
-  position: relative;
-}
-@media only screen and (max-width: 31.25rem) {
-  .header {
-    padding: 1rem 0;
-  }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .header a {
   color: white;
@@ -570,15 +552,14 @@ html, body {
 }
 
 .logo {
-  float: left;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 3 15rem;
+  -ms-flex: 0 3 15rem;
+  flex: 0 3 15rem;
   margin: 0;
   line-height: 1;
   color: #e4be68;
-  padding: 0 1.5rem;
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -600,19 +581,13 @@ html, body {
 }
 .logo h1 {
   line-height: 0;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 5px;
-  padding: 0 1rem;
-}
-@media only screen and (max-width: 31.25rem) {
-  .logo h1 {
-    font-size: 1rem;
-  }
+  margin-left: 1rem;
 }
 
 .footer {
-  padding: 0 0 1.5rem 0;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 .footer img {
@@ -700,9 +675,6 @@ html, body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size: 2rem;
-    line-height: .75;
-    padding: 0;
     background: #b74435;
     text-align: center;
     margin: .5rem 1rem .5rem auto;
@@ -710,57 +682,65 @@ html, body {
   .navbtn svg {
     fill: white;
   }
-  .navbtn:active {
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.4);
-  }
 }
 
 .show {
-  display: block !important;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .nav {
-  float: right;
-  min-height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 15rem;
+  -ms-flex: 1 0 15rem;
+  flex: 1 0 15rem;
   font-size: 1.125rem;
-  letter-spacing: 1px;
-  margin: .5rem 0;
+  text-align: right;
 }
 @media only screen and (max-width: 63rem) {
   .nav {
-    padding: 1rem 1rem 0;
+    background: #b74435;
     display: none;
-    width: 100%;
-    float: none;
+    -webkit-box-flex: 5;
+    -webkit-flex: 5 0 63rem;
+    -ms-flex: 5 0 63rem;
+    flex: 5 0 63rem;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 31.25rem) {
+  .nav {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5 0 15rem;
+    -ms-flex: 5 0 15rem;
+    flex: 5 0 15rem;
+    padding: 0;
   }
 }
 .nav ul {
   list-style: inside none;
   width: 100%;
-  text-align: right;
-}
-@media only screen and (max-width: 63rem) {
-  .nav ul {
-    text-align: left;
-  }
 }
 .nav li {
   display: inline-block;
   padding: 1rem;
 }
-@media only screen and (max-width: 63rem) {
+@media only screen and (max-width: 31.25rem) {
   .nav li {
     display: block;
-    border-top: 1px solid white;
+    background: #e16b56;
   }
-}
-.nav div {
-  width: 100%;
-  text-align: center;
+  .nav li:nth-child(1) {
+    background: #e16b56;
+  }
+  .nav li:nth-child(2) {
+    background: rgba(225, 107, 86, 0.75);
+  }
+  .nav li:nth-child(3) {
+    background: rgba(225, 107, 86, 0.5);
+  }
 }
 
 .sidebar {
@@ -826,6 +806,18 @@ html, body {
   .entry p {
     font-size: 1rem;
   }
+}
+
+.footnotes {
+  margin-top: 1rem;
+  border-top: 1px solid #d04d36;
+  padding: .5rem;
+}
+.footnotes li {
+  font-size: .875rem;
+}
+.footnotes li p {
+  margin: .25rem 0;
 }
 
 .stripe {
@@ -963,7 +955,7 @@ pre[class*="language-"]::before {
   line-height: 1;
   padding: .75rem;
   text-align: left;
-  font-family: "Whitney SSm A", "Whitney SSm B", Lucida Grande, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", Avenir, Lucida Grande, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1166,6 +1158,7 @@ pre.language-http::before {
 @media only screen and (max-width: 63rem) {
   .posts--short {
     padding-left: 0;
+    padding-right: .5rem;
   }
 }
 .posts--short:last-of-type {
@@ -1214,180 +1207,39 @@ pre.language-http::before {
   margin: 0 0 1rem;
 }
 
-.post--full {
+.posts--full {
   padding: 0 1rem;
   max-width: 42rem;
   margin: 0 auto;
 }
-.post--full_header {
+.posts--full_header {
   padding: 2.125rem 0;
   max-width: 48rem;
   margin: 0 auto;
+  text-align: center;
 }
-.post--full_header h1 {
+.posts--full_header h1 {
   margin: 5rem 0 2rem;
   letter-spacing: 1px;
-  text-align: center;
   font-weight: 300;
   color: #d04d36;
   font-size: 2.5rem;
 }
 @media only screen and (max-width: 31.25rem) {
-  .post--full_header h1 {
+  .posts--full_header h1 {
     font-size: 2.125rem;
   }
 }
-
-.blogpost header .orna, .blogpost header .meta {
-  color: #d04d36;
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin: .5rem 0;
-}
-.blogpost header .meta {
-  color: #333;
-}
-.blogpost footer {
+.posts--full_footer {
   max-width: 38rem;
   margin: 0 auto 2rem;
 }
 
-.footnotes {
-  margin-top: 1rem;
-  border-top: 1px solid #d04d36;
-  padding: .5rem;
-}
-.footnotes li {
-  font-size: .875rem;
-}
-.footnotes li p {
-  margin: .25rem 0;
-}
-
-.blogindex {
-  padding: 0 1rem;
-  -webkit-box-flex: 7;
-  -webkit-flex: 7;
-  -ms-flex: 7;
-  flex: 7;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.blogindex h1 {
-  color: #d04d36;
-  margin-top: 2rem;
-}
-.blogindex article {
-  margin-bottom: 1%;
-  max-width: 40rem;
-}
-.blogindex article h2 {
-  color: #b74435;
-  font: 300 1.875rem/1;
-  letter-spacing: 2px;
-  margin-bottom: .5rem;
-}
-.blogindex article p {
-  border-left: 2px solid #d04d36;
-  padding-left: 1rem;
-}
-.blogindex article a {
-  color: #e4be68;
-}
-.blogindex article a:hover {
-  color: #d04d36;
-}
-@media only screen and (max-width: 31.25rem) {
-  .blogindex article {
-    width: 100% !important;
-  }
-}
-
-.index_navigation {
-  max-width: 60rem;
-  margin: 1rem 0 1rem auto;
-}
-.index_navigation div {
-  display: inline-block;
-  padding: 0 1rem;
-}
-
-ul.cat_list {
-  list-style: inside;
-}
-ul.cat_list li {
-  padding: 1rem;
-}
-
-.error404 main {
-  font-weight: 700;
-  font-size: 3rem;
-  color: #d04d36;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: url("../img/404target.png") no-repeat center center;
-  background-size: 50%;
-  height: 100%;
-  text-align: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.error404 h2 {
-  margin: .25rem 0;
-  color: white;
-}
-.error404 h3 {
-  margin: .25rem 0;
-}
-
-.page-connect {
-  background: url("../img/londonarchery.png") no-repeat center center;
-  background-size: cover;
-}
-.page-connect ::-webkit-input-placeholder {
-  color: rgba(51, 51, 51, 0.6);
-  font-style: italic;
-}
-.page-connect :-moz-placeholder {
-  /* Firefox 18- */
-  color: rgba(51, 51, 51, 0.6);
-  font-style: italic;
-}
-.page-connect ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(51, 51, 51, 0.6);
-  font-style: italic;
-}
-.page-connect :-ms-input-placeholder {
-  color: rgba(51, 51, 51, 0.6);
-  font-style: italic;
-}
-
-.page-about, .page-about-us {
-  background: url("../img/archerypractice.png") no-repeat center center;
-  background-size: cover;
-}
-
 .front--about {
-  background: #b74435 url("../../img/archery.png") no-repeat center center;
-  background-size: cover;
-  color: white;
+  background: #b74435 url("../../img/archery.png") no-repeat center center/cover;
   padding: 1.5rem;
   position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1.5rem 0 2rem;
 }
 .front--about::after {
   content: "";

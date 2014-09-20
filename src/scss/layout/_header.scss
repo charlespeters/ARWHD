@@ -1,28 +1,25 @@
 .header {
   background: $litered;
-  padding: 1rem 0;
   width: 100%;
-  margin: 0;
-  min-height: 75px;
-  position: relative;
-  @include respond-to(handhelds) { padding: 1rem 0; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
 	a {
 		color: white;
 		&:hover { color: $palegold;	}
 	}
-    &:after {
-        @extend .clearfix;
-    }
+    &:after { @extend .clearfix; }
 }
 
 
 .logo {
-  float: left;
+  flex: 0 3 15rem;
 	margin: 0;
 	line-height: 1;
 	color: $palegold;
-	padding: 0 1.5rem;
-	flex: 2;
+	padding: 1.5rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -31,13 +28,10 @@
 		height: auto;
 		vertical-align: top;
 	}
-
 	h1 {
 		line-height: 0;
-		font-weight: 500;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		letter-spacing: 5px;
-		padding: 0 1rem;
-		@include respond-to(handhelds) { font-size: 1rem; }
+    margin-left: 1rem;
 	}
 }

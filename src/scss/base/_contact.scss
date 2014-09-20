@@ -17,7 +17,7 @@ input[type="text"], input[type="email"], textarea {
 
 
 //buttons
-input[type="submit"], button {
+.btn {
 	border: solid 1px $darkred;
 	border-radius: 10px;
 	background-image: linear-gradient($litered, $darkred);
@@ -36,9 +36,8 @@ input[type="submit"], button {
 		outline: 0;
 	}
 }
-textarea {
-	width: 100%;
-}
+
+textarea { width: 100%; }
 
 form {
 	p {
@@ -100,31 +99,5 @@ select {
 		border: none;
 		float: left;
 		margin: 0;
-	}
-
-}
-
-
-// Contact Form
-
-.wpcf7-form {
-	input[type="text"], input[type="email"], textarea {
-		border-bottom: 1px $litered solid;
-	}
-	input[type="submit"] {
-		color: $litered;
-		background: none;
-		font-size: 2rem;
-		padding: .5rem 0 .5rem 2rem;
-		float: right;
-		border: none;
-		border-radius: 0;
-		box-shadow: none;
-		&:hover {
-			color: $palegold;
-		}
-	}
-	&:after {
-		@extend .clearfix;
 	}
 }

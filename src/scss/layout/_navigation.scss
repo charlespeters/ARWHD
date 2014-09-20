@@ -6,47 +6,41 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		font-size: 2rem;
-		line-height: .75;
-		padding: 0;
 		background: $darkred;
 		text-align: center;
 		margin: .5rem 1rem .5rem auto;
-		// margin: 0 auto;
 		svg { fill: white; }
-		&:active { box-shadow: inset 0px 0px 15px rgba(0,0,0,0.4); }
 	}
 }
 
-.show { display: block !important; flex: 0; }
+.show { display: flex !important; }
 .nav {
-		float: right;
-		min-height: 100%;
+		flex: 1 0 15rem;
 		font-size: 1.125rem;
-		letter-spacing: 1px;
-		margin: .5rem 0;
+		text-align: right;
 		@include respond-to(mediumscreens) {
-			padding: 1rem 1rem 0;
-				display: none;
-				width: 100%;
-				float: none;
+			background: $darkred;
+			display: none;
+			flex: 5 0 $breakpoint--large;
+			text-align: left;
+		}
+		@include respond-to(handhelds) {
+				flex: 5 0 15rem;
+				padding: 0;
 		}
 		ul {
 			list-style: inside none;
 			width: 100%;
-			text-align: right;
-			@include respond-to(mediumscreens) { text-align: left; }
 		}
 		li {
 			display: inline-block;
 			padding: 1rem;
-			@include respond-to(mediumscreens) {
+			@include respond-to(handhelds) {
 				display: block;
-				border-top: 1px solid white;
+				background: $palered;
+				&:nth-child(1){ background: $c1; }
+				&:nth-child(2){ background: $c2; }
+				&:nth-child(3){ background: $c3; }
 			}
-		}
-		div {
-			width: 100%;
-			text-align: center;
 		}
 }

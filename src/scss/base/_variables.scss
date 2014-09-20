@@ -11,16 +11,15 @@ $facebook: #3b5998;
 $bkg: #f2f0eb;
 $gray: #bbbbbb;
 
+$c1: rgba($palered, 1);
+$c2: rgba($palered, .75);
+$c3: rgba($palered, .5);
+
 // typography
 $basesize: 1rem;
 $line-length: 40rem;
 $letter-spacing: 1px;
 
-/* breakpoints */
-$max: new-breakpoint(max-width 1200px 12);
-$laptop: new-breakpoint(max-width 1024px 12);
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 500px 6);
 
 
 // media queries

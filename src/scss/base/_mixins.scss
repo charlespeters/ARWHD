@@ -12,13 +12,8 @@
 @mixin reset(){
 	padding: 0;
 	margin: 0;
-	box-sizing: 0;	
+	box-sizing: 0;
 };
-
-
-@mixin box-shadow(){
-	
-}
 
 @mixin inset-shadow($offset1: 0, $offset2: 0, $blur: 0, $spread: 0, $color: #333){
 	-moz-box-shadow: $offset1 $offset2 $blur $spread $color;
