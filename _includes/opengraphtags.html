@@ -14,6 +14,11 @@
 {% else %}
   <meta content="{{ site.description }}" property="og:description">
 {% endif %}
+{% if page.content %}
+  <meta content="{{ page.excerpt }}" property="og:description">
+{% else %}
+  <meta content="{{ site.description }}" property="og:description">
+{% endif %}
 {% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
 {% endif %}
