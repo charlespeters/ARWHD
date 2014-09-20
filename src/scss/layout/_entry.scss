@@ -1,0 +1,37 @@
+.entry {
+	max-width: 40rem;
+	margin: 0 auto;
+	ul, ol {
+		margin: .5rem 0;
+		list-style-position: inside;
+	}
+	h3 {
+		color: $litered;
+		margin: .625rem 0;
+		font-size: 1.5rem;
+	}
+	blockquote {
+		padding: 0 1rem;
+		margin: .5rem 0;
+		border-left: 2px solid $litered;
+		p {font-style: italic; }
+	}
+	p {
+		font-size: 1.125rem;
+		@include respond-to(handhelds) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.footnotes {
+	margin-top: 1rem;
+	border-top: 1px solid $litered;
+	padding: .5rem;
+	li {
+		font-size: .875rem;
+		p {
+			margin: .25rem 0;
+		}
+	}
+}

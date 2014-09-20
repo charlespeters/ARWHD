@@ -1,0 +1,42 @@
+// color
+$text: #333;
+$darkred: #b74435;
+$litered: #d04d36;
+$palered: #e16b56;
+$litegold: #ebb734;
+$_palegold: #e5c784;
+$palegold: #e4be68;
+$twitter: #0094c2;
+$facebook: #3b5998;
+$bkg: #f2f0eb;
+$gray: #bbbbbb;
+
+$c1: rgba($palered, 1);
+$c2: rgba($palered, .75);
+$c3: rgba($palered, .5);
+
+// typography
+$basesize: 1rem;
+$line-length: 40rem;
+$letter-spacing: 1px;
+
+
+
+// media queries
+$breakpoint--small: 31.25rem; // 500px/16px
+$breakpoint--medium: 48rem; // 768px/16px
+$breakpoint--large: 63rem; // 1024px/16px
+$breakpoint--larger: 75rem; // 1200px/16px
+
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $breakpoint--small) { @content; }
+    }
+    @else if $media == mediumscreens {
+        @media only screen and (max-width: $breakpoint--large) { @content; }
+    }
+    @else if $media == widescreens {
+        @media only screen and (min-width: $breakpoint--large) { @content; }
+    }
+}

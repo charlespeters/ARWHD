@@ -1,42 +1,51 @@
 </main>
 <footer class="footer">
     <section class="flex--contents">
-        <div class="widget mccracken">
-			<p>“More than any communications medium before it, the Web is a permanent work in progress that’s always new.” - Harry McCracken</p>
-		</div>
-
-        <div class="widget social">
-    	    <div class="followus">
-            	<h3>Follow Us</h3>
-            	<a href="https://twitter.com/arwhdco/">
-                    <svg viewBox="0 0 300 300" class="icon circling">
-                        <use xlink:href="#twitter"></use>
-                    </svg>
-                </a>
-            	<a href="https://www.facebook.com/arwhdco">
-                    <svg viewBox="0 0 300 300" class="icon circling">
-                        <use xlink:href="#facebook"></use>
-                    </svg>
-                </a>
-            	<a href="http://dribbble.com/charlespeters">
-                    <svg viewBox="0 0 300 300" class="icon circling">
-                        <use xlink:href="#dribbble"></use>
-                    </svg>
-                </a>
-            	<p>We tweet awesome things &amp; for some reason we need to have a Facebook. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
-            </div>
+      <div class="widget mccracken">
+			  <p>More than any communications medium before it, the Web is a permanent work in progress that’s always new.</p>
+        <p>- Harry McCracken</p>
+      </div>
+      <div class="widget social">
+    	  <div class="followus">
+          	<h3>Follow Us</h3>
+            <a class="social--media_link" href="https://twitter.com/arwhdco/">
+              <i class="icon--container">
+                <svg viewBox="0 0 300 300" class="icon">
+                    <use xlink:href="#twitter"></use>
+                </svg>
+              </i>
+            </a>
+            <a class="social--media_link" href="https://github.com/charlespeters/">
+              <i class="icon--container">
+                <svg viewBox="0 0 300 300" class="icon">
+                    <use xlink:href="#github"></use>
+                </svg>
+              </i>
+            </a>
+            <a class="social--media_link" href="http://codepen.io/charlespeters/">
+              <i class="icon--container">
+                <svg viewBox="0 0 300 300" class="icon">
+                    <use xlink:href="#codepen"></use>
+                </svg>
+              </i>
+            </a>
+          	<a class="social--media_link" href="http://dribbble.com/charlespeters">
+              <i class="icon--container">
+                <svg viewBox="0 0 300 300" class="icon">
+                    <use xlink:href="#dribbble"></use>
+                </svg>
+              </i>
+            </a>
+          	<p>We tweet awesome things &amp; for some reason we need to have a Facebook. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
+          </div>
     	</div>
-
-        <div class="widget">
-            <h3>Newsletter</h3>
-            {% include mailchimp.html %}
-        </div>
+      <div class="widget">
+          <h3>Newsletter</h3>
+          {% include mailchimp.html %}
+      </div>
     </section>
     <img src="/img/logo.svg" alt="">
     <br />
     ©2014 ARHWD
-    <!-- <br />
-    <p class="text">{{ site.description }}</p> -->
 </footer>
-<script type="text/javascript" src="/js/build/global.min.js"></script>
-<script src="//localhost:35729/livereload.js"></script>
+<script type="text/javascript" src="{{ "/build/js/arwhd.min.js" | prepend: site.baseurl }}"></script>

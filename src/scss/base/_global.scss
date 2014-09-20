@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+	background: rgba($bkg, .5);
+	box-sizing: border-box;
+}
+
+.page-wrap {
+	padding: 0 1.5rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.hide {
+	display: none;
+}
+
+.clearfix {
+		content: "";
+		clear: both;
+		display: block;
+}

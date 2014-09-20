@@ -1,0 +1,46 @@
+.navbtn {
+	display: none;
+	@include respond-to(mediumscreens) {
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: $darkred;
+		text-align: center;
+		margin: .5rem 1rem .5rem auto;
+		svg { fill: white; }
+	}
+}
+
+.show { display: flex !important; }
+.nav {
+		flex: 1 0 15rem;
+		font-size: 1.125rem;
+		text-align: right;
+		@include respond-to(mediumscreens) {
+			background: $darkred;
+			display: none;
+			flex: 5 0 $breakpoint--large;
+			text-align: left;
+		}
+		@include respond-to(handhelds) {
+				flex: 5 0 15rem;
+				padding: 0;
+		}
+		ul {
+			list-style: inside none;
+			width: 100%;
+		}
+		li {
+			display: inline-block;
+			padding: 1rem;
+			@include respond-to(handhelds) {
+				display: block;
+				background: $palered;
+				&:nth-child(1){ background: $c1; }
+				&:nth-child(2){ background: $c2; }
+				&:nth-child(3){ background: $c3; }
+			}
+		}
+}

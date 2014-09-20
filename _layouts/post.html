@@ -1,19 +1,16 @@
 ---
 layout: default
 ---
-<article class="blogpost">
-    <header class="post-header">
-    <span class="category">{{ page.categories }}</span>
-    <h1>{{ page.title }}</h1>
-    <span class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} | {{ page.meta }}{% endif %}</span>
-    <span class="orna"></span>
-  </header>
-
-  <section class="entry">
-  {{ content }}
-  </section>
-    <footer>
-    {% include sharing.html %}
-    {% include disqus.html %}
+<article class="posts--full">
+    <header class="posts--full_header">
+      <h1>{{ page.title }}</h1>
+      <span class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} | {{ page.meta }}{% endif %}</span>
+      </header>
+    <section class="entry">
+      {{ content }}
+    </section>
+    <footer class="posts--full_footer">
+      {% include sharing.html %}
+      {% include disqus.html %}
     </footer>
 </article>
