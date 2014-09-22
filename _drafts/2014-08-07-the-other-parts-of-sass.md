@@ -39,7 +39,7 @@ That will totally compile into that for you:
 
 That's pretty useful. But there's still way more.
 
-Let's look at this example from CSS-Tricks
+Let's look at this example from [CSS-Tricks](http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/). Chris created a mixin to a flexible row 
 
 <pre><code class="language-scss">@mixin rowMachine($numPerRow, $margin) {
   width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
@@ -60,3 +60,5 @@ Let's look at this example from CSS-Tricks
 [for media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32)
 
 ### Extending
+
+### Interpolation
