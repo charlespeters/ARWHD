@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                 }
             },
 			jekyll: {
-                files: ['*.html', '*md', '_layouts/*.html', '_posts/*.md', '_projects/*.md', '_includes/*.html'],
+                files: ['*.html', '*md', '_layouts/*.html', '_posts/*.md', '_drafts/*.md', '_includes/*.html'],
                 tasks: ['shell:jekyllBuild'],
                 options: { livereload: 35729 }
 			}
