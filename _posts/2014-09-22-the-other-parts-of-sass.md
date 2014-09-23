@@ -149,11 +149,112 @@ Compiles to:
   }
 }</code></pre>
 
-You can also use the Content directive to inline [media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32) to setup and manage breakpoints better:
+You can also use the Content directive to inline [media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32) to setup and manage breakpoints better. Let's say we setup all our breakpoints as variables.
 
+<pre><code class="language-scss">$breakpoint--small: 31.25rem; // 500px/16px
+$breakpoint--medium: 48rem; // 768px/16px
+$breakpoint--large: 63rem; // 1024px/16px</code></pre>
 
-[For IE only](http://jakearchibald.github.io/sass-ie/)
+This is little smarter because we're using variables, less room for error and more consistency. Then we can use that in mixin.
 
-[More Use Cases](http://robots.thoughtbot.com/sasss-content-directive)
+<pre><code class="language-scss">@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $breakpoint--small) { @content; }
+    }
+    @else if $media == mediumscreens {
+        @media only screen and (min-width: $breakpoint--small + 1) and (max-width: $breakpoint--large - 1) { @content; }
+    }
+    @else if $media == widescreens {
+        @media only screen and (min-width: $breakpoint--large) { @content; }
+    }
+}</code></pre>
+
+In this mixin we're setting up media queries we can nest like this:
+
+<pre><code class="language-scss">.item {
+  width: 49%;
+  margin-right: 2%;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  @include respond-to(handhelds) {
+    width: 100%;
+    margin: 0;
+  }
+}</code></pre>
+
+Compiles to:
+
+<pre><code class="language-css">.item {
+  width: 49%;
+  margin-right: 2%;
+}
+.item:last-of-type {
+  margin-right: 0;
+}
+@media only screen and (max-width: 31.25rem) {
+  .item {
+    width: 100%;
+    margin: 0;
+  }
+}</code></pre>
+
+There a ton of other use cases for the Content directive like getting styles for [for IE only](http://jakearchibald.github.io/sass-ie/) and lot brilliant ones from [Thoughtbot](http://robots.thoughtbot.com/sasss-content-directive) that are worth spending some time checking out.
 
 ### Interpolation
+
+The last lesser known part of SASS that I think is awesome is interpolation. Interpolation (in this context, interpolation isn't unique to SASS) is using the value of a variable in a string or different context. There is a way better explanation of that over [here](http://webdesign.tutsplus.com/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375).
+
+Here we're going to create a simple 4 column grid. We're going to use a `@for` loop to count from 1 to 4. This loop will create a class for each count it makes and we'll use interpolation to name these classes so we can use them later.
+
+<pre><code class="language-scss">$end: 4;
+$gutterSize: 2%;
+@for $i from 1 through $end {
+    $single--column: (100 - (($end - 1)* $gutterSize ))/$end;
+    .col-#{$i}-#{$end} {
+        float: left;
+        width: ($i * $single--column) + (($i - 1) * $gutterSize);
+        @if $i == $end {} @else {
+          margin-right: $gutterSize;
+          &:last-child { margin-right: 0; }
+        }
+    }
+}</code></pre>
+
+Will return values we can use in our project naming the classes according to these values.
+
+<pre><code class="language-css">.col-1-4 {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+}
+.col-1-4:last-child {
+  margin-right: 0;
+}
+
+.col-2-4 {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.col-2-4:last-child {
+  margin-right: 0;
+}
+
+.col-3-4 {
+  float: left;
+  width: 74.5%;
+  margin-right: 2%;
+}
+.col-3-4:last-child {
+  margin-right: 0;
+}
+
+.col-4-4 {
+  float: left;
+  width: 100%;
+}</code></pre>
+
+---
+
+This is just the surface of SASS. There's so many things that don't get as much air play as imports, mixins, nesting and variables that are just as useful as those things. Leave me a comment and let me know how you're using other parts of SASS and some cool use cases, I would love hear more about how you folks use SASS.
