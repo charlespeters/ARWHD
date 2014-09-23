@@ -20,10 +20,11 @@ Done
 
 To Do
 ----
-- [x] Organize Categories
+- [ ] Organize Categories
 - [ ] 404
+- [ ] New Icons
+- [ ] Menu Animation
 - [x] Disqus
-- [x] Redirect
 
 Known Issues
 ----
@@ -33,12 +34,12 @@ Known Issues
 
 Future Versions
 ----
-* ~~Featured Projects~~
-* Twitter Cards
-* Learning Resources
-* Advertising
-* Hire Button
-* Speed
-* Leveraging Cache
-* ~~Migrating from Icon Fonts to SVG~~
-* Category Pages
+- ~~Featured Projects~~
+- Learning Resources
+- Advertising
+- Hire Button
+- Speed
+- Leveraging Cache
+- ~~Migrating from Icon Fonts to SVG~~
+- Category Pages
+- Links and Videos Categories
