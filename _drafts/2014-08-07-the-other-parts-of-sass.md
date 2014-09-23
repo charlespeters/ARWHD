@@ -39,7 +39,9 @@ That will totally compile into that for you:
 
 That's pretty useful. But there's still way more.
 
-Let's look at this example from [CSS-Tricks](http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/). Chris created a mixin to a flexible row 
+Let's look at this example from [CSS-Tricks](http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/). Chris created a mixin to a flexible row of elements, in this case a group of staff bios.
+
+He's using pretty basic operators to make this happen.
 
 <pre><code class="language-scss">@mixin rowMachine($numPerRow, $margin) {
   width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
