@@ -2,7 +2,7 @@
 layout: post
 title:  "Making Atom Home"
 date:   2014-10-01 14:03:43
-categories: Wordpress
+categories: Development
 ---
 Most of my time is spent using Atom Editor from Github, it's by far my favorite text editor. It's amazingly customizable, flexible and I thought I would share how I've customize and use it on a daily basis.
 
