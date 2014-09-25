@@ -1,27 +1,51 @@
 ---
 layout: post
 title:  "Making Atom Home"
-date:   2014-10-01 14:03:43
+date:   2014-09-25 14:03:43
 categories: Development
 ---
-Most of my time is spent using Atom Editor from Github, it's by far my favorite text editor. It's amazingly customizable, flexible and I thought I would share how I've customize and use it on a daily basis.
+Most of time I spend working on stuff is in Atom Editor from Github, it's by far my favorite text editor. It's amazingly customizable, flexible and I thought I would share how I've customize and use it on a daily basis.
+
+### Why?
+Atom is under constant active development, it's free, open source, all you have to do to get a question answered is file an issue on Github and someone gets back to you really quickly.
+
+It comes with amazing find in project, markdown preview, you can open your project on Github really quickly, see what branch you're on and all the changes you're making.
+
+You can really customize Atom to make your own. This whole application is based on web technologies so a little bit of LESS and CoffeeScript can really make a huge difference.  Plus, if there's a  feature missing out of the box, there are so many amazing packages being made everyday for it.
 
 ### Favorite Packages
+
 Here are some of my favorite packages and if you star all your favorites on Atom.io, that'll come in handy later in the post.
 
-- Minimap
-- Rdio
-- Emmet
-- Alignment
-- Grunt Runner
-- File Icons
-- JSHint
-- Color Picker
+Mostly I just love having the minimap on the right and having the toolbar tell me what track is playing from Rdio (there's one for iTunes and Spotify too), running grunt tasks and creating gists really quickly. The color picker and the bezier curve editor is really nice to have.
+
+- [Minimap](https://atom.io/packages/minimap)
+- [Rdio](https://atom.io/packages/rdio)
+- [Emmet](https://atom.io/packages/emmet)
+- [Alignment](https://atom.io/packages/)
+- [Grunt Runner](https://atom.io/packages/grunt-runner)
+- [File Icons](https://atom.io/packages/file-icons)
+- [JSHint](https://atom.io/packages/jshint)
+- [Color Picker](https://atom.io/packages/color-picker)
+- [Autocomplete Plus](https://atom.io/packages/autocomplete-plus)
+- [Project Manager](https://atom.io/packages/project-manager)
+- [Atom Beautify](https://atom.io/packages/atom-beautify)
+- [Editorconfig](https://atom.io/packages/editorconfig)
+- [Gist It](https://atom.io/packages/gist-it)
+- [Open Last Project](https://atom.io/packages/open-last-project)
+- [Bezier Curve Editor](https://atom.io/packages/bezier-curve-editor)
+- [File Types](https://atom.io/packages/bezier-curve-editor)
+- [Wordcount](https://atom.io/packages/wordcount)
+- [Git Tab Status](https://atom.io/packages/git-tab-status)
+- [SVG Preview](https://atom.io/packages/svg-preview)
+- [Ember-CLI Helper](https://atom.io/packages/ember-cli-helper)
+- [Slash Closer](https://atom.io/packages/slash-closer)
+- [Ember Snippets](https://atom.io/packages/ember-snippets)
+- [Enhanced Package List](https://atom.io/packages/enhanced-package-list)
 
 ### Syntax & UI
 
 I use [Solarized Dark](http://ethanschoonover.com/solarized) by Ethan Schoonover, everwhere. [Solarized Dark](https://atom.io/themes/solarized-dark-syntax) & [Solarized Dark UI](https://atom.io/themes/solarized-dark-ui). I even have it in my [Terminal](). When I'm feeling adventurous I try a few of [these from Daylee Rees](http://daylerees.github.io/)
-
 
 ### Stylesheet
 
@@ -29,12 +53,22 @@ I prefer [Fira Sans](http://mozilla.github.io/Fira/) for the UI and [Fira Mono](
 
 Here's my styles.less file:
 
-```
-REPLACE THIS
-
-
-
-```
+<pre><code class="language-css">body, .workspace, .markdown-preview {
+		font-family: 'Fira Sans';
+		-webkit-font-smoothing: antialiased;
+		font-size: 1.25rem;
+}
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 {
+		font-family: 'Fira Sans';
+		font-weight: 600;
+}
+.wrap-guide {
+		display: none !important;
+}
+.tooltip-inner {
+		padding: .75rem;
+		max-width: 100%;
+}</code></pre>
 
 You can set the font family and size under preferences.
 
