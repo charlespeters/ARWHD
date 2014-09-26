@@ -9,7 +9,7 @@ Most of the time I spend working on stuff is in Atom Editor from Github, it's by
 ### Why?
 Atom is under constant active development; it's free, open source, and all you have to do to get a question answered is file an issue on Github and someone gets back to you really quickly.
 
-It comes with amazing find in project, markdown preview. You can open your project on Github really quickly, see what branch you're on and all the changes you're making.
+It comes with amazing find in project, markdown preview, you can open your project on Github really quickly, see what branch you're on and all the changes you're making.
 
 You can really customize Atom to make it your own. This whole application is based on web technologies so a little bit of LESS and CoffeeScript can make a huge difference.  Plus, if there's a feature missing out of the box, there are so many amazing packages being made for it everyday.
 
