@@ -4,3 +4,4 @@ node_modules
 *.map
 *.log
 .DS_Store
+wordpress.xml
