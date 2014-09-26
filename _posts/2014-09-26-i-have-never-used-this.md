@@ -7,7 +7,7 @@ categories: Development
 
 There's a few technologies I've heard about, read loads about, played a lot with a little bit, gotten excited about, but have never used them in a real project for a client or for a side project. I felt really guilty for that, but now I don't.
 
-Let's name a few of them: Backbone.js, Compass, HAML, Foundation, React.js, Snap.svg, D3.js. I know what they are, what they're for, enough to get started. But there hasn't been an instance where that would be advantageous or time saving to use.
+Let's name a few of them: Backbone.js, Compass, HAML, Foundation, React.js, Snap.svg, D3.js. I know what they are, what they're for, enough to get started, but that's it. There hasn't been an instance where it would be advantageous or time saving to deviate from my workflow to use any of those things.
 
 ### Backbone.js
 Backbone is a JavaScript framework for working with a RESTful API. It's like Ember.js and Angular but with less convention, so for instance you have to configure your own way to write a route, where as there's one way in Ember to do it; it's an exceptionally flexible framework. It's for working with JSON and data modeling.
