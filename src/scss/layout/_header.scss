@@ -10,12 +10,11 @@
 		color: white;
 		&:hover { color: $palegold;	}
 	}
-    &:after { @extend .clearfix; }
 }
 
 
 .logo {
-  flex: 0 3 15rem;
+    flex: 0 3 15rem;
 	margin: 0;
 	line-height: 1;
 	color: $palegold;
@@ -32,6 +31,6 @@
 		line-height: 0;
 		font-size: 1.25rem;
 		letter-spacing: 5px;
-    margin-left: 1rem;
+        margin-left: 1rem;
 	}
 }

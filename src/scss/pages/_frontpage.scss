@@ -1,31 +1,10 @@
-// .frontpage {
-// 	background: url('../img/connect_copy.png') no-repeat -15% 0;
-// 	background-size: contain;
-// 	padding: 2rem 1rem;
-// 	h2 {
-// 		font-weight: 600;
-// 				font-size: 2rem;
-// 		letter-spacing: 3px;
-// 		line-height: 1;
-// 		text: {transform: uppercase; align: center;}
-// 		margin: 0 0 .5rem;
-// 		color: $palegold;
-// 	}
-// 	button {
-// 		width: 60%;
-// 		margin: 1.5rem auto 1rem;
-// 		display: block;
-// 		@include respond-to(handhelds) { width: 100%; }
-// 	}
-// }
-
 .posts {
 	&--index {
 		color: $litered;
 	}
 	&--heading {
 		color: $palegold;
-		font-weight: 400;
+		// font-weight: 400;
 		margin-top: 1rem;
 		margin-bottom: 3.5rem;
 		// text-transform: uppercase;

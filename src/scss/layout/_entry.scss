@@ -14,13 +14,7 @@
 		padding: 0 1rem;
 		margin: .5rem 0;
 		border-left: 2px solid $litered;
-		p {font-style: italic; }
-	}
-	p {
-		font-size: 1.125rem;
-		@include respond-to(handhelds) {
-			font-size: 1rem;
-		}
+		p { font-style: italic; }
 	}
 }
 
