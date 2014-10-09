@@ -9,23 +9,23 @@ Responsive type isn't as hard as we make it out to be. After a lot of experiment
 
 ### Use REMs
 
-REMs are a relative unit of measurement in CSS that's similar to EMs except instead of being relative to the font size of container it's relative to the root font size of the root of the document (hence the 'r').
+REMs are a relative unit of measurement in CSS that's similar to EMs, except instead of being relative to the font size of container, it's relative to the root font size of the root of the document (hence the 'r').
 
-There's an old approach from Jonathan Snook that's popular that uses REMs that I don't think is a great idea[^1]. Jonathan advocates (I don't know if he still holds this position) that you should set your font-size on your html element to 62.5% so that 1.4rem can equal out to be 14px. I've heard this volleyed again on Twitter not too long ago and I can't say I agree.
+There's an old approach from Jonathan Snook using REMs that's popular but I don't think is a great idea[^1]. Jonathan advocates (I don't know if he still holds this position) that you should set your font-size on your html element to 62.5% so that 1.4rem can equal out to be 14px. I've heard this volleyed again on Twitter not too long ago and I can't say I agree.
 
-1rem equals 1x of the default browser size. So let's say the default browser font size is 16px, 1rem would be 16px, 2rem would be 28px and so on. But the default browser font size could be anything, it's something the user can decide in their browser settings, it's not a reliable metric to depend on.
+1rem equals 1x of the default browser size. So let's say the default browser font size is 16px, 1rem would be 16px, 2rem would be 32px and so on. But the default browser font size could be anything; it's something the user can decide in their browser settings, so it's not a reliable metric to depend on.
 
 If we design with a pixel based mentality, we're working against the browser and the user.
 
-I tend to set the html size to 100% and with media queries set it to 92.5% and let's everything I've declared in REMs size accordingly. Much less resistance. For reference, .875rem to 1rem are an ideal body text size. A great headline size is about 2.25rem.
+I tend to set the html size to 100% and with media queries set it to 92.5% and let everything I've declared in REMs size accordingly. Much less resistance. For reference, .875rem to 1rem are an ideal body text size. A great headline size is about 2.25rem.
 
-Browser support of REMs is pretty good IE9+, and if you need to support an older browser there's a ways you can still use REMs. If you're doing smart things like using a [build step](http://arwhd.co/development/2014/06/25/codekit-vs-grunt-js/) there's Grunt tasks and Gulp plugins to set a pixel fall back.
+Browser support of REMs is pretty good IE9+, and if you need to support an older browser there are ways you can still use REMs. If you're doing smart things like using a [build step](http://arwhd.co/development/2014/06/25/codekit-vs-grunt-js/) there's Grunt tasks and Gulp plugins to set a pixel fall back.
 
 ### As Few Font Families as Possible
 
 This is more of a performance note versus being strictly related to responsive design. But you never know the bandwidth on your user's end so it's still relevant when designing for multiple devices.
 
-You should declare as a few different font families as possible. Let's say you're using a sans-serif like Freight Sans on all your headlines and everywhere else on the site, but on your paragraphs using Freight Text. Declare Freight Sans on the html element and use a reset to let forms inherit the font-family, and only on the paragraph's declare Freight Text.
+You should declare as a few different font families as possible. Let's say you're using a sans-serif like Freight Sans on all your headlines and everywhere else on the site, but on your paragraphs using Freight Text. Declare Freight Sans on the html element and use a reset to let forms inherit the font-family, and only on the paragraphs declare Freight Text.
 
 Example:
 
@@ -45,17 +45,17 @@ p {
 }
 </code></pre>
 
-By comparison, declare font-weight and font-size as often as you want as provided it's trusting the cascading parts of CSS. I know it might be a weird thing to harp on but I've been using the mindset of using as few font-family declarations a possibile. I also which I had actual numbers behind this, but I've seen my sites load faster on mobile devices since implementing.
+By comparison, declare font-weight and font-size as often as you want, provided it's trusting the cascading parts of CSS. I know it might be a weird thing to harp on but I've been in the mindset of using as few font-family declarations a possible. I also wish I had actual numbers behind this, but I've seen my sites load faster on mobile devices since implementing.
 
 From a logical standpoint, by declaring fewer font families, you're writing less declarations and less CSS (and smarter CSS) and which means less for the browser to render, letting it use the cascade it the way it was meant to.
 
-This is my speculation, not gospel. I would however love to see real performance stats on this.
+This is my speculation, not gospel. I would, however, love to see real performance stats on this.
 
 ### Icon Fonts
 
 Just don't.
 
-If you're thinking about using an icon font, I have a bunch of [free SVG icons](http://charlespeters.net/justafewicons/) you can use for free. They're seriously free and better for the internet. Not every device supports `@font-face` and depending on a font for your icons can't provide you any real fallback. STOP USING ICON FONTS.[^2]
+If you're thinking about using an icon font, I have a bunch of [free SVG icons](http://charlespeters.net/justafewicons/) you can use for free. They're seriously free and better for the internet. Not every device supports `@font-face`, and depending on a font for your icons can't provide you any real fallback. STOP USING ICON FONTS.[^2]
 
 ### More CSS to Consider
 
@@ -67,7 +67,7 @@ You can set a max-width on paragraphs to close to 33rem to 38rem to maintain a r
 
 ---
 
-These are my approaches and best practices to responsive typography, there's lot to consider and it's constantly evolving. But I think this is the path of least resistance. I also have a [repo up on Github](https://github.com/charlespeters/type-findings) that's just a list of articles and resources about typography for you guys to check out.
+Those are my approaches and best practices to responsive typography; there's lot to consider and it's constantly evolving. But I think this is the path of least resistance. I also have a [repo up on Github](https://github.com/charlespeters/type-findings) that's just a list of articles and resources about typography for you guys to check out.
 
 
 
