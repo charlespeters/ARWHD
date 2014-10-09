@@ -5,7 +5,7 @@ date:   2014-10-08 14:03:43
 categories: CSS
 ---
 
-Responsive type isn't as hard as we make it out to be. After a lot of experimenting and a lot of screwing it up, I found the best way to respond to different screen sizes is to have a straight forward approach.
+Responsive typography isn't as hard as we make it out to be. After a lot of experimenting and a lot of screwing it up, I found the best way to respond to different screen sizes is to have a straight forward approach.
 
 ### Use REMs
 
@@ -45,7 +45,7 @@ p {
 }
 </code></pre>
 
-By comparison, declare font-weight and font-size as often as you want, provided it's trusting the cascading parts of CSS. I know it might be a weird thing to harp on but I've been in the mindset of using as few font-family declarations a possible. I also wish I had actual numbers behind this, but I've seen my sites load faster on mobile devices since implementing.
+By comparison, declare font-weight and font-size as often as you want, provided it's trusting the cascading parts of CSS. I know it might be a weird thing to harp on but I've been in the mindset of using as few font-family declarations a possible. I also wish I had actual numbers behind this, but I've seen my sites load faster on mobile devices since implementing this mindset.
 
 From a logical standpoint, by declaring fewer font families, you're writing less declarations and less CSS (and smarter CSS) and which means less for the browser to render, letting it use the cascade it the way it was meant to.
 
