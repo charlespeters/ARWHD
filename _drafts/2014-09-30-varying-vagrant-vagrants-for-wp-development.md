@@ -5,7 +5,7 @@ date:   2014-09-28 14:03:43
 categories: Wordpress
 ---
 
-I don't like MAMP. I don't think I need to qualify that statement at all. For development, Rails comes with it's own server, there's a great connect task for both Grunt & Gulp and [Anvil](http://anvilformac.com/) fills in the other gaps for the static web server. But having a good server for PHP isn't as straight forward (at least from my perspective).
+I don't like MAMP. I don't think I need to qualify that statement at all. For development, Rails comes with it's own server, there's a great connect task for both Grunt & Gulp and [Anvil](http://anvilformac.com/) fills in the other gaps for the static web server. But having a good server for PHP, particularily Wordpress, isn't as straightforward (at least from my perspective).
 
 [Post Status](http://www.poststat.us/vvv-tips-every-day/)
 
