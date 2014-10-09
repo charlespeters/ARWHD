@@ -61,7 +61,7 @@ If you're thinking about using an icon font, I have a bunch of [free SVG icons](
 
 Go for unitless line-height.
 
-> Unitless line heights are recommended due to the fact that child elements will inherit the raw number value, rather than the computed value. With this, child elements can compute their line heights based on their computed font size, rather than inheriting an arbitrary value from a parent that is more likely to need overriding.[^3]
+> Unitless line heights are recommended due to the fact that child elements will inherit the raw number value, rather than the computed value. With this, child elements can compute their line heights based on their computed font size, rather than inheriting an arbitrary value from a parent that is more likely to need overriding. [^3]
 
 You can set a max-width on paragraphs to close to 33rem to 38rem to maintain a readable amount of characters on a line (45-75 characters). You also might want to consider setting `word-wrap: break-word` for long links. There's nothing worse than reading a blog post on your phone and having a long horizontal scroll because there's a link in a comment.
 
