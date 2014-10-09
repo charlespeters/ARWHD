@@ -67,7 +67,7 @@ You can set a max-width on paragraphs to close to 33rem to 38rem to maintain a r
 
 ---
 
-These are my approaches and best practices to responsive typography, there's lot to consider and it's constantly evolving. I have a [repo up on Github](https://github.com/charlespeters/type-findings) that's just a list of articles and resources about typography for you guys to check out.
+These are my approaches and best practices to responsive typography, there's lot to consider and it's constantly evolving. But I think this is the path of least resistance. I also have a [repo up on Github](https://github.com/charlespeters/type-findings) that's just a list of articles and resources about typography for you guys to check out.
 
 
 
