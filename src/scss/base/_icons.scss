@@ -6,9 +6,7 @@
 	fill: currentColor;
 	background: none;
 	transition: all 750ms ease;
-	&:hover {
-		fill: currentColor;
-	}
+	&:hover { fill: currentColor; }
 	&--container {
 		width: 100%;
 		height: auto;
@@ -18,5 +16,5 @@
 .circling {
 		border-radius: 50%;
 		border: 1px solid $litered;
-		padding: .25rem;
+		padding: .5rem;
 }
