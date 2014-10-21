@@ -11,6 +11,10 @@ In the past, I've relied on really great frameworks (Bootstrap, Foundation, Neat
 
 ### Declaring a Media Query
 
+<pre><code class="language-css">@media screen and (min-width: 48rem) {
+	/* Stuff you want to query to this media */
+}</code></pre>
+
 ### Min-Width
 
 At least as big as _X_
