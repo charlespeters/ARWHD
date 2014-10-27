@@ -28,3 +28,4 @@ Not Duplicating Styles
 
 [^1]: [BEM](http://bem.info/method/)
 [^2]: [Louis Lazarus on Smashing Mag](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+[^3]: [Organizing CSS: OOCSS, SMACSS, and BEM](http://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
