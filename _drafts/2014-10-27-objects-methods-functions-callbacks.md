@@ -21,11 +21,14 @@ beer.kind = 'amber ale';
 beer.oz = 16;
 beer.color = 'copper';</code></pre>
 
+Our object of `beer` now has properties assigned to it for it's color, ounces and kind.
+
+
 ### Methods
 Methods are functions that belong to objects.
 
 ### Functions
-
+A function is a collection of statements used to return a result.
 
 ### Callbacks
 
