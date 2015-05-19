@@ -6,21 +6,22 @@
     "url": "https://github.com/charlespeters/arwhd-jekyll.git"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-autoprefixer": "^0.7.6",
-    "grunt-contrib-connect": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.9.0",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-uglify": "^0.2.7",
-    "grunt-contrib-watch": "^0.5.3",
-    "grunt-jekyll": "^0.4.2",
-    "grunt-notify": "^0.2.20",
-    "grunt-remfallback": "0.0.5",
-    "grunt-shell": "^1.0.0",
-    "grunt-svgmin": "^0.4.0",
-    "time-grunt": "^0.3.2"
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-concat": "^2.5.2",
+    "gulp-gh-pages": "^0.5.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-inject": "^1.2.0",
+    "gulp-pixrem": "^0.2.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-svgmin": "^1.1.2",
+    "gulp-svgstore": "^5.0.1",
+    "gulp-uglify": "^1.2.0"
   },
-  "dependencies": {
-    "time-grunt": "^0.3.2"
-  }
+  "dependencies": {}
 }
