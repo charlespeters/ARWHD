@@ -20,21 +20,12 @@ $basesize: 1rem;
 $line-length: 40rem;
 $letter-spacing: 1px;
 
-// media queries
-$breakpoint--small: 31.25rem; // 500px/16px
-$breakpoint--medium: 48rem; // 768px/16px
-$breakpoint--large: 63rem; // 1024px/16px
-$breakpoint--larger: 75rem; // 1200px/16px
+$sans-serif: 'Whitney SSm A', 'Whitney SSm B', 'Myriad Pro', Avenir, Lucida Grande, sans-serif !default;
+$mono: 'Source Code Pro' !default;
+
+$baseFontWeight: 400 !default;
+$baseFontSize: 1rem !default;
+$baseFontFamily: $sans-serif;
 
 
-@mixin respond-to($media) {
-    @if $media == handhelds {
-        @media only screen and (max-width: $breakpoint--small) { @content; }
-    }
-    @else if $media == mediumscreens {
-        @media only screen and (max-width: $breakpoint--large) { @content; }
-    }
-    @else if $media == widescreens {
-        @media only screen and (min-width: $breakpoint--large) { @content; }
-    }
-}
+$w: 68rem;

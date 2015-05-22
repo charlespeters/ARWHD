@@ -1,67 +1,60 @@
-$sans-serif: 'Whitney SSm A', 'Whitney SSm B', Avenir, Lucida Grande, sans-serif;
+
 
 body {
-	font: 400 100%/1.5 $sans-serif;
-	@include anti;
-	text-rendering: optimizeLegibility;
-	color: $text;
-}
-form, input, textarea {
-	font: 400 1rem/1.5 $sans-serif;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-weight: 400;
-	line-height: 1;
+  font: $baseFontWeight 100%/1.5 $sans-serif;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-	// font-weight: 500;
-	font-size: 200%;
-	margin: .5rem 0;
+form, input, textarea {
+  font: 400 1rem/1.5 inherit;
 }
-h2 {
-	// font-weight: 500;
-	font-size: 175%;
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  line-height: 1.2;
 }
-h3 {
-	font-size: 150%;
-	line-height: 1.2;
-}
+
+h1 { font-size: $baseFontSize + $baseFontSize; }
+h2 { font-size: $baseFontSize + ($baseFontSize*.75); }
+h3 { font-size: $baseFontSize + ($baseFontSize/2); }
+h4 { font-size: $baseFontSize + ($baseFontSize/4); }
+h5 { font-size: $baseFontSize + ($baseFontSize/8); }
+h6 { font-size: $baseFontSize; }
 
 p {
-	margin: 1rem 0;
-	color: $text;
-	font-size: 1rem;
-	strong, b { font-weight: 700;}
-	em, i {font-style: italic; }
-	@include respond-to(handhelds) {
-		font-size: .875rem;
-	}
+  margin: 1rem 0;
+  color: $text;
+  font-size: $baseFontSize;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  @include respond-to(handhelds) { font-size: .875rem; }
 }
 
+strong, b { font-weight: 700;}
+em, i {font-style: italic; }
+
 a {
-	text-decoration: none;
-	color: $litered;
-	transition: all 375ms linear;
-	&:hover {
-		color: $palegold;
-	}
+  text-decoration: none;
+  color: $litered;
+  transition: all 375ms linear;
+  &:hover {
+    color: $palegold;
+  }
 }
 
 ol, ul {
-	padding: 0;
-	list-style-position: inside;
-}
-
-
-li {
-	font-size: 1rem;
+  padding: 0;
+  list-style-position: inside;
 }
 
 hr {
-	background: $palegold;
-	height: .0625rem;
-	width: 65%;
-	border: 0;
-	margin: 1rem auto 1.5rem;
+  background: $palegold;
+  height: .0625rem;
+  width: 65%;
+  border: 0;
+  margin: 1rem auto 1.5rem;
 }
+
+.meta { color: $gray; }

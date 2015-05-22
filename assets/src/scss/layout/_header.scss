@@ -1,36 +1,15 @@
-.header {
-  background: $litered;
+.site--header {
+  // background: $litered;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-	a {
-		color: white;
-		&:hover { color: $palegold;	}
-	}
-}
-
-
-.logo {
-    flex: 0 3 15rem;
-	margin: 0;
-	line-height: 1;
-	color: $palegold;
-	padding: 1.5rem;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	img {
-		max-width: 2rem;
-		height: auto;
-		vertical-align: top;
-	}
-	h1 {
-		line-height: 0;
-		font-size: 1.25rem;
-		letter-spacing: 5px;
-        margin-left: 1rem;
-	}
+  &_logo { padding: 1rem; }
+  &_img { max-width: 1.5rem; height: auto; }
+  &_hl {
+    margin-left: 1rem;
+    color: $palegold;
+    line-height: 1;
+  }
+  &_link {
+    color: $palered;
+    &:hover { color: $palegold;	}
+  }
 }

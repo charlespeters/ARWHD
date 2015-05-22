@@ -1,0 +1,18 @@
+.post {
+  &--date {
+    background: $palered;
+    color: $bkg;
+    max-width: 5.5rem;
+    width: 100%;
+    min-height: 5rem;
+    float: left;
+    margin-top: -1.875rem;
+    margin-left: -6.5rem;
+    &_item {
+      line-height: 1;
+      padding: .125rem;
+      &:first-of-type { padding-top: .425rem; }
+      &:last-of-type { padding-bottom: .425rem; }
+    }
+  }
+}

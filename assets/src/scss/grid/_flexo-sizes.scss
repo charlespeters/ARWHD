@@ -1,0 +1,9 @@
+.flex {
+  @for $f from 1 through 9 {
+    &--#{$f} { flex: $f 0; }
+  }
+}
+
+.m {
+  &--none { margin: 0; }
+}

@@ -3,26 +3,29 @@ layout: default
 title: Home
 ---
 
-<section class="posts--index flex--main">
-	<h2 class="posts--heading">Recent Posts</h2>
-	<section class="flexposts">
-	{% for post in site.posts limit:6 %}
-		<article class="posts--short">
-			<header>
-				<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-			</header>
-			<aside class="meta--short posts--short_info">
-				<p class="meta">{{ post.date | date: "%m.%d.%y" }}</p>
-				<p class="meta">{{ page.categories }}</p>
-				<span class="icon--container">
-					<svg class="icon">
-						<use xlink:href="#icon-JAFI_link" />
-					</svg>
-				</span>
-			</aside>
-			{{ post.excerpt }}
-		</article>
-	{% endfor %}
-	</section>
+<section class="container--sm container--center">
+  <section class="">
+  {% for post in site.posts limit:7 %}
+    {% if post.layout == 'link' %}
+		<h2><a class="post-link w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+		{% else %}
+		<article class="container--spacer">
+      <header>
+        <h2><a class="post-link w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+				<div class="post--date center">
+          <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%b" }}</span>
+  				<span class="post--date_item bl hl--md w-700 lt-1 m--none">{{ post.date | date: "%d" }}</span>
+  				<span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%Y" }}</span>
+				</div>
+      </header>
+      <section class="left container">
+        {{ post.excerpt }}
+      </section>
+    </article>
+		{% endif %}
+
+  {% endfor %}
+  </section>
 </section>
-{% include sidebar.html %}
+
+<!-- {% include sidebar.html %} -->

@@ -18,12 +18,12 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.hide {
-	display: none;
-}
+
 
 .clearfix {
+	&::after {
 		content: "";
-		clear: both;
-		display: block;
+	  clear: both;
+	  display: block;
+	}
 }

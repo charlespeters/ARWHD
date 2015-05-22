@@ -1,11 +1,19 @@
 .entry {
-	max-width: 40rem;
+	max-width: $w;
+	width: 100%;
 	margin: 0 auto;
 	ul, ol { margin: .5rem 0; }
 	h3 {
 		color: $litered;
 		margin: .625rem 0;
 		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	h4 {
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		font-weight: 300;
+		letter-spacing: 2px;
 	}
 	blockquote {
 		padding: .5rem 0;

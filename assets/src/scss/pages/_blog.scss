@@ -11,10 +11,7 @@
 		h1 {
 			margin: 5rem 0 2rem;
 			letter-spacing: 1px;
-			font-weight: 300;
 			color: $litered;
-			font-size: 2.5rem;
-			@include respond-to(handhelds) { font-size: 2.125rem; }
 		}
 	}
 	&_footer {
