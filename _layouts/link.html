@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<main role="main" class="flexcontents">
 <article class="blogpost">
     <header class="post-header">
     <span class="category"><a href="/{{ page.categories }}/">{{ page.categories }}</a></span>
@@ -10,11 +9,10 @@ layout: default
     <span class="orna"></span>
   </header>
 
-  <section class="entry">
+  <section class="entry container--spacer">
   {{ content }}
   </section>
     <footer>
     {% include sharing.html %}
     </footer>
 </article>
-</main>

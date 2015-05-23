@@ -23,9 +23,9 @@ React [powers the editor](http://blog.atom.io/2014/07/02/moving-atom-to-react.ht
 I know HAML is an HTML preprocessor in Ruby. I've played with it in CodePen. Haven't really found a good use for it, yet. It looks really powerful, I just don't know when to reach for it. I'm just getting started with learning Rails so honest question: Can I use HAML instead of ERB?
 
 ### Compass
-I love SASS. I have never used Compass. I know to a lot of you that's like saying, 'Ya, I like food, except when it tastes good'. I immediately jumped on the Bourbon train when I got started with SASS because of how awesome Bourbon Neat is and I never really gave Compass the time it takes to learn about how to use it because I already knew Bourbon.
+I love Sass. I have never used Compass. I know to a lot of you that's like saying, 'Ya, I like food, except when it tastes good'. I immediately jumped on the Bourbon train when I got started with Sass because of how awesome Bourbon Neat is and I never really gave Compass the time it takes to learn about how to use it because I already knew Bourbon.
 
-Compass extends the power SASS comes with. It's great for icon spriting, gradient fallbacks and CSS3 prefixing (present day Autoprefixer is more suited for that). I haven't figured out how to install it or get going with it so it hasn't been in my workflow at all.
+Compass extends the power Sass comes with. It's great for icon spriting, gradient fallbacks and CSS3 prefixing (present day Autoprefixer is more suited for that). I haven't figured out how to install it or get going with it so it hasn't been in my workflow at all.
 
 ---
 

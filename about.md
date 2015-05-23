@@ -21,7 +21,7 @@ My only real goals here are to make sense of things like design & front-end code
 
 ### Colophon
 
-This site is powered by Jekyll. It’s made with SASS, Autoprefixer, Grunt & Flexbox, Prism.js, FitText/FitVids & written mostly with the Atom editor. It’s hosted on Github Pages, version controlled with Github (via Tower).
+This site is powered by Jekyll. It’s made with Sass, Autoprefixer, Grunt & Flexbox, Prism.js, FitText/FitVids & written mostly with the Atom editor. It’s hosted on Github Pages, version controlled with Github (via Tower).
 
 The typeface being used is Whitney from Hoefler & Co.
 

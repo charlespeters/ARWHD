@@ -1,18 +1,33 @@
 .post {
+  &--offset {
+    &_top { margin-top: -1.875rem; }
+    &_top-sm { margin-top: -.75rem }
+    &_top { margin-top: .75rem; }
+    &_cont {
+      max-width: 5.5rem;
+      width: 100%;
+      min-height: 5rem;
+    }
+  }
   &--date {
     background: $palered;
     color: $bkg;
     max-width: 5.5rem;
-    width: 100%;
-    min-height: 5rem;
-    float: left;
-    margin-top: -1.875rem;
-    margin-left: -6.5rem;
+    padding: 0 .25rem;
     &_item {
       line-height: 1;
       padding: .125rem;
       &:first-of-type { padding-top: .425rem; }
       &:last-of-type { padding-bottom: .425rem; }
+    }
+  }
+  &--short_link {
+    &::after {
+      content: "\2192";
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      margin-left: 1rem;
     }
   }
 }

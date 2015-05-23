@@ -7,25 +7,38 @@ title: Home
   <section class="">
   {% for post in site.posts limit:7 %}
     {% if post.layout == 'link' %}
-		<h2><a class="post-link w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-		{% else %}
-		<article class="container--spacer">
-      <header>
-        <h2><a class="post-link w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-				<div class="post--date center">
-          <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%b" }}</span>
-  				<span class="post--date_item bl hl--md w-700 lt-1 m--none">{{ post.date | date: "%d" }}</span>
-  				<span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%Y" }}</span>
-				</div>
+    <article class="container--spacer cf">
+        <div class="fl--left col--2_12 right">
+          <a href="{{ post.link }}">
+          <span class="i-bl icon--circle">
+            <svg class="icon">
+              <use xlink:href="#icon-link" />
+            </svg>
+          </span>
+          </a>
+        </div>
+      <header class="fl--left col--10_12 post--offset_top">
+        <a class="" href="{{ post.url | prepend: site.baseurl }}">
+          <h2 class="w-300 lt-3 caps hl--sm post--short_link">{{ post.title }}</h2>
+        </a>
       </header>
-      <section class="left container">
-        {{ post.excerpt }}
-      </section>
-    </article>
-		{% endif %}
 
+    </article>
+    {% else %}
+    <article class="container--spacer cf">
+      <aside class="fl--left col--2_12 right">
+        <div class="post--date i-bl center">
+          <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%b" }}</span>
+          <span class="post--date_item bl hl--sm w-700 lt-1 m--none">{{ post.date | date: "%d" }}</span>
+          <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%Y" }}</span>
+        </div>
+      </aside>
+      <header class="fl--left col--10_12">
+        <h2><a class="w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </header>
+    </article>
+    {% endif %}
   {% endfor %}
   </section>
 </section>
-
-<!-- {% include sidebar.html %} -->

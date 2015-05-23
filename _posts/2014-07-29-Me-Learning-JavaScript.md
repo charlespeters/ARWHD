@@ -5,7 +5,7 @@ date:   2014-07-30 04:11:43
 categories: JS
 ---
 
-JavaScript has always been a pain point for me. It's not a brutally visual language like CSS and isn't as easy to pick up as SASS. Being a designer, I found it really hard to understand `console.log` or the difference between functions and methods, let alone what qualifies as an object; none of those things are on the surface.
+JavaScript has always been a pain point for me. It's not a brutally visual language like CSS and isn't as easy to pick up as Sass. Being a designer, I found it really hard to understand `console.log` or the difference between functions and methods, let alone what qualifies as an object; none of those things are on the surface.
 
 But I need JavaScript, it's a very useful language and it completes the Holy Trinity of front-end development. It's in more and more places, on servers, in browsers, in text-editors; it's not going anywhere. It's being used to build everything from rich applications to build tools to the most annoying pop-modals on Upworthy and everything in between.
 
@@ -20,6 +20,6 @@ One book I've found really useful so far is Jon Duckett's [_JavaScript and jQuer
 
 What's this all mean though? It's simple; I'm going to be writing more and more about the things I'm learning and how I'm using them. Whether it's a link to tutorial on Backbone.js or a simple definition of what a JavaScript promise ('cause I have like no idea) is or some crazy way I've found to make an AJAX request (or why you'd need to make an AJAX request for that matter), I'm going to share it Austin Kleon style.
 
-I'm adjusting more of my schedule and how I handle projects better so I can structure more time to write/blog. So, expect more posts here on JavaScript and all the crazy stuff with SASS I'm figuring out how to do.
+I'm adjusting more of my schedule and how I handle projects better so I can structure more time to write/blog. So, expect more posts here on JavaScript and all the crazy stuff with Sass I'm figuring out how to do.
 
 Also, much love to Dave Rupert for his patience and guidance and super-awesomeness (that he should bottle and sell to the general public) and to Tyler who will probably need to explain what a RESTful API is at least 3 more times for me (he's the best).

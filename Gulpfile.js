@@ -1,4 +1,5 @@
 var gulp        = require('gulp'),
+    gutil       = require('gulp-util'),
     pixrem      = require('gulp-pixrem'),
     plumber     = require('gulp-plumber'),
     browserSync = require('browser-sync'),
@@ -6,16 +7,12 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
-    svgmin      = require('gulp-svgmin'),
-    svgstore    = require('gulp-svgstore'),
     imagemin    = require('gulp-imagemin'),
-    sourcemaps  = require('gulp-sourcemaps'),
     autoprefix  = require('gulp-autoprefixer'),
     size        = require('gulp-size'),
     concat      = require('gulp-concat'),
-    ghPages     = require('gulp-gh-pages'),
     cp          = require('child_process'),
-    name        = 'vws';
+    name        = 'arwhd';
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -24,7 +21,7 @@ var messages = {
 var paths = {
   scss: 'assets/src/scss/**/*.scss',
   js: 'assets/src/js/*.js',
-  svg: 'assets/src/icons/*.svg',
+  icons: 'assets/src/icons/*.svg',
   img: 'assets/src/img/*',
   markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*'],
   dist: 'assets/dist/'
@@ -68,17 +65,9 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
-
-gulp.task('icons', function () {
-  return gulp.src(paths.svg)
-  .pipe(svgmin())
-  .pipe(svgstore({ fileName: 'icons.svg', prefix: 'icon-', inlineSvg: true}))
-  .pipe(gulp.dest('_includes/'));
-});
-
-
-gulp.task('images', function () {
+gulp.task('images', function() {
   return gulp.src(paths.img)
+  .pipe(size())
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}]
@@ -96,22 +85,16 @@ gulp.task('connect', ['styles', 'jekyll-build'], function() {
   });
 });
 
-gulp.task('deploy', function() {
-  return gulp.src('_site/**/*')
-    .pipe(ghPages());
-});
 
-
-gulp.task('watch', function () {
+gulp.task('watch', function() {
   gulp.watch(paths.scss, ['styles', 'jekyll-rebuild']);
   gulp.watch(paths.js, ['scripts', 'jekyll-rebuild']);
-  gulp.watch(paths.svg, ['icons', 'jekyll-rebuild']);
+  gulp.watch(paths.icons, ['icons', 'jekyll-rebuild']);
   gulp.watch(paths.img, ['images', 'jekyll-rebuild']);
   gulp.watch(paths.markup, ['jekyll-rebuild']);
 });
 
 // Task Registry
 
-gulp.task('build', ['styles', 'scripts', 'icons', 'images', 'jekyll-rebuild']);
-gulp.task('destroy', ['build', 'deploy']);
+gulp.task('build', ['styles', 'scripts', 'images', 'jekyll-rebuild']);
 gulp.task('default', ['build', 'connect', 'watch']);

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: The Other Parts of SASS
+title: The Other Parts of Sass
 date: 2014-09-22
 ---
 
-If you write SASS there's a chance you're only seeing the tip of the iceberg. Most times when I write SASS everyday, I use [imports](http://sass-lang.com/guide#topic-5), [nesting](http://sass-lang.com/guide#topic-3) and [variables](http://sass-lang.com/guide#topic-2) then less often mixins and extends. All makes authoring stylesheets incredibly easier, but that's not all of what SASS can do, hell that's not even close.
+If you write Sass there's a chance you're only seeing the tip of the iceberg. Most times when I write Sass everyday, I use [imports](http://sass-lang.com/guide#topic-5), [nesting](http://sass-lang.com/guide#topic-3) and [variables](http://sass-lang.com/guide#topic-2) then less often mixins and extends. All makes authoring stylesheets incredibly easier, but that's not all of what Sass can do, hell that's not even close.
 
 ### Basic Operators
 
-You can make your SASS files do some basic math for you.
+You can make your Sass files do some basic math for you.
 
 <pre><code class="language-scss">$baseFontSize: 100%;
 .main--content {
@@ -67,11 +67,11 @@ Compiles to:
   margin-bottom: 0;
 }</code></pre>
 
-Doing this by hand would be really tedious and would be pretty hard to modularize so you can use it in different places. But the basic operators in SASS make this a lot easier to work with and use over again.
+Doing this by hand would be really tedious and would be pretty hard to modularize so you can use it in different places. But the basic operators in Sass make this a lot easier to work with and use over again.
 
 ### Content Directive
 
-One of the other lesser used parts of SASS is the `@content` directive from SASS 3.2. The Content directive allows to pass in content into a mixin. This is really becomes useful when you need to nest media queries or setup a keyframe animation.
+One of the other lesser used parts of Sass is the `@content` directive from Sass 3.2. The Content directive allows to pass in content into a mixin. This is really becomes useful when you need to nest media queries or setup a keyframe animation.
 
 For keyframe animations this example from [Eric Suzanne](https://gist.github.com/ericam/1607696) shows how we can setup a mixin to prefix animations.
 
@@ -203,7 +203,7 @@ There a ton of other use cases for the Content directive like getting styles for
 
 ### Interpolation
 
-The last lesser known part of SASS that I think is awesome is interpolation. Interpolation (in this context, interpolation isn't unique to SASS) is using the value of a variable in a string or different context. There is a way better explanation of that over [here](http://webdesign.tutsplus.com/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375).
+The last lesser known part of Sass that I think is awesome is interpolation. Interpolation (in this context, interpolation isn't unique to Sass) is using the value of a variable in a string or different context. There is a way better explanation of that over [here](http://webdesign.tutsplus.com/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375).
 
 Here we're going to create a simple 4 column grid. We're going to use a `@for` loop to count from 1 to 4. This loop will create a class for each count it makes and we'll use interpolation to name these classes so we can use them later.
 
@@ -257,4 +257,4 @@ Will return values we can use in our project naming the classes according to the
 
 ---
 
-This is just the surface of SASS. There's so many things that don't get as much air play as imports, mixins, nesting and variables that are just as useful as those things. Leave me a comment and let me know how you're using other parts of SASS and some cool use cases, I would love hear more about how you folks use SASS.
+This is just the surface of Sass. There's so many things that don't get as much air play as imports, mixins, nesting and variables that are just as useful as those things. Leave me a comment and let me know how you're using other parts of Sass and some cool use cases, I would love hear more about how you folks use Sass.

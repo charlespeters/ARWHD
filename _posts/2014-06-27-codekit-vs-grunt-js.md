@@ -11,18 +11,18 @@ categories:
 - Development
 ---
 
-As a front-end developer there's lots of little things you need to do as a part of your workflow, like compiling your SASS files, running [Autoprefixer](https://github.com/ai/autoprefixer), minifying your SVG files, optimizing your images, linting your Javascript files, firing up a server.
+As a front-end developer there's lots of little things you need to do as a part of your workflow, like compiling your Sass files, running [Autoprefixer](https://github.com/ai/autoprefixer), minifying your SVG files, optimizing your images, linting your Javascript files, firing up a server.
 
 Naturally, a tool would come along to simplify and automate some of those processes. There's a few major tools on the market, namely Codekit, Grunt & Gulp, that I want to break down a little bit.
 
 ### Codekit
-Codekit is an OS X app for compiling languages like SASS, HAML, Coffeescript and most other front-end tasks like minifying your Javascript and stylesheets. The first Codekit is how I got interested in using SASS on my projects and made me an instant convert, but it was very hard to customize and share your preferences with other collaborators. As far as features go, there's style injection, live reloading, Bower components and it now even ports a local server from MAMP that's accessible on all devices.
+Codekit is an OS X app for compiling languages like Sass, HAML, Coffeescript and most other front-end tasks like minifying your Javascript and stylesheets. The first Codekit is how I got interested in using Sass on my projects and made me an instant convert, but it was very hard to customize and share your preferences with other collaborators. As far as features go, there's style injection, live reloading, Bower components and it now even ports a local server from MAMP that's accessible on all devices.
 
 The second offering of Codekit is even more amazing than the first. There's a vast overhall done to it and is a lot more customizable, like it will let you execute bash scripts upon successfully compiling your code. It has a very interesting feature that lets you use includes in HTML through the Kit language that AJ Troxell [explains very well](http://ajtroxell.com/codekits-the-kit-language-how-to-use-it/) how to use. Plus that server thing is [pretty sweet](http://youtu.be/YUgH0jlYur0); sometimes I use Codekit just for that feature.
 
 The thing that grabs me most about Codekit is that it's easy to get up & running with very little effort and you can only really tell it's there when you've hit an error in your code. It just works. It fits in a workflow intuitively and sits very comfortably in the background.
 
-As far as downsides, it costs money (but $36 isn't a terrible price to pay for software you use all day). I've run into errors using Bourbon and Bourbon Neat because the Codekit versions of these libraries are still running on older versions of SASS. The only other thing is that if you're using Grunt previously, it will try and automatically minify your Gruntfile and freak out.
+As far as downsides, it costs money (but $36 isn't a terrible price to pay for software you use all day). I've run into errors using Bourbon and Bourbon Neat because the Codekit versions of these libraries are still running on older versions of Sass. The only other thing is that if you're using Grunt previously, it will try and automatically minify your Gruntfile and freak out.
 
 ### Grunt.js
 Speaking of your Gruntfile, Grunt.js is a little more involved with the project you're working on. It requires a good bit of configuration and setup but you get a lot more control and options. I like Grunt because you need to use the command line to get it going and it only runs tasks when you want it to, whereas with Codekit you have to tell it not to compile, concatenate, refresh, etc.

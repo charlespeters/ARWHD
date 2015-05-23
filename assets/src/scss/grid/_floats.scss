@@ -1,0 +1,18 @@
+.cf {
+  &::before {
+    content: "";
+    display: table;
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.fl {
+  $fls: left, right, none;
+  @each $fl in $fls {
+    &--#{$fl} { float: $fl; }
+  }
+}

@@ -12,18 +12,17 @@
 @import "grid/flexo";
 @import "grid/flexo-items";
 @import "grid/flexo-sizes";
+@import "grid/floats";
+@import "grid/floats-columns";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
-// @import "layout/sidebar";
 @import "layout/posts-list";
 @import "layout/entry";
 
 @import "components/stripe";
-@import "components/sharing";
+// @import "components/sharing";
 @import "components/prism";
 
-// @import "pages/frontpage";
 @import "pages/blog";
-@import "pages/projects";
