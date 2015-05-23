@@ -3,22 +3,12 @@ layout: default
 title: Blog
 tags: blog
 ---
-<section class="posts--index flex--main">
-    <h2 class="posts--heading">Full Blog Archive</h2>
+<section class="center">
+    <h2 class="w-700 lt-2 caps center">Full Blog Archive</h2>
     {% for post in site.posts %}
-    <article>
+    <article class="container--spacer">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </article>
     {% endfor %}
 </section>
-<!-- <aside class="flex--sidebar">
-    <div id="text-3" class="widget widget_text">
-        <div class="textwidget">
-            <p>{{ site.description }}</p>
-        </div>
-    </div>
-    <hr>
-
-</aside> -->
-{% include sidebar.html %}

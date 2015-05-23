@@ -51,4 +51,11 @@
 		flex: 1;
 		padding: 1rem;
 	}
+  a { color: $bkg; }
+  li {
+    &:nth-child(1){ background: $c1; }
+    &:nth-child(2){ background: $c2; }
+    &:nth-child(3){ background: $c3; }
+    &:nth-child(4){ background: $c4; }
+  }
 }
