@@ -15,43 +15,46 @@
 
 .show { display: flex !important; }
 .nav {
-    flex: 2 0 15rem;
-    font-size: 1.125rem;
-    text-align: right;
-    @include respond-to(mediumscreens) {
-      background: $darkred;
-      display: none;
-      flex: 5 0 $breakpoint--large;
-      text-align: left;
-    }
-    @include respond-to(handhelds) {
-        flex: 5 0 15rem;
-        padding: 0;
-    }
-    ul {
-      list-style: inside none;
-      width: 100%;
-    }
-    li {
-      display: inline-block;
-      padding: 1rem;
-      @include respond-to(handhelds) {
-        display: block;
-        background: $palered;
-        &:nth-child(1){ background: $c1; }
-        &:nth-child(2){ background: $c2; }
-        &:nth-child(3){ background: $c3; }
-      }
-    }
+    // flex: 2 0 15rem;
+    // font-size: 1.125rem;
+    // text-align: right;
+    // @include respond-to(mediumscreens) {
+    //   background: $darkred;
+    //   display: none;
+    //   flex: 5 0 $breakpoint--large;
+    //   text-align: left;
+    // }
+    // @include respond-to(handhelds) {
+    //     flex: 5 0 15rem;
+    //     padding: 0;
+    // }
+    // ul {
+    //   list-style: inside none;
+    //   width: 100%;
+    // }
 }
 
 .site--nav {
   // flex: 3 0;
-	&_item {
-		flex: 1;
-		padding: 1rem;
-	}
+  &_btn {
+    width: 3rem;
+    height: 3rem;
+    background: $c4;
+  }
+  &_item {
+    flex: 1;
+    padding: 1rem;
+  }
   a { color: $bkg; }
+  &::before {
+    content: "";
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-bottom: 1.25rem solid $c1;
+    position: absolute;
+    top: -1.25rem;
+    right: 1rem;
+  }
   li {
     &:nth-child(1){ background: $c1; }
     &:nth-child(2){ background: $c2; }

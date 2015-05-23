@@ -1,5 +1,5 @@
 .shown  { display: block; }
-.hidden { display: none; }
+.hidden { display: none !important; }
 .bl { display: block; }
 .i-bl { display: inline-block; }
 
