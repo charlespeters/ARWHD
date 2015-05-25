@@ -1,43 +1,43 @@
 .entry {
-	ul, ol { margin: 1rem 0; }
-	h3 {
-		color: $litered;
-		margin: .625rem 0;
-		font-size: 1.5rem;
-		font-weight: 400;
-	}
-	h4 {
-		color: $darkred;
-		text-transform: uppercase;
-		font-size: 1.125rem;
-		font-weight: 700;
-		letter-spacing: 2px;
-	}
-	blockquote {
-		padding: .5rem 0;
-		@include mq-min(tablet) {
-			width: 150%;
-			margin-left: -25%;
-		}
-		p {
-			font-style: italic;
-			color: darken($gray, 12.5%);
-			@include mq-min(tablet) { font-size: 1.25rem; }
-			&:first-of-type { margin-top: 0; }
-		}
-		&::after {
-			content: "";
-			display: block;
-			background: $litered;
-			margin: 1rem 0;
-			width: 6rem;
-			height: 2px;
-		}
-	}
+  ul, ol { margin: 1rem 0; }
+  h3 {
+    color: $litered;
+    margin: .625rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  h4 {
+    color: $darkred;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  blockquote {
+    padding: .5rem 0;
+    @include mq-min(tablet) {
+      width: 150%;
+      margin-left: -25%;
+    }
+    p {
+      font-style: italic;
+      color: darken($gray, 12.5%);
+      @include mq-min(tablet) { font-size: 1.25rem; }
+      &:first-of-type { margin-top: 0; }
+    }
+    &::after {
+      content: "";
+      display: block;
+      background: $litered;
+      margin: 1rem 0;
+      width: 6rem;
+      height: 2px;
+    }
+  }
 }
 
 .footnotes {
-	margin-top: 2rem;
-	border-top: 1px solid $litered;
-	padding: .5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid $litered;
+  padding: .5rem 0;
 }

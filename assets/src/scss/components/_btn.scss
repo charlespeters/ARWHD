@@ -1,0 +1,17 @@
+.btn {
+	border: solid 1px $darkred;
+	border-radius: 10px;
+	background-image: linear-gradient($litered, $darkred);
+	color: white;
+	padding: .875rem 1.875rem;
+	margin: 0.5rem 0;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.125);
+	@include anti();
+	&:hover { background-image: linear-gradient($litered, $palered); }
+	&:focus {
+		color: $text;
+		background-image: linear-gradient($palegold, $litegold);
+		border: $litegold;
+		outline: 0;
+	}
+}

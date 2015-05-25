@@ -5,25 +5,14 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 html {
 	background: rgba($bkg, .5);
 	box-sizing: border-box;
 }
 
-.page-wrap {
-	padding: 0 1.5rem;
-}
 
 img {
 	max-width: 100%;
 	height: auto;
-}
-
-
-.clearfix {
-	&::after {
-		content: "";
-	  clear: both;
-	  display: block;
-	}
 }
