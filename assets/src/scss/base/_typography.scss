@@ -24,16 +24,17 @@ h5 { font-size: $baseFontSize + ($baseFontSize/8); }
 h6 { font-size: $baseFontSize; }
 
 p {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   color: $text;
-  font-size: $baseFontSize;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
-  @include respond-to(handhelds) { font-size: .875rem; }
+  font-size: .875rem;
+  &:last-of-type { margin-bottom: 0; }
+  @include mq-min(tablet) { font-size: $baseFontSize; }
 }
 
-strong, b { font-weight: 700;}
-em, i {font-style: italic; }
+strong, b { font-weight: 700; }
+em, i { font-style: italic; }
 
 a {
   text-decoration: none;

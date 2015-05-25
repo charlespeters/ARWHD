@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<article class="posts--full">
-    <header class="posts--full_header center">
-      <h1 class="w-700 hl--jumbo">{{ page.title }}</h1>
+<article class="posts--full  ">
+    <header class="posts--full_header container--center container--md center">
+      <h1 class="w-700 hl--jumbo posts--full_hl ">{{ page.title }}</h1>
       <span class="caps lt-3 w-300 meta">
         {{ page.date | date: "%b %-d, %Y" }}
         {% if page.meta %} | {{ page.meta }}{% endif %}
         </span>
       </header>
-    <section class="entry">
+    <section class="entry container--spacer container--center container--sm">
       {{ content }}
     </section>
-    <footer class="posts--full_footer">
+    <footer class="posts--full_footer container--center container--sm">
       {% include sharing.html %}
     </footer>
 </article>

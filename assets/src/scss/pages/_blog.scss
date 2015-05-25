@@ -1,21 +1,15 @@
 // blog page
 
 .posts--full {
-	max-width: 42rem;
-	margin: 0 auto;
 	&_header {
 		padding: 2.125rem 0;
-		max-width: 48rem;
-		margin: 0 auto;
-		text-align: center;
 		h1 {
 			margin: 5rem 0 2rem;
 			letter-spacing: 1px;
-			color: $litered;
 		}
 	}
+	&_hl { color: $litered; }
 	&_footer {
-		max-width: 38rem;
-		margin: 0 auto 2rem;
+		margin-bottom: 2rem;
 	}
 }

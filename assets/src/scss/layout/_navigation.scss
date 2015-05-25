@@ -1,45 +1,11 @@
-.navbtn {
-  display: none;
-/*   @include respond-to(mediumscreens) {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $darkred;
-  text-align: center;
-  margin: .5rem 1rem .5rem auto;
-  svg { fill: white; }
-} */
-}
-
-.show { display: flex !important; }
-.nav {
-    // flex: 2 0 15rem;
-    // font-size: 1.125rem;
-    // text-align: right;
-    // @include respond-to(mediumscreens) {
-    //   background: $darkred;
-    //   display: none;
-    //   flex: 5 0 $breakpoint--large;
-    //   text-align: left;
-    // }
-    // @include respond-to(handhelds) {
-    //     flex: 5 0 15rem;
-    //     padding: 0;
-    // }
-    // ul {
-    //   list-style: inside none;
-    //   width: 100%;
-    // }
-}
-
 .site--nav {
   // flex: 3 0;
   &_btn {
     width: 3rem;
     height: 3rem;
     background: $c4;
+    color: $bkg;
+    padding: .25rem;
   }
   &_item {
     flex: 1;

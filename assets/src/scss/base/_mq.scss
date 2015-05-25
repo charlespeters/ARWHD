@@ -16,3 +16,13 @@ $breakpoint--larger: 75rem; // 1200px/16px
         @media only screen and (min-width: $breakpoint--large) { @content; }
     }
 }
+
+
+@mixin mq-min($media) {
+	@if $media == tablet {
+		@media only screen and (min-width: $breakpoint--small + 1) { @content; }
+	}
+	@if $media == desktop {
+		@media only screen and (min-width: $breakpoint--medium + 1) { @content; }
+	}
+}

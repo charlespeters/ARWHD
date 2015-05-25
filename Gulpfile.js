@@ -1,6 +1,5 @@
 var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
-    pixrem      = require('gulp-pixrem'),
     plumber     = require('gulp-plumber'),
     browserSync = require('browser-sync'),
     reload      = browserSync.reload(),
@@ -9,6 +8,9 @@ var gulp        = require('gulp'),
     uglify      = require('gulp-uglify'),
     imagemin    = require('gulp-imagemin'),
     autoprefix  = require('gulp-autoprefixer'),
+    cheerio     = require('gulp-cheerio'),
+    svgmin      = require('gulp-svgmin'),
+    svgstore    = require('gulp-svgstore'),
     size        = require('gulp-size'),
     concat      = require('gulp-concat'),
     cp          = require('child_process'),
@@ -49,7 +51,6 @@ gulp.task('styles', function() {
     onError: browserSync.notify
   }))
   .pipe(autoprefix(['last 2 version']))
-  .pipe(pixrem())
   .pipe(gulp.dest('_site/' + paths.dist + 'css/'))
   .pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest(paths.dist + 'css/'));
@@ -75,6 +76,21 @@ gulp.task('images', function() {
   .pipe(gulp.dest('_site/' + paths.dist + 'img/'))
   .pipe(gulp.dest(paths.dist + 'img/'));
 });
+
+gulp.task('icons', function () {
+  return gulp.src(paths.icons)
+    .pipe(svgmin())
+    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true}))
+    .pipe(cheerio({
+      run: function ($, file) {
+          $('svg').addClass('hidden');
+          $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(gulp.dest('./_includes/'));
+});
+
 
 // Connect & Deploy
 gulp.task('connect', ['styles', 'jekyll-build'], function() {
