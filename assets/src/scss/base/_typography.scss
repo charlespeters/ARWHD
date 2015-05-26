@@ -5,10 +5,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-form, input, textarea {
-  font: 400 100%/1.5 inherit;
-}
-
 h1 { font-size: $baseFontSize + $baseFontSize; line-height: 1.2; }
 h2 { font-size: $baseFontSize + ($baseFontSize*.75); line-height: 1.2; }
 h3 { font-size: $baseFontSize + ($baseFontSize/2); line-height: 1.2; }

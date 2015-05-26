@@ -10,9 +10,9 @@
 	transition: all 375ms linear;
 	&:hover { background: $darkred; }
 	&:focus {
-		color: $text;
-		background-image: linear-gradient($palegold, $litegold);
-		border: $litegold;
+		color: mix($text, $litegold);
+		background: $litegold;
+		border: $palegold;
 		outline: 0;
 	}
 }
