@@ -53,7 +53,8 @@ gulp.task('styles', function() {
   .pipe(autoprefix(['last 2 version']))
   .pipe(gulp.dest('_site/' + paths.dist + 'css/'))
   .pipe(browserSync.reload({stream:true}))
-  .pipe(gulp.dest(paths.dist + 'css/'));
+  .pipe(gulp.dest(paths.dist + 'css/'))
+  .pipe(gulp.dest('_includes/'));
 });
 
 gulp.task('scripts', function() {
