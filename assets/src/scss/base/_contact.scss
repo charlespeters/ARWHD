@@ -1,30 +1,45 @@
 //input types
 
-input[type="text"], input[type="email"], textarea {
-	background: none;
-	appearance: none;
-	border: 1px solid;
-	padding: .875rem 0;
-	color: $darkred;
-	width: 80%;
-	max-width: 45rem;
-	&:focus {
-		outline: none;
-		background: none;
-		color: $litered;
-	}
+
+::-webkit-input-placeholder {
+  font-size: $baseFontSize;
+  color: $gray;
+}
+:-moz-placeholder {
+  font-size: $baseFontSize;
+  color: $gray;
+}
+::-moz-placeholder {
+  font-size: $baseFontSize;
+  color: $gray;
+}
+:-ms-input-placeholder {
+  font-size: $baseFontSize;
+  color: $gray;
 }
 
-select {
-	background-image: linear-gradient($darkred, $litered);
-	padding: .5rem 0 .5rem 1.5rem;
-	border: 0;
-	border-radius: 15px;
-	text-transform: uppercase;
-	-webkit-appearance: none;
-	text-align: center !important;
-	letter-spacing: 2px;
-	color: white;
-	@include anti();
-	&:focus { outline: 0;}
+.form {
+  &--input {
+    background: $bkg;
+    border: 1px solid;
+    padding: .75rem .5rem;
+    color: $darkred;
+    max-width: 100%;
+    font-family: inherit;
+    line-height: 1;
+    transition: all 375ms linear;
+    &:focus {
+      outline: none;
+      background: none;
+      color: $bkg;
+    }
+  }
+  &--appearance {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  &--label {
+    color: $palegold;
+  }
 }

@@ -5,16 +5,6 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  &--main {
-    flex: 4 0 19rem;
-    padding: 0 .5rem;
-    @include respond-to(handhelds) { padding: 0; }
-  }
-  &--sidebar {
-    flex: 1 0 18rem;
-    padding: 0 .5rem;
-    @include respond-to(handhelds) { padding: 0; }
-  }
 }
 
 

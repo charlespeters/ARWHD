@@ -1,6 +1,5 @@
 @import "base/variables";
 @import "base/mq";
-@import "base/mixins";
 @import "base/normalize";
 @import "base/typography";
 @import "base/typography-util";
@@ -12,8 +11,7 @@
 @import "grid/flexo";
 @import "grid/flexo-items";
 @import "grid/flexo-sizes";
-@import "grid/floats";
-@import "grid/floats-columns";
+@import "grid/flexo-order";
 
 @import "layout/header";
 @import "layout/footer";

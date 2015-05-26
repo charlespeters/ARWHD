@@ -7,3 +7,7 @@
   &--h { justify-content: center; }
   &--items { align-items: center; }
 }
+
+.align--bottom {
+  align-items:  flex-end;
+}

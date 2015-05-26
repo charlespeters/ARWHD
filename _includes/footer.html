@@ -1,5 +1,5 @@
 </main>
-<!--
+
 <footer class="footer container--spacer">
     <section class="flex">
       <div class="widget mccracken">
@@ -40,17 +40,19 @@
           	<p>We tweet awesome things &amp; for some reason we need to have a Facebook. <br/>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
           </div>
     	</div>
-      <div class="widget">
-          <h3>Newsletter</h3>
-          {\% include mailchimp.html %\}
+      <div class="widget nwl">
+          <h3 class="w-700">Newsletter</h3>
+          {% include mailchimp.html %}
       </div>
     </section>
-    <img src="/img/logo.svg" alt="">
-    <br />
-    ©2014 ARHWD
+    <div class="center">
+      <img src="/img/logo.svg" class="footer--logo" alt="">
+      <br />
+      ©2014 ARHWD
+    </div>
+
 </footer>
 
--->
 
 <script type="text/javascript">
   var navicon = document.getElementById('navicon');

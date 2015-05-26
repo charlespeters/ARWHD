@@ -1,18 +1,9 @@
 .footer {
 	// padding: 0 0 1.5rem 0;
 	margin-bottom: 1.5rem;
-	text-align: center;
-	img {
-		max-width: 25px;
+	&--logo {
+		max-width: 1.5rem;
 		height: auto;
-	}
-	.flexcontents {
-		flex-direction: row;
-		border-top: 1px $litered solid;
-		padding: 1rem;
-		@include respond-to(handhelds) {
-			flex-direction: column;
-		}
 	}
 	.widget {
 		flex: 1 0 19rem;

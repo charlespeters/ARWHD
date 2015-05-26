@@ -6,24 +6,18 @@ html {
 }
 
 form, input, textarea {
-  font: 400 1rem/1.5 inherit;
+  font: 400 100%/1.5 inherit;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h1 { font-size: $baseFontSize + $baseFontSize; }
-h2 { font-size: $baseFontSize + ($baseFontSize*.75); }
-h3 { font-size: $baseFontSize + ($baseFontSize/2); }
-h4 { font-size: $baseFontSize + ($baseFontSize/4); }
-h5 { font-size: $baseFontSize + ($baseFontSize/8); }
-h6 { font-size: $baseFontSize; }
+h1 { font-size: $baseFontSize + $baseFontSize; line-height: 1.2; }
+h2 { font-size: $baseFontSize + ($baseFontSize*.75); line-height: 1.2; }
+h3 { font-size: $baseFontSize + ($baseFontSize/2); line-height: 1.2; }
+h4 { font-size: $baseFontSize + ($baseFontSize/4); line-height: 1.2; }
+h5 { font-size: $baseFontSize + ($baseFontSize/8); line-height: 1.2; }
+h6 { font-size: $baseFontSize;  line-height: 1.2; }
 
 p {
   margin-bottom: 1rem;
-  color: $text;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-size: .875rem;
