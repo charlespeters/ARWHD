@@ -33,6 +33,7 @@ samp {
 	font-size: 87.5%;
 	line-height: 1.4;
 	padding: .25em;
+	font-family: "Source Code Pro", "Menlo", monospace;
 }
 pre {
 	background-color: $solarized_base02;
@@ -52,9 +53,9 @@ pre {
 		    -ms-hyphens: none;
 		        hyphens: none;
 		padding: 1.143em;
-		-moz-tab-size: 4;
-		  -o-tab-size: 4;
-		     tab-size: 4;
+		-moz-tab-size: 2;
+		  -o-tab-size: 2;
+		     tab-size: 2;
 		text-align: left;
 		white-space: pre-wrap;
 		word-spacing: normal;

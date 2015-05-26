@@ -1,12 +1,12 @@
 </main>
 
-<footer class="footer container--spacer">
+<footer class="site--footer container--spacer">
     <section class="flex">
-      <div class="footer--widget mccracken">
+      <div class="site--footer_widget mccracken">
 			  <p class="hl--b left">More than any communications medium before it, the Web is a permanent work in progress that’s always new.</p>
         <p class="hl--b right">- Harry McCracken</p>
       </div>
-      <div class="footer--widget social center">
+      <div class="site--footer_ social center">
     	  <div class="followus">
           	<h3>Follow Us</h3>
             <a class="social--media_link" href="https://twitter.com/arwhdco/">
@@ -40,31 +40,32 @@
           	<p>We tweet awesome things &amp; for some reason we need to have a Facebook. <br/></p>
           </div>
     	</div>
-      <div class="footer--widget nwl">
+      <div class="site--footer_widget nwl">
           <h3 class="w-700 m--bottom">Newsletter</h3>
           <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
           {% include mailchimp.html %}
       </div>
     </section>
     <div class="center">
-      <img src="/img/logo.svg" class="footer--logo" alt="">
+      <img src="/img/logo.svg" class="site--footer_logo" alt="">
       <br />
       ©2014 ARHWD
     </div>
 
 </footer>
 
-
-<script type="text/javascript">
-
-</script>
 <script src="{{ '/assets/dist/js/arwhd.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45825941-1', 'auto');
-  ga('send', 'pageview');
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5564877392c6ac7126004377');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://track.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
 </script>
