@@ -1,41 +1,35 @@
 .footer {
-	// padding: 0 0 1.5rem 0;
-	margin-bottom: 1.5rem;
 	&--logo {
 		max-width: 1.5rem;
 		height: auto;
 	}
-	.widget {
+	&--widget {
 		flex: 1 0 19rem;
 		padding: 1rem;
 	}
-	.mccracken {
-		position: relative;
-		z-index: 1;
-		&::before {
-			content: "\201c";
-			display: block;
-			position: absolute;
-			top: -.75rem;
-			left: 0;
-			font-size: 5rem;
-			font-family: Georgia;
-			font-weight: 700;
-			color: rgba($litered, .125);
-		}
-		p {
-			text-align: left;
-			font-size: 1.125rem;
-			&:last-of-type { text-align: right; }
-		}
+}
+
+.followus {
+	padding: 0 .5rem;
+	a {
+		fill: $litered;
+		&:hover { fill: $palegold; }
 	}
-	.followus {
-		text-align: center;
-		padding: 0 .5rem;
-		a {
-			fill: $litered;
-			&:hover { fill: $palegold; }
-		}
-		.social--media_link { padding: .5rem; }
+	.social--media_link { padding: .5rem; }
+}
+
+.mccracken {
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: "\201c";
+		display: block;
+		position: absolute;
+		top: -.75rem;
+		left: 0;
+		font-size: 5rem;
+		font-family: Georgia;
+		font-weight: 700;
+		color: rgba($litered, .125);
 	}
 }

@@ -22,7 +22,7 @@ var messages = {
 
 var paths = {
   scss: 'assets/src/scss/**/*.scss',
-  js: 'assets/src/js/*.js',
+  js: ['assets/src/js/plugins/*.js', 'assets/src/js/*.js'],
   icons: 'assets/src/icons/*.svg',
   img: 'assets/src/img/*',
   markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*'],
@@ -59,6 +59,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src(paths.js)
+  .pipe(size())
   .pipe(plumber())
   .pipe(concat(name+'.js'))
   .pipe(uglify())
