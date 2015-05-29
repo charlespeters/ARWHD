@@ -121,7 +121,7 @@ gulp.task('watch', function() {
 
 ### Building Into Your HTML Document
 
-This is mostly bonus points but itâ€™s pretty well incorporated into my SVG workflow.
+This is mostly bonus points but it's pretty well incorporated into my SVG workflow.
 
 In our `icons` task for Gulp we had it deposited our SVG container in our directory for our HTML includes. We're going to add another task to take all of our partials and build them into a document.
 
