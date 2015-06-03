@@ -4,6 +4,8 @@ title: Generating a Random Background Color in Sass
 date: 2015-02-17
 ---
 
+I'm exploring a lot more of how to use the lesser known parts of Sass. One of the nicer things that Sass offers is lists and I'm going to cover how to leverage some of their benefits.
+
 Here are some random colors:
 
 <pre><code class="language-scss">

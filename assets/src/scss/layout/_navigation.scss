@@ -1,5 +1,4 @@
 .site--nav {
-  // flex: 3 0;
   &_btn {
     width: 3rem;
     height: 3rem;
@@ -14,12 +13,13 @@
   a { color: $bkg; }
   &::before {
     content: "";
-    border-left: 1.25rem solid transparent;
-    border-right: 1.25rem solid transparent;
-    border-bottom: 1.25rem solid $c1;
+    border-left: 1.125rem solid transparent;
+    border-right: 1.125rem solid transparent;
+    border-bottom: 1.125rem solid $c1;
     position: absolute;
-    top: -1.25rem;
-    right: 1rem;
+    top: -1.125rem;
+    right: .5rem;
+    @include mq-min(tablet) { right: 1.25rem; }
   }
   li {
     &:nth-child(1){ background: $c1; }

@@ -9,10 +9,11 @@
 
 
 .container {
-  &--center { margin-left: auto; margin-right: auto; }
-  &--full   { max-width: $w; }
-  &--md     { max-width: $w*.75; }
-  &--sm     { max-width: $w*.625; }
-  &--spacer { padding: 1rem .5rem; }
-  &--100    { display: block; width: 100%; }
+  &--center    { margin-left: auto; margin-right: auto; }
+  &--full      { max-width: $w; }
+  &--md        { max-width: $w*.75; }
+  &--sm        { max-width: $w*.625; }
+  &--spacer    { padding: 1rem .5rem; }
+  &--spacer_tb { padding: 1rem 0; }
+  &--100       { display: block; width: 100%; }
 }

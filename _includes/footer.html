@@ -1,58 +1,28 @@
 </main>
-
-<footer class="site--footer container--spacer">
+<!-- <div class="site--footer_widget mccracken">
+  <p class="hl--b left">More than any communications medium before it, the Web is a permanent work in progress that’s always new.</p>
+  <p class="hl--b right">- Harry McCracken</p>
+</div> -->
+<footer class="site--footer container--full container--center container--spacer m--bottom">
     <section class="flex">
-      <div class="site--footer_widget mccracken">
-			  <p class="hl--b left">More than any communications medium before it, the Web is a permanent work in progress that’s always new.</p>
-        <p class="hl--b right">- Harry McCracken</p>
-      </div>
-      <div class="site--footer_ social center">
-    	  <div class="followus">
-          	<h3>Follow Us</h3>
-            <a class="social--media_link" href="https://twitter.com/arwhdco/">
-              <i class="icon--container">
-                <svg viewBox="0 0 300 300" class="icon">
-                    <use xlink:href="#twitter"></use>
-                </svg>
-              </i>
-            </a>
-            <a class="social--media_link" href="https://github.com/charlespeters/">
-              <i class="icon--container">
-                <svg viewBox="0 0 300 300" class="icon">
-                    <use xlink:href="#github"></use>
-                </svg>
-              </i>
-            </a>
-            <a class="social--media_link" href="http://codepen.io/charlespeters/">
-              <i class="icon--container">
-                <svg viewBox="0 0 300 300" class="icon">
-                    <use xlink:href="#codepen"></use>
-                </svg>
-              </i>
-            </a>
-          	<a class="social--media_link" href="http://dribbble.com/charlespeters">
-              <i class="icon--container">
-                <svg viewBox="0 0 300 300" class="icon">
-                    <use xlink:href="#dribbble"></use>
-                </svg>
-              </i>
-            </a>
-          	<p>We tweet awesome things &amp; for some reason we need to have a Facebook. <br/></p>
-          </div>
+      <div class="site--footer_widget social">
+        <h3 class="w-700 hl--sm caps lt-2 m--bottom">About Charles</h3>
+        <p>Charles is the writer behind this site, he is a designer at Black Pixel, a podcaster on Viewsources and stream of profanity on Twitter.</p>
     	</div>
-      <div class="site--footer_widget nwl">
-          <h3 class="w-700 m--bottom">Newsletter</h3>
-          <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
-          {% include mailchimp.html %}
+      <div class="site--footer_widget">
+        <div class="nwl">
+          <h3 class="w-700 hl--sm caps lt-2 m--bottom">Newsletter</h3>
+            <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
+            {% include mailchimp.html %}
+        </div>
       </div>
     </section>
-    <div class="center">
-      <img src="/img/logo.svg" class="site--footer_logo" alt="">
-      <br />
-      ©2014 ARHWD
-    </div>
-
 </footer>
+<div class="center m--top m--bottom lt-2">
+  <img src="/img/logo.svg" class="site--footer_logo" alt="">
+  <br />
+  ©2014 ARHWD
+</div>
 
 <script src="{{ '/assets/dist/js/arwhd.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript">

@@ -1,13 +1,15 @@
 .flex {
-  @for $f from 1 through 9 {
+  @for $f from 1 through 10 {
     &--#{$f} { flex: $f 0; }
   }
 }
 
 .m {
   &--none   { margin: 0; }
+  &--all    { margin: 1rem; }
   &--right  { margin-right: 1rem; }
   &--left   { margin-left: 1rem; }
   &--top    { margin-top: 1rem; }
   &--bottom { margin-bottom: 1rem; }
+  &--b_2    { margin-bottom: 2rem; }
 }

@@ -3,26 +3,25 @@ layout: default
 ---
 <article class="posts--full">
     <header class="posts--full_header center">
-      <h1 class="w-400 lt-3 caps hl--md">
-        <a href="{{ page.link }}" class="flex center--items center--h">
-          <span class="i-bl icon--circle m--top m--bottom m--right">
-            <svg class="icon">
-              <use xlink:href="#icon-link" />
-            </svg>
-          </span>
-          <span>{{ page.title }}</span>
-        </a>
-      </h1>
+      <h1 class="w-700 lt-5 caps hl--md m--bottom"><a href="{{ page.link }}">{{ page.title }}</a></h1>
       <span class="caps lt-3 w-300 meta">
         {{ page.date | date: "%b %-d, %Y" }}
         {% if page.meta %} | {{ page.meta }}{% endif %}
       </span>
-
     </header>
-    <section class="entry">
+     <section class="entry container--spacer container--center container--sm">
       {{ content }}
+      
     </section>
     <footer class="posts--full_footer">
+      <div >
+        <a href="{{ page.link }}" class="flex center--items center--h">
+        <span class="i-bl icon--circle m--right">
+            <svg class="icon"><use xlink:href="#icon-link" /></svg>
+         </span>
+         <span class="caps lt-5">Link Here</span>
+        </a>
+      </div>
       {% include sharing.html %}
     </footer>
 </article>

@@ -3,12 +3,11 @@ layout: default
 title: Home
 ---
 
-<section class="container--md container--center">
-  <section class="">
+<section class="container--full container--center flex post--short_container m--bottom">
   {% for post in site.posts limit:7 %}
     {% if post.layout == 'link' %}
-    <article class="container--spacer flex center--items">
-      <div class="flex--1">
+    <article class="container--spacer_tb post--linkpost m--right m--bottom flex center--items">
+      <div class="m--right">
         <a href="{{ post.link }}">
         <span class="i-bl icon--circle">
           <svg class="icon">
@@ -17,28 +16,22 @@ title: Home
         </span>
         </a>
       </div>
-      <header class="flex--9">
+      <header class="flex--1_1">
         <a class="" href="{{ post.url | prepend: site.baseurl }}">
           <h2 class="w-400 lt-3 caps hl--sm post--short_link">{{ post.title }}</h2>
         </a>
       </header>
     </article>
     {% else %}
-    <article class="container--spacer  ">
-
-      <header class="container--100 m--bottom">
-        <h2><a class="w-700 hl--md" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
+    <article class="container--spacer_tb post--short m--right m--b_2">
+      <header class="container--100">
+        <h2><a class="w-700 hl--sm m--bottom" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       </header>
-      <div class="flex m--top">
-        <aside class="flex--1">
-          <div class="post--date i-bl center">
-            <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%b" }}</span>
-            <span class="post--date_item bl hl--sm w-700 lt-1 m--none">{{ post.date | date: "%d" }}</span>
-            <span class="post--date_item bl hl--xs w-300 caps lt-3">{{ post.date | date: "%Y" }}</span>
-          </div>
+      <div class="m--top">
+        <aside class=" post--date m--bottom">
+        <span class="hl--xs w-300 lt-1 caps">{{ post.date | date: "%b %-d, %Y" }}</span>
         </aside>
-        <section class="flex--9">
+        <section class="">
           {{ post.excerpt }}
         </section>
       </div>
@@ -46,5 +39,4 @@ title: Home
     </article>
     {% endif %}
   {% endfor %}
-  </section>
 </section>
