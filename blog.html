@@ -3,12 +3,14 @@ layout: default
 title: Blog
 tags: blog
 ---
-<section class="center">
-    <h2 class="w-700 lt-2 caps center">Full Blog Archive</h2>
-    {% for post in site.posts %}
-    <article class="container--spacer">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-    </article>
-    {% endfor %}
+<section class="">
+    <h2 class="w-700 lt-2 caps m--b_2 center">Full Blog Archive</h2>
+    <section class="m--top flex">
+      {% for post in site.posts %}
+        <article class="post--short m--right m--b_2">
+          <h3 class="m--top m--bottom"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <span class="caps lt-3 meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </article>
+      {% endfor %}
+    </section>
 </section>
