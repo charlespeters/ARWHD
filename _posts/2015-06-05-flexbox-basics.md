@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "Flexbox"
+title:  "Flexbox Basics"
 date: 2015-06-05 14:03:43
 categories: CSS
 
