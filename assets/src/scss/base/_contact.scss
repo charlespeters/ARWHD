@@ -21,17 +21,18 @@
 .form {
   &--input {
     background: $bkg;
-    border: 0;
+    border: 1px solid transparent;
     padding: .75rem .5rem;
     color: $darkred;
     max-width: 100%;
     font-family: inherit;
     line-height: 1;
-    transition: all 375ms linear;
+    transition: all 250ms linear;
     &:focus {
       outline: none;
       background: none;
       color: $bkg;
+      border-bottom-color: $c4;
     }
   }
   &--appearance {

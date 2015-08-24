@@ -18,7 +18,7 @@ title: Home
       </div>
       <header class="flex--1_1">
         <a class="" href="{{ post.url | prepend: site.baseurl }}">
-          <h2 class="w-400 lt-3 caps hl--sm post--short_link">{{ post.title }}</h2>
+          <h2 class="w-700 lt-2 caps hl--sm post--short_link">{{ post.title }}</h2>
         </a>
       </header>
     </article>
@@ -29,7 +29,7 @@ title: Home
       </header>
       <div class="m--top">
         <aside class=" post--date m--bottom">
-        <span class="hl--xs w-300 lt-1 caps">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="hl--xs w-400 lt-1 caps meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         </aside>
         <section class="">
           {{ post.excerpt }}

@@ -5,19 +5,19 @@
 	}
 	&_widget {
 		max-width: 100%;
-		flex: 1 0 20rem;
-		padding: 1rem;
+		margin-bottom: 2rem;
+		@include mq-min(desktop) {
+			&:not(:last-of-type) { padding: 1rem 2rem 1rem 0; }
+			&:last-of-type { padding: 1rem 0; }
+			flex: 1 0 20rem;
+		}
 	}
 }
 
-.followus {
-	padding: 0 .5rem;
-	a {
-		fill: $litered;
-		&:hover { fill: $palegold; }
-	}
-	.social--media_link { padding: .5rem; }
-}
+// .followus { padding: 0 .5rem; }
+// .followus a { fill: $litered; }
+// .followus a:hover { fill: $palegold; }
+// .followus .social--media_link { padding: .5rem; }
 
 .mccracken {
 	position: relative;

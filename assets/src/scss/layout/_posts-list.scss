@@ -1,17 +1,23 @@
 .post {
   &--short {
-    border-top: .25rem solid $palered;
-    flex: 5 0 18rem;
 
+    // flex: 5 0 18rem;
     overflow-y: hidden;
     &_container {
-      padding: 1rem .25rem 1rem 1.25rem;
-      @include mq-min(tablet) { padding: 0; }
+      // padding: 1rem .25rem 1rem 1.25rem;
+      @include mq-min(tablet) { }
     }
-    &_i { height: 250px; }
+    &_i {  }
+    &::after {
+      content: "";
+      width: 5rem;
+      margin-top: 2rem;
+      display: block;
+      border-top: .25rem solid $palered;
+    }
   }
   &--linkpost {
-    flex: 10 0 100%;
+    // flex: 10 0 100%;
   }
   &--offset {
     &_top { margin-top: -1.875rem; }
