@@ -2,10 +2,8 @@
 
 .posts--full {
   &_header {
-    padding: 2.125rem 0;
+    padding: 2.125rem .75rem;
   }
   &_hl { color: $litered; }
-  &_footer {
-    margin-bottom: 2rem;
-  }
+  &_footer { margin-bottom: 2rem; }
 }

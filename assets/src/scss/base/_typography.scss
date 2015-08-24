@@ -13,13 +13,13 @@ h5 { font-size: $baseFontSize + ($baseFontSize/8); line-height: 1.2; }
 h6 { font-size: $baseFontSize;  line-height: 1.2; }
 
 p {
-  margin-bottom: 1rem;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-size: .875rem;
-  &:last-of-type { margin-bottom: 0; }
+  line-height: 1.7;
   @include mq-min(tablet) { font-size: $baseFontSize; }
 }
+p:not(:last-of-type) { margin-bottom: 1.5rem; }
 
 strong, b { font-weight: 700; }
 em, i { font-style: italic; }
@@ -43,7 +43,7 @@ hr {
   height: .0625rem;
   width: 65%;
   border: 0;
-  margin: 1rem auto 1.5rem;
+  margin: 2.5rem auto;
 }
 
 .meta { color: $gray; }

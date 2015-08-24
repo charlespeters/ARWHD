@@ -1,17 +1,36 @@
 .entry {
   ul, ol { margin: 1rem 0; }
+  li:not(:last-of-type) {  margin-bottom: .625rem; }
+  p:first-child {
+      @include mq-min(desktop) {
+        font-size: 1.375rem;
+      }
+  }
+  p:last-of-type { margin-bottom: 1.5rem; }
+  iframe {
+    margin-bottom: 1.5rem;
+    @include mq-min(desktop) {
+      width: 150% !important;
+      margin-top: 1.5rem;
+      margin-left: -25%;
+    }
+  }
   h3 {
     color: $litered;
-    margin: .625rem 0;
-    font-size: 1.5rem;
-    font-weight: 400;
+    margin: 0 0 1.25rem;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
   }
   h4 {
-    color: $darkred;
-    text-transform: uppercase;
+    color: $c3;
+    margin: 0 0 1.25rem;
+    // text-transform: uppercase;
     font-size: 1.125rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    font-style: italic;
+    // letter-spacing: 2px;
   }
   blockquote {
     padding: .5rem 0;
