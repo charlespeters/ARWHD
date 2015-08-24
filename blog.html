@@ -3,8 +3,8 @@ layout: default
 title: Blog
 tags: blog
 ---
-<section class="">
-    <h2 class="w-700 lt-2 caps m--b_2 center">Full Blog Archive</h2>
+<!-- <section class="">
+
     <section class="m--top flex">
       {% for post in site.posts %}
         <article class="post--short m--right m--b_2">
@@ -13,4 +13,59 @@ tags: blog
         </article>
       {% endfor %}
     </section>
+</section> -->
+<section class="container--md container--center post--short_container m--bottom">
+  <h2 class="w-700 lt-2 caps m--b_2 center">Archives</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li class="m--bottom">
+      <a class="w-400 hl--b bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="hl--xs w-400 lt-1 caps meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="container--md container--center post--short_container m--bottom">
+  <h2 class="w-700 lt-2 caps m--b_2 center">Archives</h2>
+  {% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h2 class="year" id="{{ this_year }}-ref">{{this_year}}</h2>
+    <ul class="list">
+    {% endif %}
+
+    <li class="m--bottom">
+      <a class="w-400 hl--b bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="hl--xs w-400 lt-1 caps meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2 class="year" id="{{ next_year }}-ref">{{next_year}}</h2>
+        <ul class="list">
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</section>
+<section class="container--md container--center post--short_container m--bottom">
+  <h2 class="w-700 lt-2 caps m--b_2 center">Archives</h2>
+  {% for post in site.posts %}
+    <article class="container--spacer_tb post--short post--short_i m--right m--b_2">
+      <header class="container--100">
+        <h2><a class="w-700 hl--sm m--bottom" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      </header>
+      <div class="m--top">
+        <aside class=" post--date m--bottom">
+
+        </aside>
+        <!-- <section class=""> {{ post.excerpt }} </section> -->
+      </div>
+
+    </article>
+  {% endfor %}
 </section>
