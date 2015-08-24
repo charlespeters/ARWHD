@@ -4,8 +4,9 @@
 		height: auto;
 	}
 	&_widget {
-		flex: 1 0 19rem;
-		padding: 1rem 1rem 1rem 0;
+		max-width: 100%;
+		flex: 1 0 20rem;
+		padding: 1rem;
 	}
 }
 

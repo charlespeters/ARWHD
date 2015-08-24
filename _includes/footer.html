@@ -8,13 +8,12 @@
       <div class="site--footer_widget">
         <h3 class="w-700 hl--sm caps lt-2 m--bottom">About Charles</h3>
         <p><a href="http://charlespeters.net">Charles</a> is the writer behind this site, he is a designer at <a href="https://blackpixel.com/">Black Pixel</a>, a podcaster on <a href="https://viewsourc.es/">Viewsources</a> and stream of profanity on <a href="https://twitter.com/charlespeters">Twitter</a>.</p>
-        <p>ARWHD is a blog about design, front-end development and hitting your targets. Get more updates on <a href="https://twitter.com/arwhdco">Twitter</a></p>
+        <p>ARWHD is a blog about design, front-end development and hitting your targets. Get more updates on <a href="https://twitter.com/arwhdco">Twitter</a>. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
     	</div>
       <div class="site--footer_widget">
         <div class="nwl">
           <h3 class="w-700 hl--sm caps lt-2 m--bottom">Newsletter</h3>
-            <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
-            {% include mailchimp.html %}
+          {% include mailchimp.html %}
         </div>
       </div>
     </section>
