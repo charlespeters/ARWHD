@@ -1,10 +1,16 @@
 .site--nav {
   &_btn {
-    width: 3rem;
-    height: 3rem;
+
+    max-width: 100%;
+    height: 2rem;
     background: $c4;
     color: $bkg;
     padding: .25rem;
+    @include mq-min(tablet) {
+      width: 3rem;
+      height: 3rem;
+    }
+
   }
   &_item {
     flex: 1;
