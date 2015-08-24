@@ -2,8 +2,8 @@
 layout: default
 ---
 <article class="posts--full">
-    <header class="posts--full_header center">
-      <h1 class="w-700 lt-5 caps hl--md m--bottom"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+    <header class="posts--full_header container--center container--sm">
+      <h1 class="w-400 lt-2 caps hl--sm m--bottom"><a href="{{ page.link }}">{{ page.title }}</a></h1>
       <span class="caps lt-3 w-400 meta">
         {{ page.date | date: "%b %-d, %Y" }}
         {% if page.meta %} | {{ page.meta }}{% endif %}
@@ -11,7 +11,7 @@ layout: default
     </header>
      <section class="entry container--spacer container--center container--sm">
       {{ content }}
-      
+
     </section>
     <footer class="posts--full_footer">
       <div >
