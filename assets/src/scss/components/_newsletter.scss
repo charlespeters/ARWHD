@@ -3,3 +3,17 @@
   color: $bkg;
   padding: 1rem;
 }
+
+
+.nwl__input {
+  flex: 7 0 12rem;
+  max-width: 100%;
+  @include mq-min(tablet) { margin-right: 1rem; }
+}
+
+.nwl__btn {
+  flex: 3 0 12rem;
+  max-width: 100%;
+  margin-top: .5rem;
+  @include mq-min(tablet) { margin-top: 0; }
+}
