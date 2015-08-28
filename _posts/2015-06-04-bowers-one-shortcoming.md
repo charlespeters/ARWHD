@@ -4,19 +4,20 @@ title: Bower's One Shortcoming
 date: 2015-06-04
 ---
 
-I'll keep this brief. there's a lot of mindless dog-piling on Bower and package managers in general. I get it, it's an easy target but that doesn't solve the problem (neither does building another package manager).
+I'll keep this brief, there's a lot of mindless dog-piling on Bower and package managers in general. I get it, it's an easy target but that doesn't solve the problem (neither does building another package manager).
 
-[Bower](http://bower.io/) is a front-end package manager in the vein of NPM (but you can definitely put your front-end assets on NPM) or Ruby's gem system. Setup is simple, registering packages, installing them is easy. 
+[Bower](http://bower.io/) is a front-end package manager in the vein of NPM (but you can definitely put your front-end assets on NPM) or Ruby's gem system. Setup is simple, registering packages, installing them is easy.
 
 But it has one major shortcoming. If you have a front-end package with *both* CSS and Javascript it's harder to work with the contents of the package in your build process.
 
-If you're using Gulp, you might want to have a pre or post processor compile your CSS and minify all your partials into a single CSS file. So that's one task to work with most of your stylesheets. But the CSS from your Bower package needs to be concatenated in there somehow and not break your cascade. 
+If you're using Gulp, you might want to have a pre or post processor compile your CSS and minify all your partials into a single CSS file. So that's one task to work with most of your stylesheets. But the CSS from your Bower package needs to be concatenated in there somehow and not break your cascade.
 
 Let me give you an example. [Switchery](http://abpetkov.github.io/switchery/) is a nice plugin that gives you iOS style checkboxes. It needs both Javascript and CSS to execute this style of checkboxes and unsurprisingly they're both in the Bower package. So there's now a Javascript module to work with and CSS that needs concatenated.
 
-Fortunately this package use the CommonJS syntax so I can `require('')` the Javascript module in my main Javascript file and have it bundled with something like Browserify or Webpack. 
+Fortunately this package use the CommonJS syntax so I can `require('')` the Javascript module in my main Javascript file and have it bundled with something like Browserify or Webpack.
 
 But then I have the CSS to worry about.
+
 - I could copy and paste it into it's own partial (for Sass or whatever you're using to work with CSS).
 - I could find a way to resolve the path of an `@import` statement (Node Sass has a really good way of handling it).
 - I could have a concatenate step in my build process.
