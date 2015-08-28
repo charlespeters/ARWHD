@@ -6,6 +6,7 @@
         font-size: 1.375rem;
       }
   }
+  li { font-size: .875rem; @include mq-min(tablet) { font-size: $baseFontSize; } }
   p:last-of-type { margin-bottom: 1.5rem; }
   iframe {
     margin-bottom: 1.5rem;
