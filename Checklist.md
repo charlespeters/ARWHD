@@ -1,7 +1,4 @@
-ARWHD
-=====
-
-Full Site for ARWHD.co
+# Planning
 
 Done
 ----
@@ -37,9 +34,9 @@ Future Versions
 - ~~Featured Projects~~
 - Learning Resources
 - Advertising
-- Hire Button
+- ~~Hire Button~~~
 - Speed
 - Leveraging Cache
 - ~~Migrating from Icon Fonts to SVG~~
 - Category Pages
-- Links and Videos Categories
+- ~~Links and Videos Categories~~

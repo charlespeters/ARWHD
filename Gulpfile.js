@@ -14,19 +14,11 @@ var gulp        = require('gulp'),
     size        = require('gulp-size'),
     concat      = require('gulp-concat'),
     cp          = require('child_process'),
+    paths       = require('./paths'),
     name        = 'arwhd';
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-var paths = {
-  scss: 'assets/src/scss/**/*.scss',
-  js: ['assets/src/js/plugins/*.js', 'assets/src/js/*.js'],
-  icons: 'assets/src/icons/*.svg',
-  img: 'assets/src/img/*',
-  markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*'],
-  dist: 'assets/dist/'
 };
 
 // Jekyll Building
@@ -58,7 +50,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(paths.js)
+  return gulp.src('./assets/src/js/**/*')
   .pipe(size())
   .pipe(plumber())
   .pipe(concat(name+'.js'))
