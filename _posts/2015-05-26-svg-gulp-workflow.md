@@ -76,14 +76,15 @@ var paths = {
 
 In our project structure there needs to be some directory full of only SVG files to become your icon system. Illustrator & Sketch both let you export a series of artboards into multiple SVG files (assuming you have an artboard for each icon). If you don't want to draw your own and work with some I design, check these [icons](http://charlespeters.net/justafewicons/) out.
 
-
 ### Working with SVG
 
 When working with SVG for your icons you're going to use the [`<symbol>` method](https://css-tricks.com/svg-symbol-good-choice-icons/). To summarize we're going to have a block of predefined objects at the top of document in a giant `<svg>` container hidden off the page that we'll reference later with this syntax:
 
-`<svg>
+```markup
+<svg>
   <use xlink:href="#icon_gear" />
-</svg>`
+</svg>
+```
 
 ### Icons Task + Watch
 
