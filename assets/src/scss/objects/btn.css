@@ -1,0 +1,20 @@
+.o-btn {
+	border: solid 1px var(--darkred);
+	border-radius: 10px;
+	background: var(--litered);
+	color: inherit;
+	font-family: inherit;
+	font-size: var(--baseFontSize);
+	line-height: 1;
+	padding: .84375rem .5rem;
+	transition: all 375ms linear;
+
+}
+
+.o-btn:hover { background: var(--darkred); }
+
+.o-btn:focus {
+	background: var(--litegold);
+	border: var(--palegold);
+	outline: 0;
+}

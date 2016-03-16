@@ -6,15 +6,15 @@ $breakpoint--larger: 75rem; // 1200px/16px
 
 
 @mixin respond-to($media) {
-    @if $media == handhelds {
-        @media only screen and (max-width: $breakpoint--small) { @content; }
-    }
-    @else if $media == mediumscreens {
-        @media only screen and (max-width: $breakpoint--large) { @content; }
-    }
-    @else if $media == widescreens {
-        @media only screen and (min-width: $breakpoint--large) { @content; }
-    }
+  @if $media == handhelds {
+    @media only screen and (max-width: $breakpoint--small) { @content; }
+  }
+  @else if $media == mediumscreens {
+    @media only screen and (max-width: $breakpoint--large) { @content; }
+  }
+  @else if $media == widescreens {
+    @media only screen and (min-width: $breakpoint--large) { @content; }
+  }
 }
 
 
