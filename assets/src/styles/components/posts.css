@@ -1,0 +1,29 @@
+.c-post--short__link {
+  color: var(--litered);
+}
+
+.c-post--short::after {
+  content: "";
+  width: 5rem;
+  margin-top: 2rem;
+  display: block;
+  border-top: 0.25rem solid var(--palered);
+}
+
+.c-post--short__container {
+  /*padding: 1rem .25rem 1rem 1.25rem;*/
+}
+
+.c-post--short__container::after {
+  content: "";
+  width: 5rem;
+  margin-top: 2rem;
+  display: block;
+  border-top: .25rem solid var(--palered);
+}
+
+.c-post--full__hl { color: var(--litered); }
+
+.c-post--archives {
+  color: var(--palegold);
+}

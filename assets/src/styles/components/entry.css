@@ -1,0 +1,71 @@
+/* uncss:ignore */
+._s-entry::after {
+  content: "";
+  display: block;
+  background: var(--litered);
+  margin: 1rem 0;
+  width: 6rem;
+  height: 2px;
+}
+
+/* uncss:ignore */
+._s-entry ul, ol { margin: 1rem 0; }
+
+/* uncss:ignore */
+._s-entry li:not(:last-of-type) {  margin-bottom: .625rem; }
+
+/* uncss:ignore */
+._s-entry li { font-size: .875rem; }
+
+/* uncss:ignore */
+._s-entry p:last-of-type { margin-bottom: 1.5rem; }
+
+/* uncss:ignore */
+._s-entry iframe { margin-bottom: 1.5rem; }
+
+/* uncss:ignore */
+._s-entry h3 {
+  color: var(--litered);
+  margin: 0 0 1.25rem;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* uncss:ignore */
+._s-entry h4 {
+  color: var(--c3);
+  margin: 0 0 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* uncss:ignore */
+._s-entry blockquote p {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--litered);
+}
+
+/* uncss:ignore */
+.footnotes {
+  margin-top: 2rem;
+  border-top: 1px solid var(--litered);
+  padding: .5rem 0;
+}
+
+/* uncss:ignore */
+@media(--lg) {
+  /* uncss:ignore */
+  ._s-entry p:first-child {
+    font-size: 1.25rem;
+  }
+  /* uncss:ignore */
+  ._s-entry iframe {
+    width: 125% !important;
+    margin-top: 1.5rem;
+    margin-left: -12.5%;
+  }
+}

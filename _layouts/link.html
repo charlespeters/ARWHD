@@ -1,27 +1,26 @@
 ---
 layout: default
 ---
-<article class="posts--full">
-    <header class="posts--full_header container--center container--sm">
-      <h1 class="w-400 lt-2 caps hl--sm m--bottom"><a href="{{ page.link }}">{{ page.title }}</a></h1>
-      <span class="caps lt-3 w-400 meta">
-        {{ page.date | date: "%b %-d, %Y" }}
-        {% if page.meta %} | {{ page.meta }}{% endif %}
+<article class="posts--full o-container--sm u-mx-auto">
+    <header class="posts--full_header u-mb2 u-py4">
+      <h1 class="h3 c-post--full__hl u-mb2">{{ page.title }}</h1>
+      <span class="u-w400 u-lt-3 u-caps meta">
+      {{ page.date | date: "%B %-d, %Y" }}
+      {% if page.meta %} | {{ page.meta }}{% endif %}
       </span>
     </header>
-     <section class="entry container--spacer container--center container--sm">
+    <section class="_s-entry">
       {{ content }}
-
-    </section>
-    <footer class="posts--full_footer">
-      <div >
-        <a href="{{ page.link }}" class="flex center--items center--h">
-        <span class="i-bl icon--circle m--right">
-            <svg class="icon"><use xlink:href="#icon-link" /></svg>
+      <div class="u-al-center@md">
+        <a href="{{ page.link }}" class="o-icon--red">
+        <span class="o-icon--circle u-d-inbl u-mr3">
+            <svg class="o-icon"><use xlink:href="#icon-link" /></svg>
          </span>
-         <span class="caps lt-5">Link Here</span>
+         <span class="h6 u-w700 u-caps u-lt-5">Link Here</span>
         </a>
       </div>
+    </section>
+    <footer class="container--center container--sm">
       {% include sharing.html %}
     </footer>
 </article>

@@ -1,0 +1,24 @@
+.c-nav {
+  background: var(--darkred);
+}
+
+.c-nav__item {
+  flex: 1;
+  padding: 1rem;
+}
+
+.c-nav__link {
+  color: var(--bkg);
+}
+
+/*.c-nav__item:nth-child(1){ background: var(--c1); }
+.c-nav__item:nth-child(2){ background: var(--c2); }
+.c-nav__item:nth-child(3){ background: var(--c3); }
+.c-nav__item:nth-child(4){ background: var(--c4); }*/
+
+
+@media (--lg) {
+  .c-nav {
+    background: none;
+  }
+}

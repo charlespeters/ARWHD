@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Prism - Solarized Dark
+   ========================================================================== */
+
+/* Colors from Ethan Shoonover's _Solarized_:
+ * http://ethanschoonover.com/solarized
+ */
+:root {
+	--solarized_base03:  #002b36;
+	--solarized_base02:  #073642;
+	--solarized_base01:  #586e75;
+	--solarized_base00:  #657b83;
+	--solarized_base0:   #839496;
+	--solarized_base1:   #93a1a1;
+	--solarized_base2:   #eee8d5;
+	--solarized_base3:   #fdf6e3;
+	--solarized_yellow:  #b58900;
+	--solarized_orange:  #cb4b16;
+	--solarized_red:     #dc322f;
+	--solarized_magenta: #d33682;
+	--solarized_violet:  #6c71c4;
+	--solarized_blue:    #268bd2;
+	--solarized_cyan:    #2aa198;
+	--solarized_green:   #859900;
+}
+
+/* Set up the basic look and feel */
+
+code,
+kbd,
+samp {
+  /*   	background-color: $solarized_base03; */
+  color: var(--solarized_base0);
+  font-size: 87.5%;
+  line-height: 1.4;
+  padding: .25em;
+  font-family: "Source Code Pro", "Menlo", monospace;
+}
+
+pre {
+  background-color: var(--solarized_base02);
+  color: var(--solarized_base0);
+  font-size: 100%;
+  line-height: inherit;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+pre code,
+pre kbd,
+pre samp {
+  background: none;
+  direction: ltr;
+  display: block;
+  hyphens: none;
+  padding: 1.143em;
+  tab-size: 2;
+  text-align: left;
+  white-space: pre-wrap;
+  word-spacing: normal;
+}
+
+pre ::selection {
+  background: var(--solarized_base02);
+  color: inherit;
+  text-shadow: none;
+}
+pre ::-moz-selection {
+  background: var(--solarized_base02);
+  color: inherit;
+  text-shadow: none;
+}
+
+pre[class*="language-"]::before {
+  background-color: var(--solarized_base03);
+  color: var(--solarized_base00);
+  display: block;
+  font-size: 87.5%;
+  line-height: 1;
+  padding: .75rem;
+  text-align: left;
+  font-family: Helvetica;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+pre[class*="language-"] code { padding-top: .5rem; }
+
+pre.language-markup::before { content: "HTML"; }
+pre.language-css::before { content: "CSS"; }
+pre.language-scss::before { content: "SASS"; }
+pre.language-javascript::before { content: "JavaScript"; }
+pre.language-php::before { content: "PHP"; }
+pre.language-clike::before { content: "C-like"; }
+pre.language-coffeescript::before { content: "CoffeeScript"; }
+pre.language-bash::before { content: "Bash"; }
+pre.language-cpp::before { content: "C++"; }
+pre.language-python::before { content: "Python"; }
+pre.language-sql::before { content: "SQL"; }
+pre.language-http::before { content: "HTTP"; }
+
+/* General
+   ========================================================================== */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--solarized_base01);
+}
+
+.token.punctuation {
+  color: var(--solarized_base00);
+  font-weight: 400;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: var(--solarized_blue);
+  font-weight: 700;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: var(--solarized_base0);
+  font-weight: 400;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--solarized_cyan);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--solarized_cyan);
+  font-weight: 400;
+}
+
+.token.regex,
+.token.important {
+  color: var(--solarized_red);
+}
+
+.token.important {
+  font-weight: 700;
+}
+
+.token.entity {
+  color: var(--solarized_orange);
+}
+
+.language-css,
+.language-scss {
+  color: var(--solarized_blue);
+}
+.language-css .token.selector,
+.language-scss .token.selector {
+  color: var(--solarized_yellow);
+}
+.language-css .token.property,
+.language-scss .token.property {
+  color: var(--solarized_base0);
+  font-weight: 400;
+}
+.language-css .token.atrule,
+.language-scss .token.atrule {
+  color: var(--solarized_violet);
+}
+.language-css .token.variable,
+.language-scss .token.variable {
+  color: var(--solarized_magenta);
+}
+
+.language-javascript .token.keyword {
+  color: var(--solarized_blue);
+}
+.language-javascript .token.operator {
+  color: var(--solarized_green);
+}
+.language-javascript .token.string,
+.language-javascript .token.number {
+  color: var(--solarized_cyan);
+  font-weight: 400;
+}
+.language-javascript .token.boolean {
+  color: var(--solarized_yellow);
+  font-weight: 400;
+}
+.language-javascript .token.class-name {
+  color: var(--solarized_yellow);
+}
+
+.language-php .token.delimiter,
+.language-php .token.punctuation {
+  color: var(--solarized_red);
+}
+.language-php .token.constant,
+.language-php .token.boolean {
+  color: var(--solarized_yellow);
+}
+.language-php .token.operator {
+  color: var(--solarized_green);
+}
+.language-php .token.variable {
+  color: var(--solarized_blue);
+  display: inline-block;
+}
+.language-php .token.variable::first-letter {
+  color: var(--solarized_green);
+}
+.language-php .token.keyword {
+  color: var(--solarized_green);
+}
+
+.language-php .token.number {
+  color: var(--solarized_cyan);
+  font-weight: 400;
+}
+
+.language-php .token.string {
+  color: var(--solarized_cyan);
+  display: inline-block;
+}
