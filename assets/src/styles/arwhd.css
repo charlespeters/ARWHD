@@ -1,11 +1,13 @@
 /* Settings */
 
 @import 'obsidian.css/lib/settings';
+
 @import './settings/local-variables';
 
 /* Generic */
 
 @import 'obsidian.css/lib/generic';
+
 @import './generic/typography';
 @import './generic/placeholders';
 

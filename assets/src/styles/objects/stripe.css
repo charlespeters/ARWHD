@@ -1,9 +1,0 @@
-.o-stripe {
-  height: .25rem;
-  width: 100%;
-  background-image: linear-gradient(to left, var(--c1) 0%, var(--c1) 12.5%, var(--c2) 12.5%, var(--c2) 25%, var(--c3) 25%, var(--c3) 37.5%, var(--c1) 37.5%, var(--c1) 50%, var(--c2) 50%, var(--c2) 62.5%, var(--c3) 62.5%, var(--c3) 75%, var(--c1) 75%, var(--c1) 87.5%, var(--c2) 87.5%, var(--c2) 100%);
-}
-
-.o-stripe--mini {
-  background-image: linear-gradient(to left, var(--c1) 0%, var(--c1) 12.5%, var(--c2) 12.5%, var(--c2) 25%, var(--c3) 25%, var(--c3) 37.5%, var(--c1) 37.5%, var(--c1) 50%, var(--c2) 50%, var(--c2) 62.5%, var(--c3) 62.5%, var(--c3) 75%, var(--c1) 75%, var(--c1) 87.5%, var(--c2) 87.5%, var(--c2) 100%);
-}
