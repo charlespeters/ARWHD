@@ -3,39 +3,32 @@ layout: default
 title: Home
 ---
 
-<section class="container--md container--center flex post--short_container m--bottom">
+<section class="o-container--sm u-pt5 u-mx-auto">
   {% for post in site.posts limit:7 %}
     {% if post.layout == 'link' %}
-    <article class="container--spacer_tb post--linkpost m--right m--bottom flex center--items">
-      <div class="m--right">
-        <a href="{{ post.link }}">
-        <span class="i-bl icon--circle">
-          <svg class="icon">
+    <article class="c-post--short u-mb4">
+      <header class="">
+        <a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">
+          <svg class="o-icon o-icon--sm u-d-inbl u-va-middle">
             <use xlink:href="#icon-link" />
           </svg>
-        </span>
-        </a>
-      </div>
-      <header class="flex--1_1">
-        <a class="" href="{{ post.url | prepend: site.baseurl }}">
-          <h2 class="w-700 lt-2 caps hl--sm post--short_link">{{ post.title }}</h2>
+          <h2 class="h5 u-d-inbl u-va-middle u-ml2">{{ post.title }}</h2>
         </a>
       </header>
     </article>
     {% else %}
-    <article class="container--spacer_tb post--short post--short_i m--right m--b_2">
-      <header class="container--100">
-        <h2><a class="w-700 hl--sm m--bottom" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <article class="c-post--short u-mb4">
+      <header class="">
+        <h2 class="h5"><a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       </header>
-      <div class="m--top">
-        <aside class=" post--date m--bottom">
-        <span class="hl--xs w-400 lt-1 caps meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="">
+        <aside class="u-mb3">
+          <span class="u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
         </aside>
         <section class="">
           {{ post.excerpt }}
         </section>
       </div>
-
     </article>
     {% endif %}
   {% endfor %}
