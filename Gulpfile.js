@@ -9,6 +9,8 @@ var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 var cheerio     = require('gulp-cheerio');
 var svgmin      = require('gulp-svgmin');
+var nano        = require('gulp-cssnano');
+var uncss       = require('gulp-uncss');
 var svgstore    = require('gulp-svgstore');
 var size        = require('gulp-size');
 var concat      = require('gulp-concat');
@@ -52,6 +54,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('styles', function () {
   return gulp.src(paths.cssI)
   .pipe(postcss(processors))
+  .pipe(uncss({
+    html: ['./_site/**/*.html'],
+  }))
+  .pipe(nano({ mergeRules: false }))
   .pipe(size({
     showFiles: true,
     gzip: true,
