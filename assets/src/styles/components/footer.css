@@ -1,36 +1,4 @@
-.c-footer__widget {
-	max-width: 100%;
-	width: 100%;
-}
-
 .c-footer__logo {
 	max-width: 1.5rem;
 	height: auto;
-}
-
-.c-footer__quote {
-	position: relative;
-	z-index: 1;
-}
-
-.c-footer__quote::before {
-	content: "\201c";
-	display: block;
-	position: absolute;
-	top: -.75rem;
-	left: 0;
-	font-size: 5rem;
-	font-family: Georgia;
-	font-weight: 700;
-	color: color(var(--litered) a(.125));
-}
-
-
-@media (--lg) {
-	.c-footer__widget {
-		width: auto;
-		flex: 1 0 20rem;
-	}
-	.c-footer__widget:not(:last-of-type) { padding: 1rem 2rem 1rem 0; }
-	.c-footer__widget:last-of-type { padding: 1rem 0; }
 }
