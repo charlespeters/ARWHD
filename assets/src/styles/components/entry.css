@@ -53,4 +53,10 @@
   ._s-entry p:first-child {
     font-size: 1.375rem;
   }
+  
+  ._s-entry iframe {
+    width: 150% !important;
+    margin-top: 1.5rem;
+    margin-left: -25%;
+  }
 }

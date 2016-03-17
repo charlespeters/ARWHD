@@ -1,27 +1,13 @@
-html {
-  font: 300 100%/1.5 var(--sans-serif);
-  color: var(--text);
-}
-
-h1 { font-size: var(--baseFontSize) + var(--baseFontSize); line-height: 1.2; }
-h2 { font-size: var(--baseFontSize) + (var(--baseFontSize)*.75); line-height: 1.1; }
-h3 { font-size: var(--baseFontSize) + (var(--baseFontSize)/2); line-height: 1.1; }
-h4 { font-size: var(--baseFontSize) + (var(--baseFontSize)/4); line-height: 1.2; }
-h5 { font-size: var(--baseFontSize) + (var(--baseFontSize)/8); line-height: 1.2; }
-h6 { font-size: var(--baseFontSize);  line-height: 1.2; }
+html { color: var(--text); }
 
 p {
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-size: .875rem;
   line-height: 1.7;
-
 }
 
 p:not(:last-of-type) { margin-bottom: 1.5rem; }
-
-strong, b { font-weight: 700; }
-em, i { font-style: italic; }
 
 a {
   text-decoration: none;
