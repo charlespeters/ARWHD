@@ -52,7 +52,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('styles', function () {
   return gulp.src(paths.cssI)
   .pipe(postcss(processors))
-  .pipe(size())
+  .pipe(size({
+    showFiles: true,
+    gzip: true,
+  }))
   .pipe(gulp.dest('_site/' + paths.dist + 'css/'))
   .pipe(browserSync.reload({ stream: true }))
   .pipe(gulp.dest(paths.dist + 'styles/'))
@@ -87,7 +90,7 @@ gulp.task('icons', function () {
     .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
     .pipe(cheerio({
       run: function ($, file) {
-        $('svg').addClass('hidden');
+        $('svg').addClass('u-d-none');
         $('[fill]').removeAttr('fill');
       },
 
