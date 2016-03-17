@@ -50,12 +50,12 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 // Asset Building
 
 gulp.task('styles', function () {
-  return gulp.src(paths.scss)
+  return gulp.src(paths.cssI)
   .pipe(postcss(processors))
   .pipe(size())
   .pipe(gulp.dest('_site/' + paths.dist + 'css/'))
   .pipe(browserSync.reload({ stream: true }))
-  .pipe(gulp.dest(paths.dist + 'css/'))
+  .pipe(gulp.dest(paths.dist + 'styles/'))
   .pipe(gulp.dest('_includes/'));
 });
 
@@ -106,7 +106,7 @@ gulp.task('connect', ['styles', 'jekyll-build'], function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.scss, ['styles', 'jekyll-rebuild']);
+  gulp.watch([paths.cssI, paths.cssDir], ['styles', 'jekyll-rebuild']);
   gulp.watch(paths.js, ['scripts', 'jekyll-rebuild']);
   gulp.watch(paths.icons, ['icons', 'jekyll-rebuild']);
   gulp.watch(paths.img, ['images', 'jekyll-rebuild']);
