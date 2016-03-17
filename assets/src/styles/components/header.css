@@ -4,15 +4,20 @@
   max-width: 100%;
 }
 
-.c-header
-
-.c-header__logo {  }
 .c-header__img { max-width: 1.5rem; height: auto; }
 .c-header__hl {
-  margin-left: 1rem;
   color: var(--palegold);
   line-height: 1;
 }
 
 .c-header__link { color: var(--palered); }
 .c-header__link:hover { color: var(--palegold);	}
+
+
+@media (--lg) {
+  .c-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
