@@ -1,63 +1,56 @@
-.entry {
-  ul, ol { margin: 1rem 0; }
-  li:not(:last-of-type) {  margin-bottom: .625rem; }
-  p:first-child {
-      @include mq-min(desktop) {
-        font-size: 1.375rem;
-      }
-  }
-  li { font-size: .875rem; @include mq-min(tablet) { font-size: $baseFontSize; } }
-  p:last-of-type { margin-bottom: 1.5rem; }
-  iframe {
-    margin-bottom: 1.5rem;
-    @include mq-min(desktop) {
-      width: 150% !important;
-      margin-top: 1.5rem;
-      margin-left: -25%;
-    }
-  }
-  h3 {
-    color: $litered;
-    margin: 0 0 1.25rem;
-    font-size: 1.375rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-  }
-  h4 {
-    color: $c3;
-    margin: 0 0 1.25rem;
-    // text-transform: uppercase;
-    font-size: 1.125rem;
-    font-weight: 700;
-    font-style: italic;
-    // letter-spacing: 2px;
-  }
-  blockquote {
-    padding: .5rem 0;
-    @include mq-min(tablet) {
-      width: 150%;
-      margin-left: -25%;
-    }
-    p {
-      font-style: italic;
-      color: darken($gray, 12.5%);
-      @include mq-min(tablet) { font-size: 1.25rem; }
-      &:first-of-type { margin-top: 0; }
-    }
-    &::after {
-      content: "";
-      display: block;
-      background: $litered;
-      margin: 1rem 0;
-      width: 6rem;
-      height: 2px;
-    }
-  }
+._s-entry ul, ol { margin: 1rem 0; }
+._s-entry li:not(:last-of-type) {  margin-bottom: .625rem; }
+
+._s-entry li { font-size: .875rem; }
+._s-entry p:last-of-type { margin-bottom: 1.5rem; }
+
+._s-entry iframe {
+  margin-bottom: 1.5rem;
+  /*@include mq-min(desktop) {
+    width: 150% !important;
+    margin-top: 1.5rem;
+    margin-left: -25%;
+  }*/
+}
+
+._s-entry h3 {
+  color: var(--litered);
+  margin: 0 0 1.25rem;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+._s-entry h4 {
+  color: var(--c3);
+  margin: 0 0 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+._s-entry::after {
+  content: "";
+  display: block;
+  background: var(--litered);
+  margin: 1rem 0;
+  width: 6rem;
+  height: 2px;
 }
 
 .footnotes {
   margin-top: 2rem;
-  border-top: 1px solid $litered;
+  border-top: 1px solid var(--litered);
   padding: .5rem 0;
+}
+
+@media (--md) {
+  ._s-entry blockquote p { font-size: 1.25rem; }
+}
+
+@media(--lg) {
+  ._s-entry p:first-child {
+    font-size: 1.375rem;
+  }
 }

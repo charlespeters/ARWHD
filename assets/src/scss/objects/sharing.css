@@ -1,20 +1,24 @@
-.sharing {
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    li {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 1rem .5rem;
-    }
-    a { background: none; }
-    .icon {
-        fill: $litered;
-        &:hover, &:focus {
-            background: $palered;
-            width: 2.5rem;
-            height: 2.5rem;
-            fill: white;
-        }
-    }
+.o-sharing {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.o-sharing__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem .5rem;
+}
+
+.o-sharing__link {
+  background: none;
+}
+.o-sharing__icon {
+  fill: var(--litered);
+}
+
+.o-sharing__icon:hover, .o-sharing__icon:focus {
+  background: var(--palered);
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: white;
 }

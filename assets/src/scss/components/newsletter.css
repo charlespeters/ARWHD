@@ -1,0 +1,17 @@
+.c-nwl {
+  background: var(--c1);
+  color: var(--bkg);
+  padding: 1rem;
+}
+
+
+.c-nwl__input {
+  flex: 7 0 12rem;
+  max-width: 100%;
+}
+
+.c-nwl__btn {
+  flex: 3 0 12rem;
+  max-width: 100%;
+  margin-top: .5rem;
+}

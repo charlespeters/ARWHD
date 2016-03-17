@@ -1,15 +1,15 @@
 :root {
-  --text: #333;
-  --darkred: #b74435;
-  --litered: #d04d36;
-  --palered: #e16b56;
-  --litegold: #ebb734;
-  --_palegold: #e5c784;
-  --palegold: #e4be68;
-  --twitter: #0094c2;
-  --facebook: #3b5998;
-  --bkg: #f2f0eb;
-  --gray: #bbbbbb;
+  --text: #333333;
+  --darkred: #B74435;
+  --litered: #D04B36;
+  --palered: #E16B56;
+  --litegold: #EBB734;
+  --_palegold: #E5C784;
+  --palegold: #E4BE68;
+  --twitter: #0094C2;
+  --facebook: #3B5998;
+  --bkg: #F2F0EB;
+  --gray: #BBBBBB;
 
   --c1: #E36A52;
   --c2: #D76049;
@@ -25,8 +25,7 @@
 
   --baseFontWeight: 400 !default;
   --baseFontSize: 1rem !default;
-  --baseFontFamily: $sans-serif;
-
+  --baseFontFamily: var(--sans-serif);
 
   --w: 68rem;
 }

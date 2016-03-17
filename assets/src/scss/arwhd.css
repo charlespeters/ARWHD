@@ -1,0 +1,42 @@
+/* Settings */
+
+@import 'obsidian.css/lib/settings';
+@import './settings/local-variables';
+
+/* Generic */
+
+@import 'obsidian.css/lib/generic';
+@import './generic/typography';
+@import './generic/placeholders';
+
+/* Elements */
+
+@import 'obsidian.css/lib/elements';
+
+/* Objects */
+
+@import 'obsidian.css/lib/objects';
+@import './objects/stripe';
+@import './objects/btn';
+@import './objects/fields';
+@import './objects/prism';
+@import './objects/icons';
+
+/* Components */
+
+@import './components/header';
+@import './components/newsletter';
+@import './components/footer';
+@import './components/navigation';
+@import './components/posts-list';
+@import './components/entry';
+@import './components/blog';
+
+/* Utilities */
+
+@import 'obsidian.css/lib/utilities';
+
+html {
+	background: var(--bkg);
+	box-sizing: border-box;
+}

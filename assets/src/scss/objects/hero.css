@@ -1,10 +1,10 @@
-.hero {
+.o-hero {
   background: var(--darkred) url('../img/newarw.png') no-repeat right top;
   background-size: contain;
   position: relative;
 }
 
-.hero:after {
+.o-hero:after {
   content: "";
   width: 0;
   height: 0;
