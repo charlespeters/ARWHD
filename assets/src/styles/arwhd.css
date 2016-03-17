@@ -11,13 +11,22 @@
 
 /* Elements */
 
-@import 'obsidian.css/lib/elements';
+@import 'obsidian.css/lib/elements/obsidian.forms';
+@import 'obsidian.css/lib/elements/obsidian.headlines';
+@import 'obsidian.css/lib/elements/obsidian.body-text';
+@import 'obsidian.css/lib/elements/obsidian.images';
+@import 'obsidian.css/lib/elements/obsidian.lists';
 
 /* Objects */
 
-@import 'obsidian.css/lib/objects';
-@import './objects/stripe';
-@import './objects/btn';
+@import 'obsidian.css/lib/objects/obsidian.icons';
+@import 'obsidian.css/lib/objects/obsidian.containers';
+@import 'obsidian.css/lib/objects/obsidian.intrinsic';
+@import 'obsidian.css/lib/objects/obsidian.flex-container';
+@import 'obsidian.css/lib/objects/obsidian.flex-modifiers';
+@import 'obsidian.css/lib/objects/obsidian.btns';
+@import 'obsidian.css/lib/objects/obsidian.forms-ui';
+
 @import './objects/fields';
 @import './objects/prism';
 @import './objects/icons';
@@ -28,15 +37,12 @@
 @import './components/newsletter';
 @import './components/footer';
 @import './components/navigation';
-@import './components/posts-list';
+@import './components/posts';
 @import './components/entry';
-@import './components/blog';
 
 /* Utilities */
 
-@import 'obsidian.css/lib/utilities';
-
-html {
-	background: var(--bkg);
-	box-sizing: border-box;
-}
+@import 'obsidian.css/lib/utilities/obsidian.display';
+@import 'obsidian.css/lib/utilities/obsidian.spacing';
+@import 'obsidian.css/lib/utilities/obsidian.align';
+@import 'obsidian.css/lib/utilities/obsidian.typography';

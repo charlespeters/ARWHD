@@ -20,11 +20,14 @@
   --line-length: 40rem;
   --letter-spacing: 1px;
 
-  --sans-serif: 'Whitney SSm A', 'Whitney SSm B', 'Myriad Pro', Avenir, Lucida Grande, sans-serif !default;
-  --mono: 'Source Code Pro' !default;
+  --whitney: 'Whitney SSm A', 'Whitney SSm B', 'Myriad Pro', Avenir, Lucida Grande, sans-serif;
+  --ff-mono: 'Source Code Pro', Menlo, monospace;
+  --ff-w: 400;
 
-  --baseFontWeight: 400 !default;
-  --baseFontSize: 1rem !default;
+  --headlines: var(--whitney);
+  --body-text: var(--whitney);
+  --baseFontWeight: 400;
+  --baseFontSize: 1rem;
   --baseFontFamily: var(--sans-serif);
 
   --w: 68rem;

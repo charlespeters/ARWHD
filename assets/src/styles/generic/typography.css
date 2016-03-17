@@ -1,4 +1,7 @@
-html { color: var(--text); }
+html {
+  color: var(--text);
+  background: var(--bkg);
+}
 
 p {
   word-wrap: break-word;
