@@ -4,14 +4,19 @@
   padding: 1rem;
 }
 
-
 .c-nwl__input {
-  flex: 7 0 12rem;
+  flex: 8;
   max-width: 100%;
 }
 
 .c-nwl__btn {
-  flex: 3 0 12rem;
+  flex: 0 2 12rem;
   max-width: 100%;
-  margin-top: .5rem;
+}
+
+@media (--lg) {
+  .c-nwl__form {
+    display: flex;
+    align-items: flex-end;
+  }
 }
