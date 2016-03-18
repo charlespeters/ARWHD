@@ -1,8 +1,3 @@
-window.onload = function () {
-  fitVids('.entry');
-  loadCSS('//cloud.typography.com/7107912/754766/css/fonts.css');
-};
-
 // ServiceWorker is a progressive technology. Ignore unsupported browsers
 if ('serviceWorker' in navigator) {
   console.log('CLIENT: service worker registration in progress.');
@@ -14,5 +9,3 @@ if ('serviceWorker' in navigator) {
 } else {
   console.log('CLIENT: service worker is not supported.');
 };
-
-console.log('stuff is happening');
