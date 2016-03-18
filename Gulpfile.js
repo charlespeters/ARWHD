@@ -84,6 +84,7 @@ function bundle() {
       .pipe(buffer())
       .on('error', gutil.log)
       .pipe(uglify())
+      .on('error', gutil.log)
     .pipe(gulp.dest('./assets/dist/scripts/'))
     .pipe(browserSync.reload({ stream: true }));
 };
