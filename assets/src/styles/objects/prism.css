@@ -79,7 +79,7 @@ pre[class*="language-"]::before {
   line-height: 1;
   padding: .75rem;
   text-align: left;
-  font-family: Helvetica;
+  font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
 }
