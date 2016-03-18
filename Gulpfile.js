@@ -9,6 +9,7 @@ var babelify    = require('babelify');
 var watchify    = require('watchify');
 var source      = require('vinyl-source-stream');
 var buffer      = require('vinyl-buffer');
+var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 var cheerio     = require('gulp-cheerio');
 var svgmin      = require('gulp-svgmin');
@@ -72,15 +73,18 @@ gulp.task('styles', () => {
 });
 
 // Transpile JavaScript through Browserify with Babel
-const bundler = watchify(browserify(paths.js.inp, watchify.args));
+const bundler = watchify(browserify('./assets/src/scripts/global.js', watchify.args));
 
 function bundle() {
   return bundler
     .transform(babelify)
     .bundle()
+    .on('error', gutil.log)
     .pipe(source('./bundle.js'))
       .pipe(buffer())
-    .pipe(gulp.dest(paths.js.dist))
+      .on('error', gutil.log)
+      .pipe(uglify())
+    .pipe(gulp.dest('./assets/dist/scripts/'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
@@ -143,5 +147,5 @@ gulp.task('watch', function () {
 });
 
 // Task Registry
-gulp.task('build', ['styles', 'scripts', 'images', 'jekyll-rebuild']);
-gulp.task('default', ['build', 'connect', 'watch']);
+gulp.task('build', ['styles', 'scripts', 'images']);
+gulp.task('default', ['build', 'jekyll-rebuild', 'connect', 'watch']);
