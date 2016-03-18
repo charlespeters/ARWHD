@@ -6,8 +6,9 @@ var fonts = '//cloud.typography.com/7107912/754766/css/fonts.css';
 
 var arwhd = window.arwhd || {};
 
-arwhd.CSS = stylesheet(fonts);
+arwhd.Worker = require('./lib/sw');
 arwhd.Tracking = require('./lib/tracking');
+arwhd.CSS = stylesheet(fonts);
 arwhd.Highlighting = prism;
 arwhd.Fit = fitvids('._s-entry');
 
