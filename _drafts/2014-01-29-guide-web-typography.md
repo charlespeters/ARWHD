@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "A Guide to Web Typography"
-categories:
-- UI/UX Design
 status: publish
 type: post
 ---
+
 The internet is a sea of type. You can drown in content. Good typography can hold your audiences attention, create a strong information hierarchy and build visual identity &amp; recognition with your audience.
 
 Bad typography is everywhere. But you don’t need be an amazing designer to have strong typographic skills. In fact learning strong typographic principles can vastly improve your designs and you as a designer.
@@ -72,15 +71,15 @@ The reason this is important is because it effects the ways fonts visually rende
 
 ### Resources
 
-*   [Typekit Lists](https://typekit.com/lists)
-*   [A Pocket Guide to Master Every Day’s Typographic Adventures](http://www.typogui.de/)
-*   [Jason Santa Maria’s Build Conference Talk](http://vimeo.com/34178417)
-*   [Typography In Ten Minutes](http://practicaltypography.com/typography-in-ten-minutes.html)
-*   [Elements of Typographic Style (as Applied to the Web)](http://www.webtypography.net/)
-*   [Typewolf — Typographic Inspiration for the Modern Web](http://www.typewolf.com/)
-*   [Upping Your Type Game — Jessica Hische](http://jessicahische.is/thinkingthoughts)
-*   [Just My Type — A Collection of Font Pairings from Daniel Eden](http://justmytype.co/)
-*   [Cure for the Common Web Font](http://typographica.org/on-typography/intro-to-typeface-selection/)
+* [Typekit Lists](https://typekit.com/lists)
+* [A Pocket Guide to Master Every Day’s Typographic Adventures](http://www.typogui.de/)
+* [Jason Santa Maria’s Build Conference Talk](http://vimeo.com/34178417)
+* [Typography In Ten Minutes](http://practicaltypography.com/typography-in-ten-minutes.html)
+* [Elements of Typographic Style (as Applied to the Web)](http://www.webtypography.net/)
+* [Typewolf — Typographic Inspiration for the Modern Web](http://www.typewolf.com/)
+* [Upping Your Type Game — Jessica Hische](http://jessicahische.is/thinkingthoughts)
+* [Just My Type — A Collection of Font Pairings from Daniel Eden](http://justmytype.co/)
+* [Cure for the Common Web Font](http://typographica.org/on-typography/intro-to-typeface-selection/)
 
 * * *
 
