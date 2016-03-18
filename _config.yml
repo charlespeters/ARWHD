@@ -6,6 +6,7 @@ description: >
   A blog about design, front-end development and hitting your targets.
 baseurl: ""
 url: "http://arwhd.co"
+gems: [jekyll-paginate]
 paginate: 3
 paginate_path: "blog/page:num"
 
