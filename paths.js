@@ -5,7 +5,7 @@ var paths = {
   jsI: './assets/src/js/index.js',
   icons: 'assets/src/icons/*.svg',
   img: 'assets/src/img/*',
-  markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*'],
+  markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*', '_drafts/*'],
   dist: './assets/dist/',
 };
 

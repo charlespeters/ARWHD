@@ -14,6 +14,7 @@ var uncss       = require('gulp-uncss');
 var svgstore    = require('gulp-svgstore');
 var size        = require('gulp-size');
 var concat      = require('gulp-concat');
+var psi         = require('psi');
 var cp          = require('child_process');
 var paths       = require('./paths');
 var name        = 'arwhd';
@@ -41,8 +42,7 @@ var messages = {
 
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('jekyll', ['build'], { stdio: 'inherit' })
-    .on('close', done);
+  return cp.spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' }).on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
@@ -103,6 +103,17 @@ gulp.task('icons', function () {
       parserOptions: { xmlMode: true },
     }))
     .pipe(gulp.dest('./_includes/'));
+});
+
+gulp.task('details', function () {
+  var site = 'http://arwhd.co/';
+  return psi(site, {
+      nokey: 'true',
+      strategy: 'mobile',
+    }).then(function (data) {
+      console.log('Speed score: ' + data.ruleGroups.SPEED.score);
+      console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
+    });
 });
 
 // Connect & Deploy
