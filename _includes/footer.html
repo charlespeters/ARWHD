@@ -18,11 +18,12 @@
 </div>
 
 <script src="{{ '/assets/dist/scripts/bundle.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/dist/js/bundle.js' | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
-  arwhd.Highlighting();
-  arwhd.Tracking();
-  arwhd.Loader();
-  arwhd.Fit();
+  (function () {
+    arwhd.Highlighting;
+    arwhd.Tracking;
+    arwhd.Fit();
+    arwhd.CSS();
+  });
 </script>
