@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = function () {
   var _gauges = _gauges || [];
   var t   = document.createElement('script');
   t.type  = 'text/javascript';
@@ -9,6 +9,4 @@ module.exports = () => {
   t.src = 'https://track.gaug.es/track.js';
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(t, s);
-
-  c
 };

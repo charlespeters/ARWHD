@@ -1,6 +1,4 @@
-const loadCSS = require('fg-loadcss');
-
-module.exports = () => {
-  loadCSS('//cloud.typography.com/7107912/754766/css/fonts.css');
-  console.log('Loaded loadCSS');
+module.exports = function (link) {
+  var stsh = document.querySelectorAll('[data-font-link]');
+  stsh[0].setAttribute('href', link);
 };
