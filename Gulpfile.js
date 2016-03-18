@@ -4,8 +4,11 @@ var plumber     = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload();
 var postcss     = require('gulp-postcss');
-var concat      = require('gulp-concat');
-var uglify      = require('gulp-uglify');
+var browserify  = require('browserify');
+var babelify    = require('babelify');
+var watchify    = require('watchify');
+var source      = require('vinyl-source-stream');
+var buffer      = require('vinyl-buffer');
 var imagemin    = require('gulp-imagemin');
 var cheerio     = require('gulp-cheerio');
 var svgmin      = require('gulp-svgmin');
@@ -51,7 +54,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
 // Asset Building
 
-gulp.task('styles', function () {
+gulp.task('styles', () => {
   return gulp.src(paths.cssI)
   .pipe(postcss(processors))
   .pipe(uncss({
@@ -68,16 +71,21 @@ gulp.task('styles', function () {
   .pipe(gulp.dest('_includes/'));
 });
 
-gulp.task('scripts', function () {
-  return gulp.src('./assets/src/js/**/*')
-  .pipe(size())
-  .pipe(plumber())
-  .pipe(concat(name + '.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('_site/' + paths.dist + 'js/'))
-  .pipe(browserSync.reload({ stream: true }))
-  .pipe(gulp.dest(paths.dist + 'js/'));
-});
+// Transpile JavaScript through Browserify with Babel
+const bundler = watchify(browserify(paths.js.inp, watchify.args));
+
+function bundle() {
+  return bundler
+    .transform(babelify)
+    .bundle()
+    .pipe(source('./bundle.js'))
+      .pipe(buffer())
+    .pipe(gulp.dest(paths.js.dist))
+    .pipe(browserSync.reload({ stream: true }));
+};
+
+bundler.on('update', bundle);
+gulp.task('scripts', bundle);
 
 gulp.task('images', function () {
   return gulp.src(paths.img)
@@ -121,13 +129,14 @@ gulp.task('connect', ['styles', 'jekyll-build'], function () {
   browserSync({
     server: {
       baseDir: '_site',
+      https: true,
     },
   });
 });
 
 gulp.task('watch', function () {
   gulp.watch([paths.cssI, paths.cssDir], ['styles', 'jekyll-rebuild']);
-  gulp.watch(paths.js, ['scripts', 'jekyll-rebuild']);
+  gulp.watch(paths.js.src, ['scripts', 'jekyll-rebuild']);
   gulp.watch(paths.icons, ['icons', 'jekyll-rebuild']);
   gulp.watch(paths.img, ['images', 'jekyll-rebuild']);
   gulp.watch(paths.markup, ['jekyll-rebuild']);
