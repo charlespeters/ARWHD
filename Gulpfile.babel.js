@@ -1,4 +1,4 @@
-var gulp        = require('gulp');
+import gulp from 'gulp';
 var gutil       = require('gulp-util');
 var plumber     = require('gulp-plumber');
 var browserSync = require('browser-sync');
