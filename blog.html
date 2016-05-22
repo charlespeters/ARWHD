@@ -18,8 +18,8 @@ tags: blog
     {% endif %}
 
     <li class="u-mb3 bl">
-      <a class="u-w700 h6 u-d-bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <a class="u-w700 h6 u-bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
     </li>
 
     {% if forloop.last %}
