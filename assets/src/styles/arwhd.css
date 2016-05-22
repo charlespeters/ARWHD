@@ -23,6 +23,7 @@
 
 @import 'obsidian.css/lib/objects/obsidian.icons';
 @import 'obsidian.css/lib/objects/obsidian.containers';
+@import 'obsidian.css/lib/objects/obsidian.grid';
 @import 'obsidian.css/lib/objects/obsidian.intrinsic';
 @import 'obsidian.css/lib/objects/obsidian.flex-container';
 @import 'obsidian.css/lib/objects/obsidian.flex-modifiers';
@@ -48,3 +49,4 @@
 @import 'obsidian.css/lib/utilities/obsidian.spacing';
 @import 'obsidian.css/lib/utilities/obsidian.align';
 @import 'obsidian.css/lib/utilities/obsidian.typography';
+@import 'obsidian.css/lib/utilities/obsidian.floats';
