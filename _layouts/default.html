@@ -8,7 +8,14 @@
     <main role="main" class="u-p3">
       {{ content }}
     </main>
+    {% if page.home == true %}
+      {% include layout-footer.html %}
+    {% else %}
+      {% include layout-footer-stacked.html %}
+    {% endif %}
 
-    {% include layout-footer.html %}
+
+    {% include snippet-copyright.html %}
+    {% include snippet-scripts.html %}
   </body>
 </html>
