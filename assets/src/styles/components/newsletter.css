@@ -1,7 +1,7 @@
 .c-nwl {
   background: var(--c1);
   color: var(--bkg);
-  padding: 1rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .c-nwl__input {
@@ -10,7 +10,7 @@
 }
 
 .c-nwl__btn {
-  flex: 0 2 12rem;
+  flex: 0 2 8rem;
   max-width: 100%;
 }
 

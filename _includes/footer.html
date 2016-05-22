@@ -1,11 +1,11 @@
-<footer class="c-footer o-container--sm u-mx-auto u-mb4 u-p3 u-p0@lg">
-    <section>
-      <div class="u-mb4">
+<footer class="c-footer o-container--full u-mx-auto u-mb4 u-p3 u-p0@lg">
+    <section class="u-cf">
+      <div class="o-grid__col--6/12@lg u-pr2@lg u-fl@lg u-mb4">
         <h3 class="h6 u-caps u-lt-2 u-mb2">About Charles</h3>
         <small class="small"><a href="http://charlespeters.net">Charles</a> is the writer behind this site, he is a designer, a podcaster on <a href="https://viewsourc.es/">Viewsources</a> and stream of profanity on <a href="https://twitter.com/charlespeters">Twitter</a>. ARWHD is a blog about design, front-end development and hitting your targets. Get more updates on <a href="https://twitter.com/arwhdco">Twitter</a>. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</small>
     	</div>
-      <div class="">
-        <div class="c-nwl">
+      <div class="o-grid__col--6/12@lg u-pl2@lg u-fl@lg u-mb4">
+        <div class="c-nwl u-p3">
           <h3 class="h6 u-caps u-lt-2 u-mb2">Newsletter</h3>
           {% include newsletter.html %}
         </div>
@@ -14,7 +14,7 @@
 </footer>
 <div class="u-center u-mb4 u-lt-2">
   <img src="/img/logo.svg" class="c-footer__logo u-d-bl u-mx-auto u-mb3" alt="">
-  ©2016 ARWHD
+  <span class="u-bl small">©2016 ARWHD</span>
 </div>
 
 <script src="{{ '/assets/dist/scripts/bundle.js' | prepend: site.baseurl }}"></script>
