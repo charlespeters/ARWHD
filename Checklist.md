@@ -20,7 +20,7 @@ To Do
 - [ ] Organize Categories
 - [ ] 404
 - [ ] New Icons
-- [ ] Menu Animation
+- [x] Menu Animation
 - [x] Disqus
 
 Known Issues
@@ -35,8 +35,8 @@ Future Versions
 - Learning Resources
 - Advertising
 - ~~Hire Button~~~
-- Speed
-- Leveraging Cache
+- ~~Speed~~
+- ~~Leveraging Cache~~
 - ~~Migrating from Icon Fonts to SVG~~
 - Category Pages
 - ~~Links and Videos Categories~~
