@@ -27,6 +27,8 @@ ol, ul {
   list-style-position: inside;
 }
 
+
+
 hr {
   background: var(--palegold);
   height: .0625rem;
@@ -38,5 +40,5 @@ hr {
 .meta { color: var(--gray); }
 
 @media (--md) {
-  p { font-size: var(--baseFontSize); }
+  p, li { font-size: var(--baseFontSize); }
 }

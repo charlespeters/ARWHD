@@ -3,33 +3,34 @@ layout: default
 title: Home
 ---
 
-<section class="o-container--sm u-pt5 u-mx-auto">
-  {% for post in site.posts limit:7 %}
-    {% if post.layout == 'link' %}
-    <article class="c-post--short u-mb4">
-      <header class="">
-        <a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">
-          <svg class="o-icon o-icon--sm u-d-inbl u-va-middle">
-            <use xlink:href="#icon-link" />
-          </svg>
-          <h2 class="h5 u-d-inbl u-va-middle u-ml2">{{ post.title }}</h2>
-        </a>
-      </header>
-    </article>
-    {% else %}
-    <article class="c-post--short u-mb4">
-      <header class="">
-        <h2 class="h5"><a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      </header>
-      <div class="">
-        <aside class="u-mb3">
-          <span class="u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-        </aside>
-        <section class="">
-          {{ post.excerpt }}
-        </section>
-      </div>
-    </article>
-    {% endif %}
-  {% endfor %}
+<section class="o-container--full u-cf u-pt5 u-mx-auto">
+  <div class="o-grid__col--8/12@lg u-pr3@lg u-fl@lg">
+    {% for post in site.posts limit:7 %}
+      <article class="c-post--short u-mb4">
+        <div class="c-post--short__container" style="">
+          <header class="u-mb3">
+            <h2 class="h6">
+              <a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <span class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+          </header>
+          <section>
+            <p class="small u-system">
+              {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
+            </p>
+          </section>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <div class="o-grid__col--4/12@lg u-pl3@lg u-fl@lg">
+    <h4 class="u-caps u-lt-5 h5 u-mb3">Links</h4>
+    <ul class="list--reset">
+      {% for link in site.links %}
+        <li class="u-system u-mb2">
+          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

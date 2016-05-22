@@ -24,6 +24,8 @@
   --ff-mono: 'Source Code Pro', Menlo, monospace;
   --ff-w: 400;
 
+  --shadow-sm: 0 0 5px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .125);
+
   --headlines: var(--whitney);
   --body-text: var(--whitney);
   --baseFontWeight: 400;
