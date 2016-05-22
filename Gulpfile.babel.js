@@ -58,7 +58,6 @@ const styles = () => {
     }))
     .pipe(gulp.dest(paths.css.dest))
     .pipe(gulp.dest('./_site/assets/dist/styles/'))
-    .pipe(gulp.dest('./_includes/'))
     .pipe(bs.stream());
 };
 
