@@ -24,7 +24,7 @@ import buffer from 'vinyl-buffer';
 import browserSync from 'browser-sync';
 import paths from './paths';
 
-const cp = require('child_process');
+const spawn = require('child_process').spawn;
 const bs = browserSync.create();
 
 // Asset Building
@@ -129,18 +129,18 @@ const icons = () => {
 // Jekyll
 /////////////////////////
 
-const messages = {
-  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
+const jekyll = () => {
+  return spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' }).on('close', () => {
+    bs.notify('Jekyll Built!');
+  });
 };
 
-const jekyll = (done) => {
-  browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' }).on('close', done);
+
+const templates = () => {
+  return gulp.src('./_site/').pipe(bs.stream());
 };
 
-const rejekyll = gulp.series(jekyll, () => {
-  return bs.stream();
-});
+const rejekyll = gulp.series(jekyll, templates);
 
 // Clean Build Directory
 /////////////////////////
@@ -161,22 +161,22 @@ const connect = () => bs.init({
 /////////////////////////
 
 const watch = () => {
-  gulp.watch(paths.css.all, gulp.series(styles, rejekyll));
-  gulp.watch(paths.js.all, gulp.series(scripts, rejekyll));
+  gulp.watch(paths.css.all, styles);
+  gulp.watch(paths.js.all, scripts);
   gulp.watch(paths.markup, rejekyll);
-  gulp.watch(paths.icons.src, gulp.series(icons, rejekyll));
-  gulp.watch(paths.img.src, gulp.series(images, rejekyll));
+  gulp.watch(paths.icons.src, icons);
+  gulp.watch(paths.img.src, images);
 };
 
 // Default Tasks
 /////////////////////////
 
-const build = gulp.parallel(styles, scripts, icons, rejekyll, images);
+const build = gulp.parallel(styles, scripts, icons, images);
 
 // Exports Functions as Proper Tasks
 
 export { build, clean, styles, scripts, icons, images, watch, connect, jekyll, rejekyll };
 
-const all = gulp.series(clean, gulp.parallel(build, connect, watch));
+const all = gulp.series(clean, jekyll, gulp.parallel(build, connect, watch));
 
 export default all;
