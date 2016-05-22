@@ -46,7 +46,10 @@ const styles = () => {
       },
     }),
     papply,
-    nano({ mergeRules: false })
+    nano({
+      autoprefixer: false,
+      mergeRules: false
+    })
   ];
 
   return gulp.src(paths.css.src)
@@ -111,7 +114,7 @@ const icons = () => {
   return gulp.src(paths.icons.src)
     .pipe(svgmin())
     .pipe(svgstore({
-      fileName: 'icons.svg',
+      fileName: 'meta-icons.svg',
       inlineSvg: true
     }))
     .pipe(cheerio({
@@ -121,6 +124,7 @@ const icons = () => {
       },
       parserOptions: { xmlMode: true },
     }))
+    .pipe(rename('meta-icons.svg'))
     .pipe(gulp.dest(paths.icons.dest))
     .pipe(bs.stream());
 };
