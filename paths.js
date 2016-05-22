@@ -15,7 +15,10 @@ var paths = {
     src: './assets/src/icons/*.svg',
     dest: './_includes/'
   },
-  img: 'assets/src/img/*',
+  img: {
+    src: './assets/src/img/*',
+    dest: './assets/dist/img/'
+  },
   markup: ['./*.html', './*.md', '_includes/*.html', '_layouts/*.html', '_posts/*', '_drafts/*'],
   dist: './assets/dist/',
   build: './_site/'
