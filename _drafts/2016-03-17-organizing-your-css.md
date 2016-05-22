@@ -5,7 +5,9 @@ date:   2016-03-17 14:03:43
 categories: CSS
 ---
 
-CSS needs an architecture to it or it will inevitably fall apart over time. The more projects the you end up working on the harder they are to maintain over time. When you need to go to work on them or invite someone else to work on them your thinking and rational for your choices needs to be explained for any type of cohesion or maintainability. There's tons of little decisions you make when you start writing CSS just to start with, like your class names, your selectors, or the order of your declarations. If you're using a preprocessor, like Sass, then there's your partials, variables, file structure and mixins to consider along with the others.
+CSS needs an architecture to it or it will inevitably fall apart over time. The more projects the you end up working on the harder they are to maintain over time. When you need to go to work on them or invite someone else to work on them your thinking and rational for your choices needs to be explained for any type of cohesion or maintainability.
+
+There's tons of little decisions you make when you start writing CSS just to start with, like your class names, your selectors, or the order of your declarations. If you're using a preprocessor, like Sass, then there's your partials, variables, file structure and mixins to consider along with the others.
 
 Then there's performance. Smarter selectors, modular code, reusable classes all equal faster pages. Just that point can spawn a different (and probably longer) post. Suffice to say, smaller file size and consistent naming lead to a
 
