@@ -100,7 +100,9 @@ const images = () => {
       showFiles: true,
       gzip: true,
     }))
-    .pipe(gulp.dest(paths.img.dest));
+    .pipe(gulp.dest(paths.img.dest))
+    .pipe(gulp.dest('./_site/assets/dist/img/'))
+    .pipe(bs.stream());
 };
 
 // Icons as SVG Sprite
@@ -149,6 +151,7 @@ const clean = () => del(paths.build);
 /////////////////////////
 
 const connect = () => bs.init({
+  port: 8080,
   server: {
     baseDir: paths.build,
   },
@@ -165,14 +168,15 @@ const watch = () => {
   gulp.watch(paths.img.src, gulp.series(images, rejekyll));
 };
 
-// Exports Functions as Proper Tasks
-
-export { clean, styles, scripts, icons, images, watch, connect, jekyll, rejekyll };
-
 // Default Tasks
 /////////////////////////
 
-const build = gulp.series(clean, gulp.parallel(styles, scripts, rejekyll, images));
-const all = gulp.series(build, gulp.parallel(connect, watch));
+const build = gulp.parallel(styles, scripts, icons, rejekyll, images);
+
+// Exports Functions as Proper Tasks
+
+export { build, clean, styles, scripts, icons, images, watch, connect, jekyll, rejekyll };
+
+const all = gulp.series(clean, gulp.parallel(build, connect, watch));
 
 export default all;
