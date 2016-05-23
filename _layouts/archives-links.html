@@ -13,7 +13,8 @@ layout: default
 
   <div class="u-py3">
     <ul class="list--reset">
-      {% for link in site.links | sort:"date" %}
+      {% assign sorted = (site.links | sort: 'date') | reverse %}
+      {% for link in sorted %}
         <li class="u-system u-mb3">
           <a href="{{ link.url | prepend: site.baseurl }}" class="u-w700 h6 u-bl">{{ link.title }}</a>
           <span class="small u-bl u-w400 u-lt-3 u-caps meta">{{ link.date | date: "%B %-d, %Y" }}</span>
