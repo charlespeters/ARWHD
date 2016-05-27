@@ -1,26 +1,28 @@
 ---
 layout: default
 ---
-<article class="o-container--sm u-mx-auto posts--full m--bottom">
+<article class="o-container--sm u-mx-auto">
 
   <header class="posts--full_header u-py4">
     <h1 class="h4 c-post--full__hl">{{ page.title }}</h1>
   </header>
 
   <section class="_s-entry">
+
     {{ content }}
+
+    <div class="u-py3">
+      <ul class="list--reset">
+        {% assign sorted = (site.links | sort: 'date') | reverse %}
+        {% for link in sorted %}
+          <li class="u-system u-mb3">
+            <a href="{{ link.url | prepend: site.baseurl }}" class="u-w700 h6 u-bl">{{ link.title }}</a>
+            <span class="small u-bl u-w400 u-lt-3 u-caps meta">{{ link.date | date: "%B %-d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
 
-  <div class="u-py3">
-    <ul class="list--reset">
-      {% assign sorted = (site.links | sort: 'date') | reverse %}
-      {% for link in sorted %}
-        <li class="u-system u-mb3">
-          <a href="{{ link.url | prepend: site.baseurl }}" class="u-w700 h6 u-bl">{{ link.title }}</a>
-          <span class="small u-bl u-w400 u-lt-3 u-caps meta">{{ link.date | date: "%B %-d, %Y" }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
 
 </article>
