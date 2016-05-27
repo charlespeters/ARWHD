@@ -39,6 +39,7 @@
 @import './components/header';
 @import './components/newsletter';
 @import './components/footer';
+@import './components/sidebar';
 @import './components/navigation';
 @import './components/posts';
 @import './components/entry';
