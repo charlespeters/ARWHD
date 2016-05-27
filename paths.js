@@ -2,12 +2,12 @@ var paths = {
   css: {
     src: './_assets/styles/arwhd.css',
     all: './_assets/styles/**/*.css',
-    dest: './assets/dist/styles/'
+    dest: './assets/dist/'
   },
   js: {
     src: './_assets/scripts/global.js',
     all: './_assets/scripts/**/*.js',
-    dest: './assets/dist/scripts/',
+    dest: './assets/dist/',
   },
   icons: {
     src: './_assets/icons/*.svg',
