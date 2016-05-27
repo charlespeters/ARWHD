@@ -34,3 +34,5 @@
 
   --w: 68rem;
 }
+
+@custom-media --xxl only screen and (width >= 97rem);

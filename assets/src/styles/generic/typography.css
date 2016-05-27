@@ -27,8 +27,6 @@ ol, ul {
   list-style-position: inside;
 }
 
-
-
 hr {
   background: var(--palegold);
   height: .0625rem;
@@ -41,4 +39,8 @@ hr {
 
 @media (--md) {
   p, li { font-size: var(--baseFontSize); }
+}
+
+@media (--xxl) {
+  html { font-size: 112.5%; }
 }
