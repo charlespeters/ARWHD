@@ -10,7 +10,5 @@
 .c-nav__link { color: var(--bkg); }
 
 @media (--lg) {
-  .c-nav {
-    background: none;
-  }
+  .c-nav { background: none; }
 }

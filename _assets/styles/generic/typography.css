@@ -35,8 +35,6 @@ hr {
   margin: 2.5rem auto;
 }
 
-.meta { color: var(--gray); }
-
 @media (--md) {
   p, li { font-size: var(--baseFontSize); }
 }

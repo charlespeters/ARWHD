@@ -13,7 +13,7 @@
   outline: none;
   background: none;
   color: var(--bkg);
-  border-bottom-color: var(--c4);
+  border-color: var(--c4);
 }
 
 .o-field__label {
