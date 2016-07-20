@@ -47,7 +47,7 @@
 }
 
 @media (--lg) {
-  ._s-entry p:first-child { font-size: 1.25rem; }
+  ._s-entry p:first-child { font-size: 112.5%; }
 
   ._s-entry iframe {
     width: 125% !important;

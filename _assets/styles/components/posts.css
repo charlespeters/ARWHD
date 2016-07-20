@@ -1,24 +1,11 @@
-.c-post--short__link {
-  color: var(--litered);
-}
-
 .c-post--short {
   background: white;
   box-shadow: var(--shadow-sm);
+  padding: 1.625rem;
 }
 
-.c-post--short__container { padding: 1.625rem; }
+.c-post__hl { color: var(--litered); }
 
-/*.c-post--short__container::after {
-  content: "";
-  width: 5rem;
-  margin-top: 2rem;
-  display: block;
-  border-top: .25rem solid var(--palered);
-}*/
+.c-post--archives { color: var(--palegold); }
 
-.c-post--full__hl { color: var(--litered); }
-
-.c-post--archives {
-  color: var(--palegold);
-}
+.meta { color: var(--gray); }
