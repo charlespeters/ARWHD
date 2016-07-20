@@ -1,9 +1,9 @@
 {% for post in site.posts limit:4 %}
   <article class="c-post--short u-mb4">
-    <div class="c-post--short__container" style="">
+    <div>
       <header class="u-mb3">
         <h2 class="h6">
-          <a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="c-post__hl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <span class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
       </header>
