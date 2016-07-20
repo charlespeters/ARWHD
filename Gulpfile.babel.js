@@ -1,3 +1,4 @@
+/* eslint-disable */
 import gulp from 'gulp';
 import del from 'del';
 import rename from 'gulp-rename';
@@ -61,7 +62,7 @@ const styles = () => {
     }))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest(paths.css.dest))
-    .pipe(gulp.dest('./_site/assets/dist/styles/'))
+    .pipe(gulp.dest('./_site/assets/dist/'))
     .pipe(bs.stream());
 };
 
