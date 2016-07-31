@@ -1,1 +1,7 @@
-.c-widget { box-shadow: var(--shadow-sm); }
+.c-widget {}
+
+.c-widget__icon {
+  filter: grayscale(1);
+  max-height: 3.5rem;
+  width: auto;
+}
