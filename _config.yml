@@ -19,4 +19,4 @@ collections:
     output: true
     permalink: /links/:path/
 
-exclude: ["checklist.md", "README.md", "node_modules", "paths.js", "package.json", "gulpfile.babel.js", "assets/src/"]
+exclude: ["Session.vim","checklist.md", "README.md", "node_modules", "paths.js", "package.json", "Gulpfile.babel.js", "assets/src/"]

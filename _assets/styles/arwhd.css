@@ -51,3 +51,13 @@
 @import 'obsidian.css/lib/utilities/obsidian.align';
 @import 'obsidian.css/lib/utilities/obsidian.typography';
 @import 'obsidian.css/lib/utilities/obsidian.floats';
+
+.u-hidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

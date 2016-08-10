@@ -122,7 +122,7 @@ const icons = () => {
     }))
     .pipe(cheerio({
       run: ($, file) => {
-        $('svg').addClass('u-none');
+        $('svg').addClass('u-hidden');
         $('[fill]').removeAttr('fill');
       },
       parserOptions: { xmlMode: true },
