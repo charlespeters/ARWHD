@@ -1,9 +1,9 @@
 ---
-layout: post
-title: "Choosing the Right Typeface"
+title: Choosing the Right Typeface
+date: 2014-05-17 10:16:43 Z
 categories:
 - Typography
-date: 2014-05-17 10:16:43
+layout: post
 ---
 
 There’s two really distinct fundamental functions for typography on the web: body type and headlines. They have different roles and create a barebones hierarchy for your design. I wanna talk about leveraging the most use and best practice out of each of them.

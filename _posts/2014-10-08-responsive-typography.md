@@ -1,8 +1,9 @@
 ---
+title: Responsive Typography
+date: 2014-10-08 14:03:43 Z
+categories:
+- CSS
 layout: post
-title:  "Responsive Typography"
-date:   2014-10-08 14:03:43
-categories: CSS
 ---
 
 Responsive typography isn't as hard as we make it out to be. After a lot of experimenting and a lot of screwing it up, I found the best way to respond to different screen sizes is to have a straight forward approach.

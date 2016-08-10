@@ -1,8 +1,9 @@
 ---
+title: Specific Solutions
+date: 2014-01-14 14:03:43 Z
+categories:
+- freelance
 layout: post
-title:  "Specific Solutions"
-date:   2014-01-14 14:03:43
-categories: freelance
 ---
 
 Client services can be a drag sometimes. We can blame the clients and their projects, but that may not be the entire cause of the acrimony occasionally find ourselves in with freelance web projects.

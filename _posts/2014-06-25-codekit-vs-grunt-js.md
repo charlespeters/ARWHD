@@ -1,14 +1,14 @@
 ---
-layout: post
-title: "Codekit vs. Grunt.js"
-date: 2014-06-25
-comments: true
+title: Codekit vs. Grunt.js
+date: 2014-06-25 00:00:00 Z
+categories:
+- Development
 tags:
 - Tools
 - Build Steps
 - Grunt
-categories:
-- Development
+layout: post
+comments: true
 ---
 
 As a front-end developer there's lots of little things you need to do as a part of your workflow, like compiling your Sass files, running [Autoprefixer](https://github.com/ai/autoprefixer), minifying your SVG files, optimizing your images, linting your Javascript files, firing up a server.

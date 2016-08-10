@@ -1,10 +1,9 @@
 ---
-
+title: Flexbox Basics
+date: 2015-06-05 14:03:43 Z
+categories:
+- CSS
 layout: post
-title:  "Flexbox Basics"
-date: 2015-06-05 14:03:43
-categories: CSS
-
 ---
 
 I've been trying to write this post for almost a year. Flexbox is a really [well-supported](http://caniuse.com/#feat=flexbox) feature by now. I've been using it on almost every site I've worked on since December 2013. By far the best way to understand how to use flexbox is to experiment with your layout, your UI components, your own needs.

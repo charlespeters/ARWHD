@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Connect
-permalink: /connect/
+permalink: "/connect/"
+layout: page
 ---
 
 Is there a post I should write or a book I should review? Let me know! All you need to do is [email me](mailto:charlespeters42@gmail.com?Subject=Thing%20from%20ARWHD).

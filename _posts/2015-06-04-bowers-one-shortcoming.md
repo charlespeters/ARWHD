@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Bower's One Shortcoming
-date: 2015-06-04
+date: 2015-06-04 00:00:00 Z
+layout: post
 ---
 
 I'll keep this brief, there's a lot of mindless dog-piling on Bower and package managers in general. I get it, it's an easy target but that doesn't solve the problem (neither does building another package manager).

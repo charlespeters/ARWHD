@@ -1,8 +1,9 @@
 ---
+title: Objects, Methods & Functions
+date: 2014-10-27 14:03:43 Z
+categories:
+- JS
 layout: post
-title:  "Objects, Methods & Functions"
-date:   2014-10-27 14:03:43
-categories: JS
 ---
 
 Following up with [a post](http://arwhd.co/js/2014/07/30/Me-Learning-JavaScript/) I wrote a little while back, I'm still learning JavaScript. There's a lot of take in and the thing I find the most difficult is keeping terminology straight. I get what a loop and a variable are, but somethings in JavaScript are really similar in meaning and syntax that it makes it hard to follow stuff.

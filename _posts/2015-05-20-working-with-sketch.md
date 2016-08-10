@@ -1,9 +1,7 @@
 ---
-
-layout: post
 title: Working with Sketch
-date: 2015-05-20
-
+date: 2015-05-20 00:00:00 Z
+layout: post
 ---
 
 We have a problem with graphics editors. There hasn’t really been an intentional application for designing user interfaces in, ever. Adobe keeps trying to make Photoshop for the web and for UI design, and it keeps coming up short for me and probably for a lot of other people. But remember, Photoshop is like 25 years old. And Photoshop is a photo editing software; layout, typography is an afterthought and lot of things you’re looking for are hidden or in layer styles.

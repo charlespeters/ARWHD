@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "Defining Responsive Web Design"
-comments: true
+title: Defining Responsive Web Design
+date: 2014-05-23 10:03:43 Z
+categories:
+- RWD
 tags:
 - RWD
 - Web Design
 - Client Services
-categories:
-- RWD
-date: 2014-05-23 10:03:43
+layout: post
+comments: true
 ---
+
 Last week, a client asked me what responsive web design (RWD) is and I wasn't sure where to begin describing what it is and how it would help her business. There are lots of things we ascribe to and associate with RWD as designers and hold to when defining it, while on the other hand when you talk someone outside the web/tech industry, most times clients and others I've talked to just think of it as “oh, like mobile”. And that doesn't really being to cover what it is or what it really does for users.
 
 So let's try and define it better.

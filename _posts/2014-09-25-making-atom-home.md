@@ -1,9 +1,11 @@
 ---
+title: Making Atom Home
+date: 2014-09-25 14:03:43 Z
+categories:
+- Development
 layout: post
-title:  "Making Atom Home"
-date:   2014-09-25 14:03:43
-categories: Development
 ---
+
 Most of the time I spend working on stuff is in Atom Editor from Github, it's by far my favorite text editor. It's amazingly customizable, flexible and I thought I would share how I customize it and use it on a daily basis.
 
 ### Why?

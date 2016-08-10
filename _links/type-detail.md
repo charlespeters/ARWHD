@@ -1,7 +1,7 @@
 ---
-layout: link
 title: Type Detail
-date: 2015-06-03
+date: 2015-06-03 00:00:00 Z
+layout: link
 link: http://typedetail.com/
 ---
 

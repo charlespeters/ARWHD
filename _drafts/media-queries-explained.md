@@ -1,8 +1,9 @@
 ---
+title: Media Queries Explained
+date: 2014-10-01 14:03:43 Z
+categories:
+- CSS
 layout: post
-title:  "Media Queries Explained"
-date:   2014-10-01 14:03:43
-categories: CSS
 ---
 
 It dawned on my I don't really understand media queries all that well. I see people post on Twitter a few times recently the statement, "the absence of a media query is the first media query." Then my brain tried to analyse it and make sense of it.

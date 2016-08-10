@@ -1,9 +1,11 @@
 ---
+title: Simple Transitions
+date: 2014-05-19 13:03:43 Z
+categories:
+- CSS
 layout: post
-title:  "Simple Transitions"
-date:   2014-05-19 13:03:43
-categories: CSS
 ---
+
 I've used CSS transitions sparingly. But a few recent posts got me really interested it going to town. During 2013's 24 Ways there was a post about the hover paradigm[^1] and it got me thinking about CSS transitions. Then this post on the Cognition Blog[^2] and that rekindled the thought that CSS transitions are a significant part of a website's design.
 
 These articles suggest going applying transitions to the `:focus` states too because fewer and fewer touch devices support hover.

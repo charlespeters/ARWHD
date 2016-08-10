@@ -1,7 +1,7 @@
 ---
-layout: post
 title: The Other Parts of Sass
-date: 2014-09-22
+date: 2014-09-22 00:00:00 Z
+layout: post
 ---
 
 If you write Sass there's a chance you're only seeing the tip of the iceberg. Most times when I write Sass everyday, I use [imports](http://sass-lang.com/guide#topic-5), [nesting](http://sass-lang.com/guide#topic-3) and [variables](http://sass-lang.com/guide#topic-2) then less often mixins and extends. All makes authoring stylesheets incredibly easier, but that's not all of what Sass can do, hell that's not even close.

@@ -1,14 +1,14 @@
 ---
-layout: post
-title: "Sass File Architecture"
-date: 2014-07-01
-comments: true
+title: Sass File Architecture
+date: 2014-07-01 00:00:00 Z
+categories:
+- Development
 tags:
 - Tools
 - Build Steps
 - Grunt
-categories:
-- Development
+layout: post
+comments: true
 ---
 
 I officially use Sass on every single project I do. No matter what.
