@@ -5,6 +5,7 @@
 /* Colors from Ethan Shoonover's _Solarized_:
  * http://ethanschoonover.com/solarized
  */
+ /* uncss:ignore */
 :root {
 	--solarized_base03:  #002b36;
 	--solarized_base02:  #073642;
@@ -25,7 +26,7 @@
 }
 
 /* Set up the basic look and feel */
-
+/* uncss:ignore */
 code,
 kbd,
 samp {
@@ -37,6 +38,7 @@ samp {
   font-family: "Source Code Pro", "Menlo", monospace;
 }
 
+/* uncss:ignore */
 pre {
   background-color: var(--solarized_base02);
   color: var(--solarized_base0);
@@ -46,6 +48,7 @@ pre {
   margin-bottom: 1rem;
 }
 
+/* uncss:ignore */
 pre code,
 pre kbd,
 pre samp {
@@ -60,17 +63,21 @@ pre samp {
   word-spacing: normal;
 }
 
+/* uncss:ignore */
 pre ::selection {
   background: var(--solarized_base02);
   color: inherit;
   text-shadow: none;
 }
+
+/* uncss:ignore */
 pre ::-moz-selection {
   background: var(--solarized_base02);
   color: inherit;
   text-shadow: none;
 }
 
+/* uncss:ignore */
 pre[class*="language-"]::before {
   background-color: var(--solarized_base03);
   color: var(--solarized_base00);
@@ -84,23 +91,37 @@ pre[class*="language-"]::before {
   text-transform: uppercase;
 }
 
+/* uncss:ignore */
 pre[class*="language-"] code { padding-top: .5rem; }
 
+/* uncss:ignore */
 pre.language-markup::before { content: "HTML"; }
+/* uncss:ignore */
 pre.language-css::before { content: "CSS"; }
+/* uncss:ignore */
 pre.language-scss::before { content: "SASS"; }
+/* uncss:ignore */
 pre.language-javascript::before { content: "JavaScript"; }
+/* uncss:ignore */
 pre.language-php::before { content: "PHP"; }
+/* uncss:ignore */
 pre.language-clike::before { content: "C-like"; }
+/* uncss:ignore */
 pre.language-coffeescript::before { content: "CoffeeScript"; }
+/* uncss:ignore */
 pre.language-bash::before { content: "Bash"; }
+/* uncss:ignore */
 pre.language-cpp::before { content: "C++"; }
+/* uncss:ignore */
 pre.language-python::before { content: "Python"; }
+/* uncss:ignore */
 pre.language-sql::before { content: "SQL"; }
+/* uncss:ignore */
 pre.language-http::before { content: "HTTP"; }
 
 /* General
    ========================================================================== */
+/* uncss:ignore */
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -108,11 +129,13 @@ pre.language-http::before { content: "HTTP"; }
   color: var(--solarized_base01);
 }
 
+/* uncss:ignore */
 .token.punctuation {
   color: var(--solarized_base00);
   font-weight: 400;
 }
 
+/* uncss:ignore */
 .token.property,
 .token.tag,
 .token.boolean,
@@ -121,6 +144,7 @@ pre.language-http::before { content: "HTTP"; }
   font-weight: 700;
 }
 
+/* uncss:ignore */
 .token.selector,
 .token.attr-name,
 .token.string {
@@ -128,6 +152,7 @@ pre.language-http::before { content: "HTTP"; }
   font-weight: 400;
 }
 
+/* uncss:ignore */
 .token.operator,
 .token.entity,
 .token.url,
@@ -136,6 +161,7 @@ pre.language-http::before { content: "HTTP"; }
   color: var(--solarized_cyan);
 }
 
+/* uncss:ignore */
 .token.atrule,
 .token.attr-value,
 .token.keyword {
@@ -143,87 +169,121 @@ pre.language-http::before { content: "HTTP"; }
   font-weight: 400;
 }
 
+/* uncss:ignore */
 .token.regex,
 .token.important {
   color: var(--solarized_red);
 }
 
+/* uncss:ignore */
 .token.important {
   font-weight: 700;
 }
 
+/* uncss:ignore */
 .token.entity {
   color: var(--solarized_orange);
 }
 
+/* uncss:ignore */
 .language-css,
 .language-scss {
   color: var(--solarized_blue);
 }
+
+/* uncss:ignore */
 .language-css .token.selector,
 .language-scss .token.selector {
   color: var(--solarized_yellow);
 }
+
+/* uncss:ignore */
 .language-css .token.property,
 .language-scss .token.property {
   color: var(--solarized_base0);
   font-weight: 400;
 }
+
+/* uncss:ignore */
 .language-css .token.atrule,
 .language-scss .token.atrule {
   color: var(--solarized_violet);
 }
+
+/* uncss:ignore */
 .language-css .token.variable,
 .language-scss .token.variable {
   color: var(--solarized_magenta);
 }
 
+/* uncss:ignore */
 .language-javascript .token.keyword {
   color: var(--solarized_blue);
 }
+
+/* uncss:ignore */
 .language-javascript .token.operator {
   color: var(--solarized_green);
 }
+
+/* uncss:ignore */
 .language-javascript .token.string,
 .language-javascript .token.number {
   color: var(--solarized_cyan);
   font-weight: 400;
 }
+
+/* uncss:ignore */
 .language-javascript .token.boolean {
   color: var(--solarized_yellow);
   font-weight: 400;
 }
+
+/* uncss:ignore */
 .language-javascript .token.class-name {
   color: var(--solarized_yellow);
 }
 
+/* uncss:ignore */
 .language-php .token.delimiter,
 .language-php .token.punctuation {
   color: var(--solarized_red);
 }
+
+/* uncss:ignore */
 .language-php .token.constant,
 .language-php .token.boolean {
   color: var(--solarized_yellow);
 }
+
+/* uncss:ignore */
 .language-php .token.operator {
   color: var(--solarized_green);
 }
+
+/* uncss:ignore */
 .language-php .token.variable {
   color: var(--solarized_blue);
   display: inline-block;
 }
+
+/* uncss:ignore */
 .language-php .token.variable::first-letter {
   color: var(--solarized_green);
 }
+
+/* uncss:ignore */
 .language-php .token.keyword {
   color: var(--solarized_green);
 }
 
+/* uncss:ignore */
 .language-php .token.number {
   color: var(--solarized_cyan);
   font-weight: 400;
 }
 
+/* uncss:ignore */
 .language-php .token.string {
   color: var(--solarized_cyan);
   display: inline-block;

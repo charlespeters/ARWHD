@@ -9,6 +9,13 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Custom CSS -->
+
     <link rel="stylesheet" data-font-link media="screen" charset="utf-8">
     <link rel="stylesheet" href="{{ '/assets/dist/bundle.css' | prepend: site.baseurl }}" media="screen" charset="utf-8">
+    {% if page.layout == 'post' %}
+      <style media="screen">
+        {% include prism.css %}
+      </style>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+    {% endif %}
 </head>

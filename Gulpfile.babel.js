@@ -12,6 +12,7 @@ import cssnext from 'postcss-cssnext';
 import atImport from 'postcss-import';
 import papply from 'postcss-apply';
 import reporter from 'postcss-reporter';
+import uncss from 'postcss-uncss';
 import nano from 'cssnano';
 import stylelint from 'stylelint';
 import eslint from 'gulp-eslint';
@@ -48,6 +49,7 @@ const styles = () => {
       },
     }),
     papply,
+    uncss({ html: ['./_site/**/*.html'] }),
     nano({
       autoprefixer: false,
       mergeRules: false
