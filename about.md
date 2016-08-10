@@ -25,9 +25,5 @@ This site is powered by Jekyll. It’s made with Sass, Autoprefixer, Gulp & Flex
 
 The typeface being used is Whitney from Hoefler & Co.
 
-### About Me
-
-My name is Charles. I’m a designer. I work for [Black Pixel](https://blackpixel.com/) and if you ever want me to shut up for about 20 minutes, put Chinese food in front of me.
-
 ### Comment Policy
 <s>Please be advised that I don’t have any patience for a**holes that aren’t me and I am not often concerned with IE8 support.</s> I closed comments.
