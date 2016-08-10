@@ -1,0 +1,22 @@
+.c-nwl {
+  background: var(--c1);
+  color: var(--bkg);
+  box-shadow: var(--shadow-sm);
+}
+
+.c-nwl__input {
+  flex: 8;
+  max-width: 100%;
+}
+
+.c-nwl__btn {
+  flex: 0 2 8rem;
+  max-width: 100%;
+}
+
+@media (--lg) {
+  .c-nwl__form {
+    display: flex;
+    align-items: flex-end;
+  }
+}

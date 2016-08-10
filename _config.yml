@@ -2,6 +2,10 @@
 title: ARWHD
 timezone: UTC
 collections:
+  links:
+    title: Links
+    output: true
+    permalink: "/links/:path/"
   posts:
     title: Posts
     output: true
@@ -26,10 +30,11 @@ paginate_path: blog/page:num
 markdown: kramdown
 permalink: pretty
 exclude:
-- Checklist.md
+- Session.vim
+- checklist.md
 - README.md
 - node_modules
 - paths.js
 - package.json
-- Gulpfile.js
+- Gulpfile.babel.js
 - assets/src/

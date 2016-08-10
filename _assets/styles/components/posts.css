@@ -1,0 +1,11 @@
+.c-post--short {
+  background: white;
+  box-shadow: var(--shadow-sm);
+  padding: 1.625rem;
+}
+
+.c-post__hl { color: var(--litered); }
+
+.c-post--archives { color: var(--palegold); }
+
+.meta { color: var(--gray); }

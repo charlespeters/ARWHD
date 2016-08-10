@@ -1,0 +1,24 @@
+{% for post in site.posts  %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+  {% if forloop.first %}
+  <h2 class="c-post--archives h3 u-w400 u-lt-2 u-mb2" id="{{ this_year }}-ref">{{this_year}}</h2>
+  <ul class="list--reset u-mb4">
+  {% endif %}
+
+  <li class="u-mb3 bl">
+    <a class="u-w400 h6 u-bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+  </li>
+
+  {% if forloop.last %}
+  </ul>
+  {% else %}
+      {% if this_year != next_year %}
+      </ul>
+      <h2 class="c-post--archives h3 u-w400 u-lt-2 u-mb2" id="{{ next_year }}-ref">{{next_year}}</h2>
+      <ul class="list--reset">
+      {% endif %}
+  {% endif %}
+{% endfor %}
