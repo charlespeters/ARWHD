@@ -2,8 +2,8 @@
 <ul class="list--reset">
   {% assign sorted = (site.links | sort: 'date') | reverse %}
   {% for link in sorted limit:3 %}
-    <li class="h6 u-mb2">
-      <a href="{{ link.url | prepend: site.baseurl }}" class="small" title="{{link.title}}">
+    <li class="u-mb2">
+      <a href="{{ link.url | prepend: site.baseurl }}" title="{{link.title}}">
         {{ link.title }}
       </a>
     </li>
