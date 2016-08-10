@@ -3,14 +3,14 @@
     <div>
       <header class="u-mb3">
         <h2 class="h6">
-          <a class="c-post__hl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="c-post__hl" href="{{ post.url | prepend: site.baseurl }}" title="Link to Post: {{ post.title}}">
+            {{ post.title }}
+          </a>
         </h2>
-        <span class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+        <time class="small u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</time>
       </header>
       <section>
-        <p class="small u-system">
-          {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
-        </p>
+        <p class="small u-system">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
       </section>
     </div>
   </article>
