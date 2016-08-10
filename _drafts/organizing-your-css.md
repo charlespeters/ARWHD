@@ -1,8 +1,9 @@
 ---
+title: Organizing Your CSS
+date: 2016-03-17 14:03:43 Z
+categories:
+- CSS
 layout: post
-title:  "Organizing Your CSS"
-date:   2016-03-17 14:03:43
-categories: CSS
 ---
 
 CSS needs an architecture to it or it will inevitably fall apart over time. The more projects the you end up working on the harder they are to maintain over time. When you need to go to work on them or invite someone else to work on them your thinking and rational for your choices needs to be explained for any type of cohesion or maintainability.

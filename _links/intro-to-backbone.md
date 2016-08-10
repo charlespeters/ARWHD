@@ -1,7 +1,7 @@
 ---
+title: Introduction to Backbone.js
+date: 2014-08-06 14:03:43 Z
 layout: link
-title:  "Introduction to Backbone.js"
-date:   2014-08-6 14:03:43
 link: https://www.youtube.com/watch?v=FZSjvWtUxYk
 ---
 

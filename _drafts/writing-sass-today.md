@@ -1,7 +1,7 @@
 ---
+title: Writing Sass Today
+date: 2016-06-13 00:00:00 Z
 layout: post
-title: 'Writing Sass Today'
-date: 2016-06-13
 ---
 
 As much as front-end developers have fallen in love with PostCSS, the truth remains that people are still writing Sass at their day jobs. Sass is still really popular and for good reason. Sass is widely adoptable by most platforms, it's easy to get started with and a really enjoyable syntax.

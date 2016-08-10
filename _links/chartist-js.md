@@ -1,7 +1,7 @@
 ---
-layout: link
 title: Chartist.js
-date: 2016-05-19
+date: 2016-05-19 00:00:00 Z
+layout: link
 link: https://gionkunz.github.io/chartist-js/
 ---
 
