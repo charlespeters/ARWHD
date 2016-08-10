@@ -1,10 +1,11 @@
 ---
-layout: post
-title: "2014 Photoshop Workflow"
+title: 2014 Photoshop Workflow
+date: 2014-01-16 00:00:00 Z
 categories:
 - UI/UX Design
-date: 2014-01-16
+layout: post
 ---
+
 Yeah, we get it, it’s 2014. Why are you still using expensive raster software to design things with fixed widths? Isn’t the web supposed to be fluid and responsive?
 
 Those are pretty valid questions. I keep finding that the more I can separate design and development of a project the easier it can become. Keeping Photoshop or an image editor (I’ve heard great things about Sketch) in my workflow keeps things running smoothly. Personally, it boils down to four major reasons.

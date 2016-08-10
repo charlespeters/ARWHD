@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Using Number Functions in Sass
-date: 2015-03-01
+date: 2015-03-01 00:00:00 Z
+layout: post
 ---
 
 One of the amazing things about Sass is that you can apply math to your stylesheets. Today I was working on a project with pixel based values and I wanted to use some math. 

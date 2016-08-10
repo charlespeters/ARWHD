@@ -1,10 +1,11 @@
 ---
-layout: post
-title: "Client Focused Wordpress Development"
+title: Client Focused Wordpress Development
+date: 2014-01-20 00:00:00 Z
 categories:
 - Wordpress
-date: 2014-01-20
+layout: post
 ---
+
 Every time I work with a client on a Wordpress related project, the number one thing being asked for is customization. Out of the box, Wordpress really isn’t very opinionated about what it will let you customize and the content you’ll be able to add. It comes with some basic content types (posts, pages, media, attachments, menus) and the rest is up to your imagination.
 
 Since it was designed originally for blogs, Wordpress has come a long way as a real Content Management System, if you should choose to use it that way. But to get there you need customize it out a little bit.

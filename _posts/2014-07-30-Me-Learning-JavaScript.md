@@ -1,8 +1,9 @@
 ---
+title: Me Learning JavaScript
+date: 2014-07-30 04:11:43 Z
+categories:
+- JS
 layout: post
-title:  "Me Learning JavaScript"
-date:   2014-07-30 04:11:43
-categories: JS
 ---
 
 JavaScript has always been a pain point for me. It's not a brutally visual language like CSS and isn't as easy to pick up as Sass. Being a designer, I found it really hard to understand `console.log` or the difference between functions and methods, let alone what qualifies as an object; none of those things are on the surface.

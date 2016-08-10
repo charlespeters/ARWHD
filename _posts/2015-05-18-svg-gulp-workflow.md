@@ -1,7 +1,7 @@
 ---
-layout: post
 title: SVG Icon Systems with Gulp
-date: 2015-05-18
+date: 2015-05-18 00:00:00 Z
+layout: post
 ---
 
 I like SVG and I like [Gulp.js](http://gulpjs.com/) and I don't think that working with either should be a pain in any way. I'm going to walk through my way of building an icon system with Gulp. This may not be _best_ way to work with SVG, but this is my current workflow for building icon systems.

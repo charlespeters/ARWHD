@@ -1,10 +1,9 @@
 ---
-
+title: Expedite Your Workflow with Keyboard Shortcuts
+date: 2015-08-22 22:20:43 Z
+categories:
+- workflow
 layout: post
-title:  "Expedite Your Workflow with Keyboard Shortcuts"
-date: 2015-08-22 22:20:43
-categories: workflow
-
 ---
 
 I switch between browser and editor, from editor to terminal and then into the company chat at sporadic times. The amount of  those transitions accrue to the point where it’s time to think critically about whether there aren’t easier ways of do it.

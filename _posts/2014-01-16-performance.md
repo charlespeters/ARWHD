@@ -1,10 +1,11 @@
 ---
-layout: post
-title: "Performance"
+title: Performance
+date: 2014-01-16 00:00:00 Z
 categories:
 - Web Development
-date: 2014-01-16
+layout: post
 ---
+
 Designers need to care about performance. It’s a huge contributing factor to user experience and a main cause of higher bounce rates.
 [80% of page load time](http://www.speedawarenessmonth.com/when-8020-becomes-2080/) is due to the front-end: images, web fonts, scripts, stylesheets.
 

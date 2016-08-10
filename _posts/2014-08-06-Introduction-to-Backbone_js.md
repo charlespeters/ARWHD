@@ -1,11 +1,11 @@
 ---
+title: Introduction to Backbone.js
+date: 2014-08-06 14:03:43 Z
+categories:
+- JS
 layout: link
-title:  "Introduction to Backbone.js"
-date:   2014-08-6 14:03:43
-categories: JS
 link: https://www.youtube.com/watch?v=FZSjvWtUxYk
 ---
-
 
 Moving from just designing to learning more about JavaScript has been [an odd transition]. MVC frameworks (Model View Controller) are insanely important right now but I hard time understanding what they do on a macro level.
 

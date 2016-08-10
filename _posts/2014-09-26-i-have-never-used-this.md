@@ -1,8 +1,9 @@
 ---
+title: I Have Never Used This & That's OK
+date: 2014-09-26 14:03:43 Z
+categories:
+- Development
 layout: post
-title:  "I Have Never Used This & That's OK"
-date:   2014-09-26 14:03:43
-categories: Development
 ---
 
 There's a few technologies I've heard about, read loads about, played a lot with a little bit, gotten excited about, but have never used them in a real project for a client or for a side project. I felt really guilty for that, but now I don't.

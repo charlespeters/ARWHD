@@ -1,10 +1,11 @@
 ---
-layout: post
-title: "Where We Start"
+title: Where We Start
+date: 2014-01-06 00:00:00 Z
 categories:
 - Freelance
-date: 2014-01-06
+layout: post
 ---
+
 We aim.
 
 We lock on.

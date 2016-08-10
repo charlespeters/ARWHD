@@ -1,6 +1,7 @@
 ---
+title: A Guide to Web Typography
+date: 2014-01-29 00:00:00 Z
 layout: post
-title: "A Guide to Web Typography"
 status: publish
 type: post
 ---
