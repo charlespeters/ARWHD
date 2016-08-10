@@ -1,9 +1,11 @@
-<h4 class="h6 u-w400 u-mb2 u-caps u-lt-3">Links</h4>
+<h3 class="h6 u-w700 u-mb2">Links</h3>
 <ul class="list--reset">
   {% assign sorted = (site.links | sort: 'date') | reverse %}
   {% for link in sorted limit:3 %}
     <li class="h6 u-mb2">
-      <a href="{{ link.url | prepend: site.baseurl }}" class="small">{{ link.title }}</a>
+      <a href="{{ link.url | prepend: site.baseurl }}" class="small" title="{{link.title}}">
+        {{ link.title }}
+      </a>
     </li>
   {% endfor %}
 </ul>
