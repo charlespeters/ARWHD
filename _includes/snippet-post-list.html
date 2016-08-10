@@ -1,0 +1,17 @@
+{% for post in site.posts limit:4 %}
+  <article class="c-post--short u-mb4">
+    <div>
+      <header class="u-mb3">
+        <h2 class="h5">
+          <a class="c-post__hl" href="{{ post.url | prepend: site.baseurl }}" title="Link to Post: {{ post.title}}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <time class="small u-w400 meta">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </header>
+      <section>
+        <p class="small u-system">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+      </section>
+    </div>
+  </article>
+{% endfor %}

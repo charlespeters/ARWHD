@@ -1,0 +1,14 @@
+.c-nav {
+  background: var(--darkred);
+}
+
+.c-nav__item {
+  flex: 1;
+  padding: 1rem;
+}
+
+.c-nav__link { color: var(--bkg); }
+
+@media (--lg) {
+  .c-nav { background: none; }
+}

@@ -1,35 +1,14 @@
 ---
-title: Home
 layout: default
+title: ARWHD
+home: true
 ---
 
-<section class="o-container--sm u-pt5 u-mx-auto">
-  {% for post in site.posts limit:7 %}
-    {% if post.layout == 'link' %}
-    <article class="c-post--short u-mb4">
-      <header class="">
-        <a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">
-          <svg class="o-icon o-icon--sm u-d-inbl u-va-middle">
-            <use xlink:href="#icon-link" />
-          </svg>
-          <h2 class="h5 u-d-inbl u-va-middle u-ml2">{{ post.title }}</h2>
-        </a>
-      </header>
-    </article>
-    {% else %}
-    <article class="c-post--short u-mb4">
-      <header class="">
-        <h2 class="h5"><a class="c-post--short__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      </header>
-      <div class="">
-        <aside class="u-mb3">
-          <span class="u-w400 u-lt-3 u-caps meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-        </aside>
-        <section class="">
-          {{ post.excerpt }}
-        </section>
-      </div>
-    </article>
-    {% endif %}
-  {% endfor %}
+<section class="o-container--full u-cf u-pt4 u-mx-auto">
+  <div class="o-grid__col--8/12@lg u-pr4@lg u-fl@lg">
+    {% include snippet-post-list.html %}
+  </div>
+  <div class="o-grid__col--4/12@lg u-pl4@lg u-fl@lg">
+    {% include layout-sidebar.html %}
+  </div>
 </section>

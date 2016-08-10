@@ -25,11 +25,10 @@ paginate: 3
 paginate_path: blog/page:num
 markdown: kramdown
 permalink: pretty
-exclude:
-- Checklist.md
-- README.md
-- node_modules
-- paths.js
-- package.json
-- Gulpfile.js
-- assets/src/
+
+collections:
+  links:
+    output: true
+    permalink: /links/:path/
+
+exclude: ["Session.vim","checklist.md", "README.md", "node_modules", "paths.js", "package.json", "Gulpfile.babel.js", "assets/src/"]
