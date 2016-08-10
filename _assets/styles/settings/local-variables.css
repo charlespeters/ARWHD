@@ -1,7 +1,8 @@
 :root {
   --text: #333333;
   --darkred: #B74435;
-  --litered: #D04B36;
+  --litered-old: #D04B36;
+  --litered: #CF4832;
   --palered: #E16B56;
   --litegold: #EBB734;
   --_palegold: #E5C784;
@@ -9,7 +10,7 @@
   --twitter: #0094C2;
   --facebook: #3B5998;
   --bkg: #F2F0EB;
-  --gray: #BBBBBB;
+  --gray: #9A9A9A;
 
   --c1: #E36A52;
   --c2: #D76049;
