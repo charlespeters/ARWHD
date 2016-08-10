@@ -22,6 +22,7 @@ import babelify from 'babelify';
 import watchify from 'watchify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
+import a11y from 'gulp-a11y';
 import browserSync from 'browser-sync';
 import paths from './paths';
 
@@ -147,6 +148,12 @@ const templates = () => {
 
 const rejekyll = gulp.series(jekyll, templates);
 
+const audit = () => {
+  return gulp.src(['./_site/index.html', './_site/2016/06/13/writing-sass-today/index.html'])
+    .pipe(a11y())
+    .pipe(a11y.reporter());
+};
+
 // Clean Build Directory
 /////////////////////////
 
@@ -180,7 +187,7 @@ const build = gulp.parallel(styles, scripts, icons, images);
 
 // Exports Functions as Proper Tasks
 
-export { build, clean, styles, scripts, icons, images, watch, connect, jekyll, rejekyll };
+export { build, clean, audit, styles, scripts, icons, images, watch, connect, jekyll, rejekyll };
 
 const all = gulp.series(clean, jekyll, gulp.parallel(build, connect, watch));
 
