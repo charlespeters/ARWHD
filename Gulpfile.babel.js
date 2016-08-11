@@ -13,6 +13,7 @@ import papply from 'postcss-apply'
 import reporter from 'postcss-reporter'
 import uncss from 'postcss-uncss'
 import nano from 'cssnano'
+import mqpacker from 'css-mqpacker'
 import stylelint from 'stylelint'
 import imagemin from 'gulp-imagemin'
 import uglify from 'gulp-uglify'
@@ -41,15 +42,19 @@ const styles = () => {
       browsers: ['last 2 version'],
       features: {
         colorFunction: true,
-        customSelectors: true,
         rem: false
       }
     }),
     papply,
     uncss({ html: ['./_site/**/*.html'] }),
+    mqpacker(),
     nano({
+      filterPlugins: false,
       autoprefixer: false,
-      mergeRules: false
+      calc: true,
+      discardComments: {
+        removeAllButFirst: true
+      }
     })
   ]
 

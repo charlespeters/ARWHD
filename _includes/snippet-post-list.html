@@ -7,7 +7,7 @@
             {{ post.title }}
           </a>
         </h2>
-        <time class="small u-w400 meta">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <time class="small u-w400 meta" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       </header>
       <section>
         <p class="small u-system">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>

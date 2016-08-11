@@ -1,13 +1,11 @@
 /* Settings */
 
 @import 'obsidian.css/lib/settings';
-
 @import './settings/local-variables';
 
 /* Generic */
 
 @import 'obsidian.css/lib/generic';
-
 @import './generic/typography';
 @import './generic/placeholders';
 
@@ -29,7 +27,6 @@
 @import 'obsidian.css/lib/objects/obsidian.flex-modifiers';
 @import 'obsidian.css/lib/objects/obsidian.btns';
 @import 'obsidian.css/lib/objects/obsidian.forms-ui';
-
 @import './objects/fields';
 @import './objects/icons';
 
@@ -50,6 +47,10 @@
 @import 'obsidian.css/lib/utilities/obsidian.align';
 @import 'obsidian.css/lib/utilities/obsidian.typography';
 @import 'obsidian.css/lib/utilities/obsidian.floats';
+
+/* For accessibility checks */
+
+/* @import 'a11y.css/css/a11y-en.css'; */
 
 .u-hidden {
   border: 0;
