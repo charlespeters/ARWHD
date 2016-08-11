@@ -1,13 +1,13 @@
-var paths = {
+const paths = {
   css: {
-    src: './_assets/styles/arwhd.css',
+    src: ['./_assets/styles/arwhd.css', './_assets/styles/prism.css'],
     all: './_assets/styles/**/*.css',
     dest: './assets/dist/'
   },
   js: {
     src: './_assets/scripts/global.js',
     all: './_assets/scripts/**/*.js',
-    dest: './assets/dist/',
+    dest: './assets/dist/'
   },
   icons: {
     src: './_assets/icons/*.svg',
@@ -22,4 +22,4 @@ var paths = {
   build: './_site/'
 };
 
-module.exports = paths;
+module.exports = paths

@@ -30,6 +30,7 @@ paginate_path: blog/page:num
 markdown: kramdown
 permalink: pretty
 exclude:
+- .editorconfig
 - Session.vim
 - checklist.md
 - README.md

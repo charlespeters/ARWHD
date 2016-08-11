@@ -1,21 +1,23 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="{{ page.tags }}">
-    <meta name="theme-color" content="#B74435">
-    {% include snippet-opengraphtags.html %}
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <!-- Custom CSS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="{{ page.tags }}">
+  <meta name="theme-color" content="#B74435">
+  {% include snippet-opengraphtags.html %}
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- <link rel="stylesheet" href="{{ '/assets/dist/bundle.css' | prepend: site.baseurl }}" media="screen" charset="utf-8"> -->
 
-    <link rel="stylesheet" data-font-link media="screen" charset="utf-8">
-    <link rel="stylesheet" href="{{ '/assets/dist/bundle.css' | prepend: site.baseurl }}" media="screen" charset="utf-8">
+  <style media="screen">
+    {% include arwhd.css %}
     {% if page.layout == 'post' %}
-      <style media="screen">
-        {% include prism.css %}
-      </style>
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+      {% include prism.css %}
     {% endif %}
+  </style>
+  <link rel="stylesheet" data-font-link media="screen" charset="utf-8">
+  {% if page.layout == 'post' %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+  {% endif %}
 </head>

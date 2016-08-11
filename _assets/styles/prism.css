@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Prism - Solarized Dark
+   ========================================================================== */
+
+/* Colors from Ethan Shoonover's _Solarized_:
+ * http://ethanschoonover.com/solarized
+ */
+
+/* Set up the basic look and feel */
+
+/* uncss:ignore */
+code,
+kbd,
+samp {
+  color: #839496;
+  font-size: 87.5%;
+  line-height: 1.4;
+  padding: .25rem;
+  font-family: "Roboto Mono", "Source Code Pro", "Menlo", monospace;
+}
+
+/* uncss:ignore */
+pre {
+  background-color: #002b36;
+  color: #839496;
+  font-size: 100%;
+  line-height: inherit;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* uncss:ignore */
+pre code,
+pre kbd,
+pre samp {
+  background: none;
+  direction: ltr;
+  display: block;
+  hyphens: none;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-spacing: normal;
+}
+
+/* uncss:ignore */
+pre ::selection {
+  background: #073642;
+  color: inherit;
+  text-shadow: none;
+}
+
+/* uncss:ignore */
+pre[class*="language-"]::before {
+  background-color: #073642;
+  color: #839496;
+  display: block;
+  font-weight: 700;
+  font-size: 87.5%;
+  line-height: 1.4;
+  padding: .28571rem 1.14286rem;
+}
+
+/* uncss:ignore */
+pre[class*="language-"] code { padding-top: .57143rem; }
+
+/* uncss:ignore */
+pre.language-markup::before { content: "HTML"; }
+
+/* uncss:ignore */
+pre.language-css::before { content: "CSS"; }
+
+/* uncss:ignore */
+pre.language-scss::before { content: "Sass"; }
+
+/* uncss:ignore */
+pre.language-javascript::before { content: "JavaScript"; }
+
+/* uncss:ignore */
+pre.language-php::before { content: "PHP"; }
+
+/* uncss:ignore */
+pre.language-clike::before { content: "C-like"; }
+
+/* uncss:ignore */
+pre.language-java::before { content: "Java"; }
+
+/* uncss:ignore */
+pre.language-coffeescript::before { content: "Coffee Script"; }
+
+/* uncss:ignore */
+pre.language-bash::before { content: "Bash"; }
+
+/* uncss:ignore */
+pre.language-cpp::before { content: "C++"; }
+
+/* uncss:ignore */
+pre.language-python::before { content: "Python"; }
+
+/* uncss:ignore */
+pre.language-sql::before { content: "SQL"; }
+
+/* uncss:ignore */
+pre.language-groovy::before { content: "Groovy"; }
+
+/* uncss:ignore */
+pre.language-http::before { content: "HTTP"; }
+
+
+/* General
+   ========================================================================== */
+/* uncss:ignore */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #586e75;
+}
+
+/* uncss:ignore */
+.token.punctuation {
+  color: #657b83;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #268bd2;
+  font-weight: 700;
+}
+
+/* uncss:ignore */
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #839496;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #2aa198;
+}
+
+/* uncss:ignore */
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #2aa198;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.token.regex,
+.token.important {
+  color: #dc322f;
+}
+
+/* uncss:ignore */
+.token.important {
+  font-weight: 700;
+}
+
+/* uncss:ignore */
+.token.entity {
+  color: #cb4b16;
+}
+
+/* uncss:ignore */
+.language-css,
+.language-scss {
+  color: #268bd2;
+}
+
+/* uncss:ignore */
+.language-css .token.selector,
+.language-scss .token.selector {
+  color: #b58900;
+}
+
+/* uncss:ignore */
+.language-css .token.property,
+.language-scss .token.property {
+  color: #839496;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.language-css .token.atrule,
+.language-scss .token.atrule {
+  color: #6c71c4;
+}
+
+/* uncss:ignore */
+.language-css .token.variable,
+.language-scss .token.variable {
+  color: #d33682;
+}
+
+/* uncss:ignore */
+.language-javascript .token.keyword {
+  color: #268bd2;
+}
+
+/* uncss:ignore */
+.language-javascript .token.operator {
+  color: #859900;
+}
+
+/* uncss:ignore */
+.language-javascript .token.string,
+.language-javascript .token.number {
+  color: #2aa198;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.language-javascript .token.boolean {
+  color: #b58900;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.language-javascript .token.class-name {
+  color: #b58900;
+}
+
+/* uncss:ignore */
+.language-php .token.delimiter,
+.language-php .token.punctuation {
+  color: #dc322f;
+}
+
+/* uncss:ignore */
+.language-php .token.constant,
+.language-php .token.boolean {
+  color: #b58900;
+}
+
+/* uncss:ignore */
+.language-php .token.operator {
+  color: #859900;
+}
+
+/* uncss:ignore */
+.language-php .token.variable {
+  color: #268bd2;
+  display: inline-block;
+}
+
+/* uncss:ignore */
+.language-php .token.variable::first-letter {
+  color: #859900;
+}
+
+/* uncss:ignore */
+.language-php .token.keyword {
+  color: #859900;
+}
+
+/* uncss:ignore */
+.language-php .token.number {
+  color: #2aa198;
+  font-weight: 400;
+}
+
+/* uncss:ignore */
+.language-php .token.string {
+  color: #2aa198;
+  display: inline-block;
+}

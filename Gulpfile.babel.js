@@ -65,9 +65,7 @@ const styles = () => {
       showFiles: true,
       gzip: true
     }))
-    .pipe(rename('bundle.css'))
-    .pipe(gulp.dest(paths.css.dest))
-    .pipe(gulp.dest('./_site/assets/dist/'))
+    .pipe(gulp.dest('./_includes/'))
     .pipe(bs.stream())
 }
 
