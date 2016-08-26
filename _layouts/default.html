@@ -8,7 +8,9 @@
     <main role="main" class="u-p3">
       {{ content }}
     </main>
-    {% if page.home == true || page.blog == true %}
+    {% if page.home == true %}
+      {% include layout-footer.html %}
+    {% elsif page.blog == true %}
       {% include layout-footer.html %}
     {% else %}
       {% include layout-footer-stacked.html %}
