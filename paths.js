@@ -1,6 +1,6 @@
 const paths = {
   css: {
-    src: ['./_assets/styles/arwhd.css', './_assets/styles/prism.css'],
+    src: ['./_assets/styles/arwhd.css'],
     all: './_assets/styles/**/*.css',
     dest: './assets/dist/'
   },
@@ -17,9 +17,15 @@ const paths = {
     src: './_assets/img/*',
     dest: './assets/dist/img/'
   },
-  markup: ['./*.html', './*.md', './_includes/**/*', './_layouts/*.html', './_posts/*', './_drafts/*'],
+  markup: [
+    './*.html', './*.md',
+    './_includes/**/*',
+    './_layouts/*.html',
+    './_posts/*',
+    './_drafts/*'
+  ],
   dist: './assets/dist/',
   build: './_site/'
-};
+}
 
-module.exports = paths
+export default paths
