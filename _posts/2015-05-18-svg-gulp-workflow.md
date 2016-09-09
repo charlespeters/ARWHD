@@ -15,7 +15,7 @@ Let's get started. I'm going to make a few assumptions:
 
 First run this command in the root of your project (or wherever your package.json lives):
 
-```
+```shell
 npm i --save-dev gulp-svgmin gulp-svgstore gulp-cheerio gulp-file-include
 ```
 
@@ -26,7 +26,7 @@ In most projects I work on there's a source directory and a build directory. In 
 
 This is a pretty common structure for my projects.
 
-<pre><code>
+```
 build/
   |  index.html
   |  assets/
@@ -57,12 +57,12 @@ source/
   |  |  |  grid.scss
 gulpfile.js
 package.json
-</code></pre>
+```
 
 In my Gulpfile there's a `paths` variable to define all my paths for files in one place. (I first saw this in Thoughtbot's [Proteus project](https://github.com/thoughtbot/proteus-gulp), it's super cool).
 
-<pre><code class="language-javascript">
-var paths = {
+```javascript
+const paths = {
   sass: './src/assets/scss/**/*.scss',
   js: './src/assets/js/*.js',
   vendor: './vendor/',
@@ -71,8 +71,8 @@ var paths = {
   templates: ['src/**/*.html', '!src/inc/**/*.html'],
   icons: './src/assets/icons/*',
   build: './build/'
-};
-</code></pre>
+}
+```
 
 In our project structure there needs to be some directory full of only SVG files to become your icon system. Illustrator & Sketch both let you export a series of artboards into multiple SVG files (assuming you have an artboard for each icon). If you don't want to draw your own and work with some I design, check these [icons](http://charlespeters.net/justafewicons/) out.
 
@@ -90,35 +90,38 @@ When working with SVG for your icons you're going to use the [`<symbol>` method]
 
 This is our `icons` task for Gulp to run on our directory full of SVG files. Now [`svgmin`](https://github.com/ben-eb/gulp-svgmin) minifies our SVG files and strips out unnecessary code that you might inherit from your graphics editor. [`svgstore`](https://github.com/w0rm/gulp-svgstore) binds them together in one giant SVG container called `icons.svg`. Then [`cheerio`](https://github.com/KenPowers/gulp-cheerio) gives us the ability to interact with the DOM components in this file in a jQuery-like way. `cheerio` in this case is removing any fill attributes from the SVG elements (you'll want to use CSS to manipulate them) and adds a class of `.hide` to our parent SVG. It gets deposited into our `inc` directory with the rest of the HTML partials.
 
-<pre><code class="language-javascript">
-var gulp        = require('gulp');
-var svgmin      = require('gulp-svgmin');
-var svgstore    = require('gulp-svgstore');
-var cheerio     = require('gulp-cheerio');
+```javascript
+import gulp from 'gulp'
+import svgmin from 'gulp-svgmin'
+import svgstore from 'gulp-svgstore'
+import cheerio from 'gulp-cheerio'
 
 gulp.task('icons', function () {
   return gulp.src(paths.icons)
     .pipe(svgmin())
-    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true}))
+    .pipe(svgstore({
+      fileName: 'icons.svg',
+      inlineSvg: true
+    }))
     .pipe(cheerio({
       run: function ($, file) {
-          $('svg').addClass('hide');
-          $('[fill]').removeAttr('fill');
+          $('svg').addClass('hide')
+          $('[fill]').removeAttr('fill')
       },
       parserOptions: { xmlMode: true }
     }))
     .pipe(gulp.dest('./src/inc/'))
-    .pipe(reload({stream:true}));
-});
-</code></pre>
+    .pipe(reload({ stream:true }))
+})
+```
 
 We can add a `watch` task to watch our icons directory for changes and run our new `icons` task when it detects a change.
 
-<pre><code class="language-javascript">
+```javascript
 gulp.task('watch', function() {
-  gulp.watch(paths.icons, ['icons']);
-});
-</code></pre>
+  gulp.watch(paths.icons, ['icons'])
+})
+```
 
 ### Building Into Your HTML Document
 
@@ -128,8 +131,8 @@ In our `icons` task for Gulp we had it deposited our SVG container in our direct
 
 This uses [gulp-file-include](https://github.com/coderhaoxin/gulp-file-include) to stitch all the HTML partials together (including our `icon.svg`).
 
-<pre><code class="language-javascript">
-var includes    = require('gulp-file-include');
+```javascript
+import includes from 'gulp-file-include'
 
 gulp.task('html', function() {
   return gulp.src(paths.templates)
@@ -138,13 +141,13 @@ gulp.task('html', function() {
       basepath: '@file'
     }))
     .pipe(gulp.dest(paths.build))
-    .pipe(reload({stream:true}));
-});
-</code></pre>
+    .pipe(reload({ stream:true }))
+})
+```
 
 This becomes our `index.html` file. This lets us work in small modular bits of code we can reuse for each template we're building.
 
-<pre><code class="language-markup">
+```markup
 @@include('inc/head.html')
 @@include('inc/icons.svg')
 @@include('inc/header.html')
@@ -152,17 +155,16 @@ This becomes our `index.html` file. This lets us work in small modular bits of c
 Put your Content Here
 
 @@include('inc/footer.html')
-</code></pre>
+```
 
 And we should update our `watch` task. Now every time we add a new icon, our icons task is run and then our document is rebuilt without any extra effort on our part.
 
-<pre><code class="language-javascript">
-gulp.task('watch', function() {
-  gulp.watch(['src/**/*.html'], ['html']);
-  gulp.watch(paths.icons, ['icons', 'html']);
-});
-</code></pre>
-
+```javascript
+gulp.task('watch', () => {
+  gulp.watch(['src/**/*.html'], ['html'])
+  gulp.watch(paths.icons, ['icons', 'html'])
+})
+```
 ---
 
 This is how I work with SVG in terms of building an icon system. It's pretty straight forward and I'm always looking to improve it.
