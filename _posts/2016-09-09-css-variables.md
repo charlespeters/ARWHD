@@ -21,7 +21,9 @@ _from [Can I Use](http://caniuse.com/#search=custom%20properties)_
 
 ### Using Variables
 
-You can define a custom property in the root of your project and call it with `var()` function. The only trick to defining a custom property is that you need to prefix them with the double dashes `--`. It may be a little odd at first, but it prevents naming collisions with reserved words and values. It's also worth noting these custom property names are case sensitive.
+You can define a custom property in the root of your project and call it with the `var()` function. The only trick to defining a custom property is that you need to prefix them with the double dashes `--`. It may be a little odd at first, but it prevents naming collisions with reserved words and values. It's also worth noting these custom property names are case sensitive.
+
+Custom properties store any value you want. It can be a color, a `calc()` function, measurement, a string or any other value you would normally define in CSS.
 
 ```css
 :root {
@@ -32,8 +34,6 @@ a {
   color: var(--base-color);
 }
 ```
-
-Custom properties store any value you want. It can be a color or a `calc()` function or measurement or a string or any other value you would normally define in CSS.
 
 You can also define a custom property at the selector level and then that property is scoped to that parent selector.
 
@@ -49,7 +49,7 @@ You can also define a custom property at the selector level and then that proper
 }
 ```
 
-You can optionally set a fallback in the `var()` function if that named variable isn't available. So if the variable `--theme` isn't available, it will use the hex value in the second parameter.
+You can optionally set a fallback in the `var()` function if that named variable isn't available. For example, if the variable `--theme` isn't available, it will use the hex value in the second parameter.
 
 ```css
 .Block {
@@ -57,7 +57,7 @@ You can optionally set a fallback in the `var()` function if that named variable
 }
 ```
 
-You can redefine variables at breakpoints.
+You can redefine custom properties at breakpoints.
 
 ```css
 :root {
@@ -77,7 +77,7 @@ html {
 
 ### Working with Numbers
 
-Custom properties store values but you can't interpolate them like you can with Sass. You can store a unit-less number but you can't just append a unit when you're calling that custom property. To achieve this  you can combine the unit-less value with the `calc()` function.
+Custom properties store values but you can't interpolate them like you can with Sass with the `#{$variable}px` or similar syntax. You can store a unit-less number but you can't just append a unit when you're calling that custom property. To achieve this you can combine the unit-less value with the `calc()` function.
 
 ```css
 :root {
@@ -92,9 +92,7 @@ h1 {
 
 ### Mixin-like Properties
 
-There's another [spec](http://tabatkins.github.io/specs/css-apply-rule/) related to custom properties with the `@apply` rule. It's similar to a Sass mixin in that it applies groups of styles, but it's static so it doesn't take any parameters like Sass mixins do.
-
-As of the time of writing this post, you can only use these in Chrome behind a feature flag. But maybe that will change. But there's a [PostCSS plugin](https://github.com/pascalduez/postcss-apply) that will let you compile those values.
+There's another [spec](http://tabatkins.github.io/specs/css-apply-rule/) related to custom properties with the `@apply` rule. It's similar to a Sass mixin in that it applies groups of styles, but it's static so it doesn't take any parameters like Sass mixins would.
 
 ```css
 :root {
@@ -109,6 +107,8 @@ h1 {
   @apply --awesome-headline;
 }
 ```
+
+As of the time of writing this post, you can only use `@apply` in Chrome behind a feature flag. But maybe that will change soon. There is a [PostCSS plugin](https://github.com/pascalduez/postcss-apply) that will let you compile those values.
 
 ### Examples
 
