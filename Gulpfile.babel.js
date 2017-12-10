@@ -6,6 +6,7 @@ import size from 'gulp-size'
 import svgmin from 'gulp-svgmin'
 import svgstore from 'gulp-svgstore'
 import cheerio from 'gulp-cheerio'
+import autoprefixer from 'autoprefixer'
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
 import atImport from 'postcss-import'
@@ -37,6 +38,9 @@ const bs = browserSync.create()
 const styles = () => {
   const processors = [
     atImport,
+    autoprefixer({
+      browsers: ['last 2 version']
+    }),
     cssnext({
       warnForDuplicates: false,
       browsers: ['last 2 version'],

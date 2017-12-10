@@ -35,7 +35,7 @@ samp {
   font-size: 87.5%;
   line-height: 1.4;
   padding: .25em;
-  font-family: "Source Code Pro", "Menlo", monospace;
+  font-family: var(--ff-mono);
 }
 
 /* uncss:ignore */
@@ -86,7 +86,7 @@ pre[class*="language-"]::before {
   line-height: 1;
   padding: .75rem;
   text-align: left;
-  font-family: inherit;
+  font-family: var(--ff-mono);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -99,7 +99,7 @@ pre.language-markup::before { content: "HTML"; }
 /* uncss:ignore */
 pre.language-css::before { content: "CSS"; }
 /* uncss:ignore */
-pre.language-scss::before { content: "SASS"; }
+pre.language-scss::before { content: "Sass"; }
 /* uncss:ignore */
 pre.language-javascript::before { content: "JavaScript"; }
 /* uncss:ignore */

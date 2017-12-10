@@ -22,7 +22,6 @@
   --letter-spacing: 1px;
 
   --whitney: 'Whitney SSm A', 'Whitney SSm B', 'Myriad Pro', Avenir, Lucida Grande, sans-serif;
-  --ff-mono: 'Roboto Mono', 'Source Code Pro', Menlo, monospace !important;
   --ff-w: 400;
 
   --shadow-sm: 0 0 5px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .125);

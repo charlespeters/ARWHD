@@ -61,3 +61,7 @@
   position: absolute;
   width: 1px;
 }
+
+:root {
+  --ff-mono: 'Roboto Mono', 'Source Code Pro', Menlo, monospace !important;
+}

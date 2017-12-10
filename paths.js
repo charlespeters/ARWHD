@@ -1,6 +1,6 @@
 const paths = {
   css: {
-    src: ['./_assets/styles/arwhd.css'],
+    src: './_assets/styles/arwhd.css',
     all: './_assets/styles/**/*.css',
     dest: './assets/dist/'
   },
