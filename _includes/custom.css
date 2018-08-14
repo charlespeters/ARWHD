@@ -1,8 +1,23 @@
+html {
+  background-color: rgba(242, 240, 235, .5);
+}
+
+code {
+  font-family: 'Roboto Mono', 'Source Code Pro', Menlo, monospace !important;
+}
+
+
+.Archive {}
+
+.Archive__heading {
+  color: #CF4832;
+}
+
 ._s-entry::after {
   content: "";
   display: block;
-  background: var(--litered);
-  margin: 1rem 0;
+  background: #CF4832;
+  margin: 1rem auto;
   width: 6rem;
   height: 2px;
 }
@@ -18,16 +33,14 @@
 ._s-entry iframe { margin-bottom: 1.5rem; }
 
 ._s-entry h3 {
-  color: var(--litered);
+  color: #CF4832;
   margin: 0 0 1.25rem;
   font-size: 1.375rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: 700;
 }
 
 ._s-entry h4 {
-  color: var(--c3);
+  color: #CD5640;
   margin: 0 0 1.25rem;
   font-size: 1.125rem;
   font-weight: 700;
@@ -37,12 +50,12 @@
 ._s-entry blockquote p {
   font-size: 1.25rem;
   font-style: italic;
-  color: var(--litered);
+  color: #CF4832;
 }
 
 .footnotes {
   margin-top: 2rem;
-  border-top: 1px solid var(--litered);
+  border-top: 1px solid #CF4832;
   padding: .5rem 0;
 }
 

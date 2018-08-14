@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html class="u-anti" lang="en">
-  {% include meta-head.html %}
-  <body>
-    {% include meta-icons.svg %}
-    {% include layout-header.html %}
+{% include meta-head.html %}
 
-    <main role="main" class="u-p3">
-      {{ content }}
-    </main>
-    {% if page.home == true %}
-      {% include layout-footer.html %}
-    {% elsif page.blog == true %}
-      {% include layout-footer.html %}
-    {% else %}
-      {% include layout-footer-stacked.html %}
-    {% endif %}
+<body>
+  {% include layout-header.html %}
 
+  <main role="main" class="o-Container o-Container--md o-Container--center u-p3">
+    {{ content }}
+  </main>
 
-    {% include snippet-copyright.html %}
-    {% include snippet-scripts.html %}
-  </body>
+  {% include layout-footer.html %} {% include snippet-copyright.html %} {% include snippet-scripts.html %}
+</body>
+
 </html>

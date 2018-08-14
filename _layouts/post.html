@@ -2,21 +2,22 @@
 layout: default
 ---
 
-<article class="o-container--md u-mx-auto">
+<article class="u-mxa">
 
-  <header class="u-mb2 u-py4">
-    <h2 class="h3 c-post__hl u-mb2">{{ page.title }}</h2>
-    <span class="u-w400 u-lt-3 u-caps meta">
+  <header class="u-mb2 u-py4 u-center">
+    <h2 class="h3 u-mb2">{{ page.title }}</h2>
+    <span class="u-w400 meta">
       {{ page.date | date: "%B %-d, %Y" }}
       {% if page.meta %} | {{ page.meta }}{% endif %}
     </span>
   </header>
 
-  <section class="_s-entry">
+  <section class="_s-entry u-w400">
     {{ content }}
   </section>
+  <hr />
 
-  <footer class="">
+  <footer class="u-pt6">
     {% include snippet-sharing.html %}
   </footer>
 
