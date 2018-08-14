@@ -15,7 +15,7 @@ It's been a challenge to find good resources that I can understand and digest an
 
 Then if neither of those two methods help me understand something, I go through issues on Github for jQuery plugins I really love using and work through how to make that happen for someone. I've always found it simple to link up jQuery from a CDN and use jQuery plugins, follow documentation and do simple things, but breaking down some of those plugins is really informative (and rewarding or whatever). My friend Tyler Childs describes jQuery as the gateway to write and understand JavaScript more and he kinda got me hooked.
 
-![](/img/jonduckett.jpg)
+![](/assets/images/jonduckett.jpg)
 
 One book I've found really useful so far is Jon Duckett's [_JavaScript and jQuery: Interactive Front-End Web Development_](http://www.amazon.com/dp/1118871650/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=180ZPE1Q3U3UK&coliid=I2T8PVQHSRTAEA). His previous book _HTML & CSS: Design and Build Websites_ is a highly visual book that goes through the barebones of HTML and CSS, breaking down the simple syntax, the properties and values of CSS declarations and best practices for authoring both. His JavaScript book is cut from the same cloth; I'm only about 4 chapters into it so far and I have a stronger understanding of objects, methods, properties and functions than I ever really have.
 

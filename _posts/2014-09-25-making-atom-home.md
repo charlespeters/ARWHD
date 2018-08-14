@@ -77,7 +77,7 @@ You can set the font family and size under preferences.
 
 ### Replacement Icon
 
-![](/img/atom.jpg)
+![Replacement Icon for Atom](/assets/images/atom.jpg)
 
 I don't really like the icon Atom comes with, but I love this one Daniel Eden put on [Dribbble](http://drbl.in/kncC).
 

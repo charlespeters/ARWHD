@@ -15,10 +15,20 @@ layout: default
   <section class="_s-entry u-w400">
     {{ content }}
   </section>
-  <hr />
 
   <footer class="u-pt6">
-    {% include snippet-sharing.html %}
+  <ul class="o-UIList o-UIList--reset u-center@md u-mb5">
+      <li class="u-m2 u-inbl">
+        <a href="https://twitter.com/intent/tweet?text='{{ page.title }}'&amp;url={{ page.url | prepend: site.url }}&amp;via=charlespeters" target="_blank">Twitter</a>
+      </li>
+      <li class="u-m2 u-inbl">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank">Facebook</a>
+      </li>
+      <li class="u-m2 u-inbl">
+        <a href="{{ page.url | prepend: site.url }}" target="_blank">URL</a>
+      </li>
+    </ul>
+        
   </footer>
 
 </article>

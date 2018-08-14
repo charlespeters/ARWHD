@@ -34,8 +34,3 @@ exclude:
 - Session.vim
 - checklist.md
 - README.md
-- node_modules
-- paths.js
-- package.json
-- Gulpfile.babel.js
-- assets/src/

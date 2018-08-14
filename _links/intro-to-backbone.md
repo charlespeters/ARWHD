@@ -1,7 +1,7 @@
 ---
 title: Introduction to Backbone.js
 date: 2014-08-06 14:03:43 Z
-layout: link
+layout: post
 link: https://www.youtube.com/watch?v=FZSjvWtUxYk
 ---
 
