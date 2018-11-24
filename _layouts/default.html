@@ -11,9 +11,7 @@
   {% include opengraph.html %}
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="https://unpkg.com/obsidian.css" />
-  <!-- <link rel="stylesheet" href="{{ '/assets/dist/bundle.css' | prepend: site.baseurl }}" media="screen" charset="utf-8"> -->
-
+  <link rel="stylesheet" href="https://unpkg.com/obsidian.css" media="screen" charset="utf-8" />
   <style media="screen">
     {% include custom.css %}
     {% include prism.css %}
@@ -30,12 +28,11 @@
       <a href="/" class="u-bl" title="Homepage for ARWHD.co" id="toHome">
         <img class="o-Icon o-Icon--lg u-mxa u-mb3" src="/assets/images/logo.svg" alt="Indian Arrowhead Logograph" id="logo" />
       </a>
-      <h1 class=" h5 u-w700 u-my0" style="color: #e4be68">ARWHD</h1>
+      <h1 class="h5 u-w900 u-my0" style="color: #e4be68">ARWHD</h1>
     </div>
   </header>
 
-
-  <main role="main" class="o-Container o-Container--md o-Container--center u-p3">
+  <main role="main" class="o-Container o-Container--sm o-Container--center u-p3">
     {{ content }}
   </main>
 
@@ -52,8 +49,8 @@
 
 
   </footer>
-  <script type="text/javascript" src="https://unpkg.com/fitvids@2.0.0/dist/fitvids.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/prismjs"></script>
+  <script async type="text/javascript" src="https://unpkg.com/fitvids@2.0.0/dist/fitvids.min.js"></script>
+  <script async type="text/javascript" src="https://unpkg.com/prismjs"></script>
   <script type="text/javascript">
     (function () {
       fitvids('._s-entry')

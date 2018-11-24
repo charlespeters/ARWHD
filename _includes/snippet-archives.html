@@ -7,10 +7,10 @@
   <ul class="o-UIList o-UIList--list u-mb6">
   {% endif %}
 
-  <li class="PostBlock u-p3 u-sh--1 u-mb4 u-bl u-bg--offwhite">
+  <li class="PostBlock u-p3 u-sh--1 u-mb4 u-bl u-bg--offwhite u-w400">
     <header class="u-left">
-    <a class="u-w900 h6 u-bl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <span class="small u-w400 meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <a class="u-w900 h6 u-bl" href="{{ post.url | prepend: site.baseurl }}" title="Link to '{{ post.title }}'">{{ post.title }}</a>
+    <span class="small meta">{{ post.date | date: "%B %-d, %Y" }}</span>
     </header>
     <p class="small u-system u-mt3">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
   </li>
