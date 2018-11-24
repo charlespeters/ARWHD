@@ -5,7 +5,7 @@ layout: default
 <article class="u-mxa">
 
   <header class="u-mb2 u-py4 u-center">
-    <h2 class="h3 u-mb2">{{ page.title }}</h2>
+    <h2 class="h3 u-mb2 u-w900">{{ page.title }}</h2>
     <span class="u-w400 meta">
       {{ page.date | date: "%B %-d, %Y" }}
       {% if page.meta %} | {{ page.meta }}{% endif %}
@@ -17,6 +17,7 @@ layout: default
   </section>
 
   <footer class="u-pt6">
+    <h4 class="u-w900 u-mb3">Share via</h4>
   <ul class="o-UIList o-UIList--reset u-center@md u-mb5">
       <li class="u-m2 u-inbl">
         <a href="https://twitter.com/intent/tweet?text='{{ page.title }}'&amp;url={{ page.url | prepend: site.url }}&amp;via=charlespeters" target="_blank">Twitter</a>
