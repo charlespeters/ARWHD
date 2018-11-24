@@ -16,11 +16,13 @@ layout: default
   {% endif %}
 
   <li class="PostBlock u-p3 u-sh--1 u-mb4 u-bl u-bg--offwhite u-w400">
-    <header class="u-left">
-      <a class="u-w900 h6 u-bl" href="{{ post.url | prepend: site.baseurl }}" title="Link to '{{ post.title }}'">{{ post.title }}</a>
-    <span class="small meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+    <header class="u-left u-mb3">
+      <h3 class="h6 u-w900">
+        <a class="u-bl" href="{{ post.url | prepend: site.baseurl }}" title="Link to '{{ post.title }}'">{{ post.title }}</a>
+      </h3>
+    <small class="small meta">{{ post.date | date: "%B %-d, %Y" }}</small>
     </header>
-    <p class="small u-system u-mt3">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+    <p class="small u-system">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
   </li>
 
   {% if forloop.last %}
