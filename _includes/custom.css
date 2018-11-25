@@ -3,7 +3,7 @@ html {
 }
 
 code {
-  font-family: "Roboto Mono", "Source Code Pro", Menlo, monospace !important;
+  font-family: 'Roboto Mono', 'Source Code Pro', Menlo, monospace !important;
 }
 
 .Archive {
@@ -14,7 +14,7 @@ code {
 }
 
 ._s-entry::after {
-  content: "";
+  content: '';
   display: block;
   background: #cf4832;
   margin: 1rem auto;
@@ -34,7 +34,6 @@ ol {
   margin-bottom: 0.625rem;
 }
 ._s-entry li {
-  font-size: 0.875rem;
 }
 ._s-entry p:last-of-type {
   margin-bottom: 1.5rem;
@@ -43,11 +42,17 @@ ol {
   margin-bottom: 1.5rem;
 }
 
+._s-entry ol li > p,
+._s-entry ul li > p {
+  display: inline;
+}
+
 ._s-entry h3 {
   color: #cf4832;
   margin: 0 0 1.25rem;
   font-size: 1.375rem;
   font-weight: 900;
+  text-align: center;
 }
 
 ._s-entry h4 {
@@ -55,6 +60,7 @@ ol {
   margin: 0 0 1.25rem;
   font-size: 1.125rem;
   font-weight: 700;
+  text-align: center;
   font-style: italic;
 }
 
